@@ -7,11 +7,6 @@ app = Flask(__name__)
 opportunityManager = OpportunityManager()
 actionVerifier = ActionVerifier()
 
-@app.route('/')
-def hello_world():
-	print 'hello world'
-	return 'Hello, Worlds!'
-
 @app.route('/location', methods = ['POST'])
 def save_location():
 	if request.method == 'POST':
@@ -22,9 +17,9 @@ def save_location():
 			file.write(save_string)
 	return 'saved!'
 
-@app.route('/moments', methods = ['GET'])
-def get_moments():
-	return opportunityManager.get_moment()
+@app.route('/moments/<id>', methods = ['GET'])
+def get_moments(id):
+	return opportunityManager.get_moment(id)
 
 @app.route('/verify', methods = ['POST'])
 def verify_action():

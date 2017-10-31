@@ -1,7 +1,17 @@
 [
+	{ 
+		"name": "Explore",
+		"prompt": "Residential locations often have lots of food and supplies within them -- if they haven’t been looted already -- if you see houses near you run towards them and pause in front of them.",
+		"timeout": 20		
+	},
 	{
-		"name": "moment1",
-		"prompt": "sprint past 10 trees",
+		"name": "Expand",
+		"prompt": "There is a row of houses a few blocks west of you, run there.",
+		"timeout": 20		
+	},
+	{
+		"name": "Exploit",
+		"prompt": "If you see parking around that means that the residents probably fled quickly and left behind supplies, jump off the curb onto a parking spot to mark it.",
 		"timeout": 20		
 	}
 ]
