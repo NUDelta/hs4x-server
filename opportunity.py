@@ -3,14 +3,14 @@ import time
 
 class OpportunityManager():
 
-	def __init__(self):
+	def __init__(self, experienceSelector):
 		self.times_pinged = 0
 		# Keep track of the last 4x stage sent to frontend
 		self.last_stage = None
 		self.stage1_sent = None
 
 		with open('moments.json') as file:
-		    self.moments = json.load(file)
+		    self.moments = json.load(file)[experienceSelector]
 
 	def get_moment(self, id):
 		print self.last_stage
