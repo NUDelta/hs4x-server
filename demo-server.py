@@ -3,9 +3,8 @@ from opportunity import OpportunityManager
 from verify import ActionVerifier
 import time
 
-numTimesRegistered = 0
 app = Flask(__name__)
-opportunityManager = OpportunityManager(numTimesRegistered)
+opportunityManager = OpportunityManager()
 # actionVerifier = ActionVerifier()
 
 @app.route('/location', methods = ['POST'])
@@ -24,10 +23,9 @@ def get_moments(id):
 
 @app.route('/register/<id>', methods = ['GET'])
 def register(id):
-	global opportunityManager, numTimesRegistered
+	global opportunityManager
 	if id == "1":
-		numTimesRegistered += 1
-		opportunityManager = OpportunityManager(numTimesRegistered % 3)
+		opportunityManager = OpportunityManager()
 		return "registered!"
 	return "nothing changed..."
 

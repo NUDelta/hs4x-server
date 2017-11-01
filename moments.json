@@ -1,54 +1,17 @@
 [
-	[
-		{ 
-			"name": "Explore",
-			"prompt": "Residential locations often have lots of food and supplies within them -- if they haven’t been looted already -- if you see houses near you run towards them and pause in front of them.",
-			"timeout": 20		
-		},
-		{
-			"name": "Expand",
-			"prompt": "There is a row of houses a few blocks west of you, run there.",
-			"timeout": 20		
-		},
-		{
-			"name": "Exploit",
-			"prompt": "If you see parking around that means that the residents probably fled quickly and left behind supplies, jump off the curb onto a parking spot to mark it.",
-			"timeout": 20		
-		}
-	],
-	[
-		{ 
-			"name": "Explore",
-			"prompt": "Only run in grassy areas here, the zombies can hear your footsteps on the pavement.",
-			"timeout": 20		
-		},
-		{
-			"name": "Expand",
-			"prompt": "There is a small park with grass coming up on your left, if you can locate it go there and pause for a moment.",
-			"timeout": 20		
-		},
-		{
-			"name": "Exploit",
-			"prompt": "Run the perimeter of the grassy area to claim it as a human stronghold. this will help future runners escape the zombies.",
-			"timeout": 20		
-		}
-	],
-	[
-		{ 
-			"name": "Explore",
-			"prompt": "The zombies are ready to ambush you on your normal route. take a detour to get to the next waypoint.",
-			"timeout": 20		
-		},
-		{
-			"name": "Expand",
-			"prompt": "There are zombies up ahead. use the detour on your left to get around them.",
-			"timeout": 20		
-		},
-		{
-			"name": "Exploit",
-			"prompt": "If the detour is well paved, take advantage of it and sprint to the end.",
-			"timeout": 20		
-		}
-	],
-	
+	{ 
+		"name": "Explore",
+		"prompt": "Residential locations often have lots of food and supplies within them -- if they haven’t been looted already -- if you see houses near you run towards them and pause in front of them.",
+		"timeout": 20		
+	},
+	{
+		"name": "Expand",
+		"prompt": "There is a row of houses a few blocks west of you, run there.",
+		"timeout": 20		
+	},
+	{
+		"name": "Exploit",
+		"prompt": "If you see parking around that means that the residents probably fled quickly and left behind supplies, jump off the curb onto a parking spot to mark it.",
+		"timeout": 20		
+	}
 ]
