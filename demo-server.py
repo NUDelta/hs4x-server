@@ -11,23 +11,14 @@ opportunityManager = OpportunityManager()
 def save_location():
 	if request.method == 'POST':
 		data = request.get_json()
-		print 'lat:', data['latitude'], '-', 'long:', data['longitude']
+		latStr = str(data['latitude'])
+		lngStr = str(data['longitude'])
+		timeStr = str(time.time())
 		with open('data.txt','a') as file:
-			save_string = str(data['latitude'])+','+str(data['longitude'])+','+str(time.time())+'\n'
+			save_string = latStr+','+lngStr+','+timeStr+'\n'
+			print save_string
 			file.write(save_string)
-	return 'saved!'
-
-@app.route('/moments/<id>', methods = ['GET'])
-def get_moments(id):
-	return opportunityManager.get_moment(id)
-
-@app.route('/register/<id>', methods = ['GET'])
-def register(id):
-	global opportunityManager
-	if id == "1":
-		opportunityManager = OpportunityManager()
-		return "registered!"
-	return "nothing changed..."
+	return opportunityManager.get_moment(float(latStr),float(lngStr))
 
 # @app.route('/verify', methods = ['POST'])
 # def verify_action():
