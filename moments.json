@@ -1,17 +1,38 @@
 [
 	{ 
-		"name": "Explore",
-		"prompt": "Residential locations often have lots of food and supplies within them -- if they haven’t been looted already -- if you see houses near you run towards them and pause in front of them.",
-		"timeout": 20		
-	},
-	{
 		"name": "Expand",
-		"prompt": "There is a row of houses a few blocks west of you, run there.",
-		"timeout": 20		
+		"prompt": "There are zombies on your tail, run to the stronghold at the Rock between Harris Hall and University Hall.",
+		"id": "rock",
+		"radius": 400
 	},
 	{
 		"name": "Exploit",
-		"prompt": "If you see parking around that means that the residents probably fled quickly and left behind supplies, jump off the curb onto a parking spot to mark it.",
-		"timeout": 20		
+		"prompt": "If you see someone guarding the Rock, then our fortress in the area is still going strong and you are safe to continue on your way towards Tech. Otherwise, canvas the area by running around the Rock and then continue to your original destination.",
+		"id": "rock",
+		"radius": 100
+	},
+		{ 
+		"name": "Expand",
+		"prompt": "There are zombies coming towards you on Sheridan, jog to Norris if you want to avoid them.",
+		"id": "Norris",
+		"radius": 1400
+	},
+	{
+		"name": "Exploit",
+		"prompt": "Jog into Norris and up towards the Starbucks -- if it’s crowded the zombies are probably on their way -- leave quickly via the door you entered. Otherwise, leave Norris through a different entrance to throw the zombies off your tail.",
+		"id": "Norris",
+		"radius": 100
+	},
+		{ 
+		"name": "Expand",
+		"prompt": "The Garrett Parking Lot is coming up on your right and zombies are close. Jog into the lot to look for cover.",
+		"id": "Garrett",
+		"radius": 250
+	},
+	{
+		"name": "Exploit",
+		"prompt": " If you see many cars in the lot and few empty spots then there it will provide cover from the zombies, weave through the cars in the lot to throw the zombies off your trail. Otherwise, sprint out of the lot and continue on quickly.",
+		"id": "Garrett",
+		"radius": 100
 	}
 ]

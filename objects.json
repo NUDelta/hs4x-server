@@ -1,0 +1,17 @@
+{
+	"rock": {
+		"lat": 42.051507,
+		"lng": -87.675919,
+		"responses": 5	
+	},
+	"Norris": {
+		"lat": 42.053384, 
+		"lng": -87.672949,
+		"responses": 5	
+	},
+	"Garrett": {
+		"lat": 42.055600,
+		"lng": -87.676569,
+		"responses": 5	
+	}
+}
