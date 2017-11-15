@@ -18,7 +18,8 @@ def save_location():
 			save_string = latStr+','+lngStr+','+timeStr+'\n'
 			print save_string
 			file.write(save_string)
-	return opportunityManager.get_moment(float(latStr),float(lngStr))
+		return opportunityManager.get_moment(float(latStr),float(lngStr))
+	return "{}"
 
 # @app.route('/verify', methods = ['POST'])
 # def verify_action():
