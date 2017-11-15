@@ -15,11 +15,9 @@ class OpportunityManager():
 
 	def get_moment(self,lat,lng):
 		moments_in_range = self.get_moments_in_range(lat,lng)
-		best_moment = self.get_best_moment(moments_in_range)
+		valid_moments = [ moment for moment in moments_in_range if moment["prompt"] not in self.sent.keys() ]
+		best_moment = self.get_best_moment(valid_moments)
 		if len(best_moment.keys()) == 0:
-			print "{}"
-			return "{}"
-		if best_moment["prompt"] in self.sent.keys():
 			print "{}"
 			return "{}"
 		else:
