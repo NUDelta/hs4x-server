@@ -3,7 +3,7 @@
 		"name": "Expand",
 		"prompt": "The Garrett Parking Lot is coming up on your right and zombies are close. Jog into the lot to look for cover.",
 		"id": "Garrett",
-		"radius": 2500
+		"radius": 250
 	},
 	{
 		"name": "Exploit",
