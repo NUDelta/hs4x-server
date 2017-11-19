@@ -7,8 +7,8 @@
 	},
 	{
 		"name": "Exploit",
-		"prompt": "If you see many cars in the lot and few empty spots then there it will provide cover from the zombies, weave through the cars in the lot to throw the zombies off your trail. Otherwise, sprint out of the lot and continue on quickly.",
+		"prompt": "If you see many cars in the lot and few empty spots then there it will provide cover from the zombies, weave through the cars in the lot to throw the zombies off. Otherwise, sprint out of the lot and continue on quickly.",
 		"id": "Garrett",
-		"radius": 100
+		"radius": 85
 	}
 ]
