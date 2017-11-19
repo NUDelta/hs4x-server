@@ -1,0 +1,1501 @@
+2017-11-19T18:30:20.236728+00:00 app[web.1]: 
+2017-11-19T18:30:20.236710+00:00 app[web.1]: 42.0554040559,-87.6763301623,1511116220.24
+2017-11-19T18:30:20.236758+00:00 app[web.1]: {}
+2017-11-19T18:30:20.237536+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=57f8ed30-087f-4b97-a8d8-ac41e4927f32 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:21.296269+00:00 app[web.1]: 42.0554008708,-87.6763667074,1511116221.3
+2017-11-19T18:30:21.296286+00:00 app[web.1]: 
+2017-11-19T18:30:21.296319+00:00 app[web.1]: {}
+2017-11-19T18:30:21.297065+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=dba673b5-f7f8-4128-ba3e-68a30a171f74 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:23.245784+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b7acce21-770a-45e9-9a61-74f8db8911c9 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:23.256494+00:00 app[web.1]: 42.055391022,-87.6764331759,1511116223.26
+2017-11-19T18:30:23.256512+00:00 app[web.1]: 
+2017-11-19T18:30:23.256568+00:00 app[web.1]: {}
+2017-11-19T18:30:24.238156+00:00 app[web.1]: 42.0553671336,-87.6764332597,1511116224.24
+2017-11-19T18:30:24.238179+00:00 app[web.1]: 
+2017-11-19T18:30:24.238219+00:00 app[web.1]: {}
+2017-11-19T18:30:24.227226+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=60b6b92c-43fd-4285-acaa-79849193e240 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:25.416694+00:00 app[web.1]: 42.0553454664,-87.6764331759,1511116225.42
+2017-11-19T18:30:25.416725+00:00 app[web.1]: 
+2017-11-19T18:30:25.416757+00:00 app[web.1]: {}
+2017-11-19T18:30:25.405961+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=712ccb66-b7f0-4c6f-8393-7c1ea5930d4d fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:27.330924+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b24d959d-727a-45cb-98a4-4b6cf81499b6 fwd="172.56.13.128" dyno=web.1 connect=0ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:27.341314+00:00 app[web.1]: 42.0553162974,-87.6764559747,1511116227.34
+2017-11-19T18:30:27.341335+00:00 app[web.1]: 
+2017-11-19T18:30:27.341390+00:00 app[web.1]: {}
+2017-11-19T18:30:29.317008+00:00 app[web.1]: 42.0552861644,-87.6764941123,1511116229.32
+2017-11-19T18:30:29.317021+00:00 app[web.1]: 
+2017-11-19T18:30:29.317097+00:00 app[web.1]: {}
+2017-11-19T18:30:29.317886+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2bfac51c-25e8-43a3-be88-392ce69e92ff fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:30.177130+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=45845b04-1066-4db0-b467-6782762aeca1 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:30.176333+00:00 app[web.1]: 42.0552691492,-87.6765114629,1511116230.18
+2017-11-19T18:30:30.176350+00:00 app[web.1]: 
+2017-11-19T18:30:30.176403+00:00 app[web.1]: {}
+2017-11-19T18:30:31.236530+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=553654b9-8fab-408a-930c-fa047d410fff fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:31.235537+00:00 app[web.1]: 42.0552535169,-87.6765287296,1511116231.24
+2017-11-19T18:30:31.235556+00:00 app[web.1]: 
+2017-11-19T18:30:31.235606+00:00 app[web.1]: {}
+2017-11-19T18:30:33.502432+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=68e9ff2d-203f-4e2f-b580-1dfb210b4844 fwd="172.56.13.128" dyno=web.1 connect=0ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:33.500909+00:00 app[web.1]: 42.0552134514,-87.6765656938,1511116233.5
+2017-11-19T18:30:33.500927+00:00 app[web.1]: 
+2017-11-19T18:30:33.500988+00:00 app[web.1]: {}
+2017-11-19T18:30:34.238243+00:00 app[web.1]: 42.0551902755,-87.6765880735,1511116234.24
+2017-11-19T18:30:34.238261+00:00 app[web.1]: 
+2017-11-19T18:30:34.238328+00:00 app[web.1]: {}
+2017-11-19T18:30:34.239932+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8ee8ddb5-3be9-4828-8484-30ceb44be71d fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:35.338398+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4927a8fa-770c-40bd-b640-219b896375df fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:35.336958+00:00 app[web.1]: 42.0551667223,-87.6766097826,1511116235.34
+2017-11-19T18:30:35.336971+00:00 app[web.1]: 
+2017-11-19T18:30:35.337021+00:00 app[web.1]: {}
+2017-11-19T18:30:36.338689+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b5e09cda-caa4-4135-b34a-314c798caaaa fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:36.337088+00:00 app[web.1]: 42.0551431273,-87.6766315755,1511116236.34
+2017-11-19T18:30:36.337102+00:00 app[web.1]: 
+2017-11-19T18:30:36.337185+00:00 app[web.1]: {}
+2017-11-19T18:30:38.332486+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f2c2a559-7f60-4593-bf09-f51fb00d1419 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:38.331513+00:00 app[web.1]: 42.0550946379,-87.6766640973,1511116238.33
+2017-11-19T18:30:38.331528+00:00 app[web.1]: 
+2017-11-19T18:30:38.331556+00:00 app[web.1]: {}
+2017-11-19T18:30:40.337842+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d24a907e-3d40-4776-b0d9-eae07436441f fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:40.336965+00:00 app[web.1]: 42.0550194942,-87.6767169033,1511116240.34
+2017-11-19T18:30:40.336986+00:00 app[web.1]: 
+2017-11-19T18:30:40.337090+00:00 app[web.1]: {}
+2017-11-19T18:30:41.417627+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=590b54bf-44bc-47a4-a6c6-64ad9553730d fwd="172.56.13.128" dyno=web.1 connect=1ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:41.416795+00:00 app[web.1]: 42.0549847093,-87.676736517,1511116241.42
+2017-11-19T18:30:41.416812+00:00 app[web.1]: 
+2017-11-19T18:30:41.416863+00:00 app[web.1]: {}
+2017-11-19T18:30:42.377616+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e34f6c1e-7072-4483-8960-50e38622c565 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:42.376768+00:00 app[web.1]: 42.0549491281,-87.67675085,1511116242.38
+2017-11-19T18:30:42.376781+00:00 app[web.1]: 
+2017-11-19T18:30:42.376840+00:00 app[web.1]: {}
+2017-11-19T18:30:44.277591+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2b5d50ec-69b8-4030-92c7-6a12470ea42a fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:44.276536+00:00 app[web.1]: 42.0548809413,-87.6767548733,1511116244.28
+2017-11-19T18:30:44.276559+00:00 app[web.1]: 
+2017-11-19T18:30:44.276795+00:00 app[web.1]: {}
+2017-11-19T18:30:45.197815+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=fc84690f-8430-4352-bb90-3cf901f18cfb fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:45.196987+00:00 app[web.1]: 42.0548464498,-87.6767461561,1511116245.2
+2017-11-19T18:30:45.197005+00:00 app[web.1]: 
+2017-11-19T18:30:45.197052+00:00 app[web.1]: {}
+2017-11-19T18:30:46.277067+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=45bcbed0-0a42-4381-b8ec-0ca373d4ee92 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:46.276228+00:00 app[web.1]: 42.0548152272,-87.6767346729,1511116246.28
+2017-11-19T18:30:46.276242+00:00 app[web.1]: 
+2017-11-19T18:30:46.276295+00:00 app[web.1]: {}
+2017-11-19T18:30:48.303111+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2b07033f-5876-4447-bbb7-565be251235a fwd="172.56.13.128" dyno=web.1 connect=1ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:48.299286+00:00 app[web.1]: 42.0547558833,-87.6767047495,1511116248.3
+2017-11-19T18:30:48.299302+00:00 app[web.1]: 
+2017-11-19T18:30:48.299597+00:00 app[web.1]: {}
+2017-11-19T18:30:49.275249+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=da427d0a-98eb-4535-a23a-a801e129ac11 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:49.274640+00:00 app[web.1]: 42.0547174523,-87.6766951942,1511116249.27
+2017-11-19T18:30:49.274654+00:00 app[web.1]: 
+2017-11-19T18:30:49.274654+00:00 app[web.1]: {}
+2017-11-19T18:30:50.380842+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=52fa187b-288d-452a-9c23-bac9da9c8a6d fwd="172.56.13.128" dyno=web.1 connect=0ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:50.377197+00:00 app[web.1]: 42.0546751656,-87.6766941883,1511116250.38
+2017-11-19T18:30:50.379930+00:00 app[web.1]: 
+2017-11-19T18:30:50.380068+00:00 app[web.1]: {}
+2017-11-19T18:30:51.301373+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=de1afe41-2ae6-4bee-bd94-abcd95be5c86 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:51.300570+00:00 app[web.1]: 42.0546347229,-87.6766918414,1511116251.3
+2017-11-19T18:30:51.300585+00:00 app[web.1]: 
+2017-11-19T18:30:51.300644+00:00 app[web.1]: {}
+2017-11-19T18:30:52.265763+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=bba8553e-8832-4fd5-8286-a22038368d86 fwd="172.56.13.128" dyno=web.1 connect=1ms service=9ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:52.259338+00:00 app[web.1]: 42.0545975073,-87.6766849683,1511116252.26
+2017-11-19T18:30:52.263954+00:00 app[web.1]: 
+2017-11-19T18:30:52.264054+00:00 app[web.1]: {}
+2017-11-19T18:30:53.319823+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=62ef1b72-96d7-41f3-bdc4-9fe244ec0c15 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:53.318878+00:00 app[web.1]: 42.0545619261,-87.6766779275,1511116253.32
+2017-11-19T18:30:53.318896+00:00 app[web.1]: 
+2017-11-19T18:30:53.318932+00:00 app[web.1]: {}
+2017-11-19T18:30:55.280140+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=cb77d4e3-304b-43f2-8135-65f96151789d fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:55.279055+00:00 app[web.1]: 42.0545006544,-87.6766775922,1511116255.28
+2017-11-19T18:30:55.279071+00:00 app[web.1]: 
+2017-11-19T18:30:55.279126+00:00 app[web.1]: {}
+2017-11-19T18:30:57.546623+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b0efb537-0ff0-4312-865b-931dc6981f62 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:57.546956+00:00 app[web.1]: 42.0544592478,-87.6767173224,1511116257.55
+2017-11-19T18:30:57.546977+00:00 app[web.1]: 
+2017-11-19T18:30:57.547024+00:00 app[web.1]: {}
+2017-11-19T18:30:59.301092+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e6ed59e8-c112-4e48-bf3d-aa93d235228d fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:30:59.298395+00:00 app[web.1]: 42.0544277737,-87.676771721,1511116259.3
+2017-11-19T18:30:59.298413+00:00 app[web.1]: 
+2017-11-19T18:30:59.298481+00:00 app[web.1]: {}
+2017-11-19T18:31:00.287143+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8f2fe92c-b9fa-49aa-8caa-848afe536bf6 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:00.285291+00:00 app[web.1]: 42.0544110518,-87.6767979563,1511116260.29
+2017-11-19T18:31:00.285305+00:00 app[web.1]: 
+2017-11-19T18:31:00.285368+00:00 app[web.1]: {}
+2017-11-19T18:31:02.384755+00:00 app[web.1]: 42.0543797454,-87.6768393629,1511116262.38
+2017-11-19T18:31:02.384835+00:00 app[web.1]: {}
+2017-11-19T18:31:02.384767+00:00 app[web.1]: 
+2017-11-19T18:31:02.388997+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4d2acdb0-0be0-447f-b660-984d65e6a327 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:04.240248+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4e2856af-4bf4-4e21-b252-aa99cdd527c9 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:04.235966+00:00 app[web.1]: 42.0543703577,-87.6769010537,1511116264.24
+2017-11-19T18:31:04.235979+00:00 app[web.1]: 
+2017-11-19T18:31:04.236069+00:00 app[web.1]: {}
+2017-11-19T18:31:05.369667+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d81601e2-58f8-4a36-b5ae-35c78c6919b8 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:05.357666+00:00 app[web.1]: 42.054359084,-87.676928714,1511116265.36
+2017-11-19T18:31:05.357681+00:00 app[web.1]: 
+2017-11-19T18:31:05.357725+00:00 app[web.1]: {}
+2017-11-19T18:31:07.301525+00:00 app[web.1]: 42.0543266042,-87.6769784187,1511116267.3
+2017-11-19T18:31:07.301534+00:00 app[web.1]: 
+2017-11-19T18:31:07.301609+00:00 app[web.1]: {}
+2017-11-19T18:31:07.302540+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=62af6517-f57d-4433-9e93-bc4e4028ecb5 fwd="172.56.13.128" dyno=web.1 connect=0ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:08.278357+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=50248809-21ed-4a1a-9e3e-96acdff6fbd6 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:08.277249+00:00 app[web.1]: 
+2017-11-19T18:31:08.277237+00:00 app[web.1]: 42.0543025062,-87.6769957692,1511116268.28
+2017-11-19T18:31:08.277316+00:00 app[web.1]: {}
+2017-11-19T18:31:09.223067+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7195714b-3c28-458f-a210-ffc70a24511c fwd="172.56.13.128" dyno=web.1 connect=0ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:09.221953+00:00 app[web.1]: 42.0542793721,-87.677006079,1511116269.22
+2017-11-19T18:31:09.221976+00:00 app[web.1]: 
+2017-11-19T18:31:09.222069+00:00 app[web.1]: {}
+2017-11-19T18:31:11.506404+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=fcb3ec4f-2177-4f97-b280-d886a1beec52 fwd="172.56.13.128" dyno=web.1 connect=3ms service=8ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:11.505544+00:00 app[web.1]: 42.0542316791,-87.677015802,1511116271.51
+2017-11-19T18:31:11.505580+00:00 app[web.1]: 
+2017-11-19T18:31:11.505726+00:00 app[web.1]: {}
+2017-11-19T18:31:13.359225+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0b53523a-09a5-40a6-a944-9c23df372528 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:13.358486+00:00 app[web.1]: 42.054177532,-87.6770292968,1511116273.36
+2017-11-19T18:31:13.358543+00:00 app[web.1]: 
+2017-11-19T18:31:13.358656+00:00 app[web.1]: {}
+2017-11-19T18:31:14.263393+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=3038b504-eabf-427c-a298-ad4a140c755c fwd="172.56.13.128" dyno=web.1 connect=2ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:14.262679+00:00 app[web.1]: 42.0541495365,-87.6770377626,1511116274.26
+2017-11-19T18:31:14.262731+00:00 app[web.1]: 
+2017-11-19T18:31:14.262841+00:00 app[web.1]: {}
+2017-11-19T18:31:15.260807+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=9922eca4-4f79-4cb2-9732-cdb70d6b5261 fwd="172.56.13.128" dyno=web.1 connect=1ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:15.260257+00:00 app[web.1]: 42.0541277854,-87.6770496649,1511116275.26
+2017-11-19T18:31:15.260276+00:00 app[web.1]: 
+2017-11-19T18:31:15.260336+00:00 app[web.1]: {}
+2017-11-19T18:31:16.299996+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=84af58e2-00c4-4579-957f-59afd9fe74b4 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:16.299551+00:00 app[web.1]: 42.0540999575,-87.6770474017,1511116276.3
+2017-11-19T18:31:16.299565+00:00 app[web.1]: 
+2017-11-19T18:31:16.299620+00:00 app[web.1]: {}
+2017-11-19T18:31:18.305080+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8b58ba7b-caa8-4d62-aec5-a0440cd46bf9 fwd="172.56.13.128" dyno=web.1 connect=1ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:18.301265+00:00 app[web.1]: 42.0540494565,-87.6770427917,1511116278.3
+2017-11-19T18:31:18.301292+00:00 app[web.1]: 
+2017-11-19T18:31:18.301333+00:00 app[web.1]: {}
+2017-11-19T18:31:20.348012+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a499b48a-8859-4f0b-bb10-c1db197bd3c4 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:20.345675+00:00 app[web.1]: 42.0539884363,-87.677012533,1511116280.35
+2017-11-19T18:31:20.345689+00:00 app[web.1]: 
+2017-11-19T18:31:20.345823+00:00 app[web.1]: {}
+2017-11-19T18:31:22.480463+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d54924f1-f0ef-43d5-b486-df3bb50fff49 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:22.479335+00:00 app[web.1]: {}
+2017-11-19T18:31:22.479282+00:00 app[web.1]: 42.0539368038,-87.6770020557,1511116282.48
+2017-11-19T18:31:22.479306+00:00 app[web.1]: 
+2017-11-19T18:31:23.200178+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=417e3425-0158-46d3-afd9-27ae4bc9c132 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:23.198905+00:00 app[web.1]: 42.0539112389,-87.676990321,1511116283.2
+2017-11-19T18:31:23.198920+00:00 app[web.1]: 
+2017-11-19T18:31:23.198975+00:00 app[web.1]: {}
+2017-11-19T18:31:24.340149+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=461fab22-5c90-4f27-90e1-7c7d40ede89b fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:24.338789+00:00 app[web.1]: 42.0538872248,-87.6769790054,1511116284.34
+2017-11-19T18:31:24.338805+00:00 app[web.1]: 
+2017-11-19T18:31:24.338853+00:00 app[web.1]: {}
+2017-11-19T18:31:26.282379+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4165964f-6b17-4dda-83cf-ffb0c6ddffae fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:26.280777+00:00 app[web.1]: 42.0538291801,-87.6769678575,1511116286.28
+2017-11-19T18:31:26.280828+00:00 app[web.1]: 
+2017-11-19T18:31:26.280930+00:00 app[web.1]: {}
+2017-11-19T18:31:27.262859+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=338b10eb-7143-4022-9d89-ea93d6a5677c fwd="172.56.13.128" dyno=web.1 connect=1ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:27.261322+00:00 app[web.1]: 42.0537990891,-87.6769641694,1511116287.26
+2017-11-19T18:31:27.261337+00:00 app[web.1]: 
+2017-11-19T18:31:27.261425+00:00 app[web.1]: {}
+2017-11-19T18:31:29.368507+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8f20bf88-ec15-418d-ac01-79e9e5fecd41 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:29.366722+00:00 app[web.1]: 42.0537327463,-87.6769603976,1511116289.37
+2017-11-19T18:31:29.366737+00:00 app[web.1]: 
+2017-11-19T18:31:29.366774+00:00 app[web.1]: {}
+2017-11-19T18:31:30.243056+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e9738a1f-46a1-4257-bb73-43b4cd148425 fwd="172.56.13.128" dyno=web.1 connect=1ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:30.240864+00:00 app[web.1]: 42.053696327,-87.6769609005,1511116290.24
+2017-11-19T18:31:30.240883+00:00 app[web.1]: 
+2017-11-19T18:31:30.240982+00:00 app[web.1]: {}
+2017-11-19T18:31:31.351847+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=03223997-4aba-49b0-b79f-c9950b608a5a fwd="172.56.13.128" dyno=web.1 connect=1ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:31.349708+00:00 app[web.1]: {}
+2017-11-19T18:31:31.349639+00:00 app[web.1]: 42.0536637633,-87.6769593079,1511116291.35
+2017-11-19T18:31:31.349653+00:00 app[web.1]: 
+2017-11-19T18:31:32.359307+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a50685e0-fe04-4764-8e12-51b6a4247641 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:32.357612+00:00 app[web.1]: 42.0536354743,-87.6769631636,1511116292.36
+2017-11-19T18:31:32.357628+00:00 app[web.1]: 
+2017-11-19T18:31:32.357647+00:00 app[web.1]: {}
+2017-11-19T18:31:34.441299+00:00 app[web.1]: 
+2017-11-19T18:31:34.441276+00:00 app[web.1]: 42.0535797766,-87.6769878902,1511116294.44
+2017-11-19T18:31:34.441397+00:00 app[web.1]: {}
+2017-11-19T18:31:34.448110+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=92e0c4d9-c32e-4259-99b2-89f9f105f348 fwd="172.56.13.128" dyno=web.1 connect=1ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:35.227238+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f8eab4f0-e8af-490e-bd97-6a59779066ae fwd="172.56.13.128" dyno=web.1 connect=2ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:35.220143+00:00 app[web.1]: 42.0535512362,-87.6770004631,1511116295.22
+2017-11-19T18:31:35.220219+00:00 app[web.1]: 
+2017-11-19T18:31:35.220345+00:00 app[web.1]: {}
+2017-11-19T18:31:37.303381+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a2e908b2-34b7-44b9-8bd2-fe6c976a21d4 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:37.301689+00:00 app[web.1]: 42.0534884558,-87.6770073363,1511116297.3
+2017-11-19T18:31:37.301706+00:00 app[web.1]: 
+2017-11-19T18:31:37.301752+00:00 app[web.1]: {}
+2017-11-19T18:31:38.279726+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=9888e32e-e1c6-462b-8826-cf6fedf7810c fwd="172.56.13.128" dyno=web.1 connect=1ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:38.278009+00:00 app[web.1]: 42.0534544671,-87.6770111081,1511116298.28
+2017-11-19T18:31:38.278024+00:00 app[web.1]: 
+2017-11-19T18:31:38.278079+00:00 app[web.1]: {}
+2017-11-19T18:31:39.300098+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b2a035c9-56b3-4a2f-bd50-d5e47469d63e fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:39.298343+00:00 app[web.1]: 42.0534191374,-87.6770156343,1511116299.3
+2017-11-19T18:31:39.298358+00:00 app[web.1]: 
+2017-11-19T18:31:39.298407+00:00 app[web.1]: {}
+2017-11-19T18:31:40.361141+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d54015dd-95a9-4198-b416-a4b5f633e0ba fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:40.358948+00:00 app[web.1]: 42.0533782337,-87.677024603,1511116300.36
+2017-11-19T18:31:40.358993+00:00 app[web.1]: 
+2017-11-19T18:31:40.359137+00:00 app[web.1]: {}
+2017-11-19T18:31:42.309957+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=281f4191-4e42-4741-994b-de31464a4659 fwd="172.56.13.128" dyno=web.1 connect=1ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:42.308204+00:00 app[web.1]: 42.0533045987,-87.6770400257,1511116302.31
+2017-11-19T18:31:42.308274+00:00 app[web.1]: 
+2017-11-19T18:31:42.308382+00:00 app[web.1]: {}
+2017-11-19T18:31:43.279596+00:00 app[web.1]: 42.0532686823,-87.6770508383,1511116303.28
+2017-11-19T18:31:43.279610+00:00 app[web.1]: 
+2017-11-19T18:31:43.279661+00:00 app[web.1]: {}
+2017-11-19T18:31:43.281186+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=dfe2267b-225e-4327-8251-99098c81e875 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:45.384878+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=592f0021-2b83-4451-972f-b5b3b11475ef fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:45.382295+00:00 app[web.1]: 42.0532004116,-87.6770587173,1511116305.38
+2017-11-19T18:31:45.382308+00:00 app[web.1]: 
+2017-11-19T18:31:45.382374+00:00 app[web.1]: {}
+2017-11-19T18:31:46.282638+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=66a3838b-310f-49d5-9d3c-e988f659b444 fwd="172.56.13.128" dyno=web.1 connect=2ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:46.280532+00:00 app[web.1]: 42.0531700692,-87.6770536882,1511116306.28
+2017-11-19T18:31:46.280550+00:00 app[web.1]: 
+2017-11-19T18:31:46.280587+00:00 app[web.1]: {}
+2017-11-19T18:31:47.302145+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5b428901-cce4-43ea-afc5-07f3afc56b62 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:47.299972+00:00 app[web.1]: 42.0531444205,-87.6770505869,1511116307.3
+2017-11-19T18:31:47.300045+00:00 app[web.1]: 
+2017-11-19T18:31:47.300146+00:00 app[web.1]: {}
+2017-11-19T18:31:48.362306+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=754dc23d-05af-4f03-8690-a5391aa6340c fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:48.360349+00:00 app[web.1]: 42.0531226695,-87.6770517603,1511116308.36
+2017-11-19T18:31:48.360362+00:00 app[web.1]: 
+2017-11-19T18:31:48.360439+00:00 app[web.1]: {}
+2017-11-19T18:31:50.306837+00:00 app[web.1]: 42.0530851186,-87.6770629921,1511116310.31
+2017-11-19T18:31:50.306859+00:00 app[web.1]: 
+2017-11-19T18:31:50.306906+00:00 app[web.1]: {}
+2017-11-19T18:31:50.307769+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2a720f18-63c9-47ba-a55a-053faa29e2d9 fwd="172.56.13.128" dyno=web.1 connect=2ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:51.298771+00:00 app[web.1]: 42.0530633256,-87.6770685241,1511116311.3
+2017-11-19T18:31:51.298786+00:00 app[web.1]: 
+2017-11-19T18:31:51.298843+00:00 app[web.1]: {}
+2017-11-19T18:31:51.299303+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b8d3b096-6ca2-45b8-a762-4bd2070609d9 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:53.366960+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8366b78c-8b71-4967-b53d-dbcf20892d9b fwd="172.56.13.128" dyno=web.1 connect=1ms service=9ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:53.365832+00:00 app[web.1]: 
+2017-11-19T18:31:53.365936+00:00 app[web.1]: {}
+2017-11-19T18:31:53.365770+00:00 app[web.1]: 42.0530119026,-87.677071374,1511116313.37
+2017-11-19T18:31:54.251322+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=77f96b8a-24b3-4440-a916-54b892d90a33 fwd="172.56.13.128" dyno=web.1 connect=12ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:54.250144+00:00 app[web.1]: 42.0529855835,-87.677068105,1511116314.25
+2017-11-19T18:31:54.250157+00:00 app[web.1]: 
+2017-11-19T18:31:54.250214+00:00 app[web.1]: {}
+2017-11-19T18:31:55.326649+00:00 app[web.1]: 42.052957085,-87.6770648361,1511116315.33
+2017-11-19T18:31:55.326717+00:00 app[web.1]: {}
+2017-11-19T18:31:55.326665+00:00 app[web.1]: 
+2017-11-19T18:31:55.327587+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=dc51642f-8cac-406d-8451-0a950ee6eaba fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:56.382815+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=cc7706c4-666f-4b13-af16-6897fe3b8dbb fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:56.381671+00:00 app[web.1]: 42.0529281674,-87.6770641656,1511116316.38
+2017-11-19T18:31:56.381689+00:00 app[web.1]: 
+2017-11-19T18:31:56.381737+00:00 app[web.1]: {}
+2017-11-19T18:31:58.302751+00:00 app[web.1]: 
+2017-11-19T18:31:58.302737+00:00 app[web.1]: 42.0528757386,-87.6770543587,1511116318.3
+2017-11-19T18:31:58.302796+00:00 app[web.1]: {}
+2017-11-19T18:31:58.304088+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=1f609f10-2138-4d8d-b3f6-a6491f32d4ad fwd="172.56.13.128" dyno=web.1 connect=2ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:31:59.303003+00:00 app[web.1]: 42.0528510539,-87.677051006,1511116319.3
+2017-11-19T18:31:59.303016+00:00 app[web.1]: 
+2017-11-19T18:31:59.303017+00:00 app[web.1]: {}
+2017-11-19T18:31:59.304328+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4538b21f-3884-47b7-8b5a-9a2742c2e317 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:01.327319+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4b720715-4542-4598-bc84-b6bdb8cea8a5 fwd="172.56.13.128" dyno=web.1 connect=3ms service=8ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:01.323746+00:00 app[web.1]: 42.0527978288,-87.6770541073,1511116321.32
+2017-11-19T18:32:01.323762+00:00 app[web.1]: 
+2017-11-19T18:32:01.325983+00:00 app[web.1]: {}
+2017-11-19T18:32:03.182604+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=41f40e4e-33a7-45b1-b52d-538ecb534a25 fwd="172.56.13.128" dyno=web.1 connect=1ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:03.179541+00:00 app[web.1]: 42.0527651813,-87.6770451386,1511116323.18
+2017-11-19T18:32:03.179556+00:00 app[web.1]: 
+2017-11-19T18:32:03.179711+00:00 app[web.1]: {}
+2017-11-19T18:32:04.303159+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=3a045953-cd75-4092-918d-319cc0945691 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:04.301430+00:00 app[web.1]: 42.0527497586,-87.6770441328,1511116324.3
+2017-11-19T18:32:04.301505+00:00 app[web.1]: 
+2017-11-19T18:32:04.301596+00:00 app[web.1]: {}
+2017-11-19T18:32:05.320125+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7fc1067c-ddcf-4ecd-8a52-a75a55317924 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:05.318223+00:00 app[web.1]: 42.0527298516,-87.6770474856,1511116325.32
+2017-11-19T18:32:05.318238+00:00 app[web.1]: 
+2017-11-19T18:32:05.318296+00:00 app[web.1]: {}
+2017-11-19T18:32:06.572406+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8fa635f2-3757-4c08-894f-78f58bacae65 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:06.570845+00:00 app[web.1]: 42.052705586,-87.677049581,1511116326.57
+2017-11-19T18:32:06.570860+00:00 app[web.1]: 
+2017-11-19T18:32:06.570910+00:00 app[web.1]: {}
+2017-11-19T18:32:08.320391+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4c2f08aa-814a-4900-8e88-51d587e42721 fwd="172.56.13.128" dyno=web.1 connect=2ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:08.318912+00:00 app[web.1]: 42.0526587312,-87.6770592202,1511116328.32
+2017-11-19T18:32:08.318925+00:00 app[web.1]: 
+2017-11-19T18:32:08.318977+00:00 app[web.1]: {}
+2017-11-19T18:32:09.336916+00:00 app[web.1]: 42.0526352618,-87.6770661772,1511116329.34
+2017-11-19T18:32:09.341319+00:00 app[web.1]: 
+2017-11-19T18:32:09.342339+00:00 app[web.1]: {}
+2017-11-19T18:32:09.346416+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d7c20718-2c28-40ae-b232-86903fb6fc0d fwd="172.56.13.128" dyno=web.1 connect=1ms service=30ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:11.261635+00:00 app[web.1]: 42.0525871078,-87.6770745591,1511116331.26
+2017-11-19T18:32:11.261693+00:00 app[web.1]: 
+2017-11-19T18:32:11.261800+00:00 app[web.1]: {}
+2017-11-19T18:32:11.264384+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f16517bd-6762-4c2b-b69f-7f8277bb7ca2 fwd="172.56.13.128" dyno=web.1 connect=2ms service=9ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:12.291739+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b4ff91af-89db-48a7-86fb-e6f0abf3f298 fwd="172.56.13.128" dyno=web.1 connect=1ms service=8ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:12.288043+00:00 app[web.1]: 42.0525630098,-87.6770770737,1511116332.29
+2017-11-19T18:32:12.288952+00:00 app[web.1]: 
+2017-11-19T18:32:12.289237+00:00 app[web.1]: {}
+2017-11-19T18:32:13.640810+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=755805b2-2422-463a-8045-28430d547d10 fwd="172.56.13.128" dyno=web.1 connect=2ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:13.638807+00:00 app[web.1]: 42.0525375707,-87.6770811808,1511116333.64
+2017-11-19T18:32:13.639127+00:00 app[web.1]: 
+2017-11-19T18:32:13.639245+00:00 app[web.1]: {}
+2017-11-19T18:32:15.358956+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e3b7a429-5780-4b9d-b7e9-dceeb6887cf1 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:15.356466+00:00 app[web.1]: 42.0524922247,-87.6770822705,1511116335.36
+2017-11-19T18:32:15.357111+00:00 app[web.1]: 
+2017-11-19T18:32:15.357247+00:00 app[web.1]: {}
+2017-11-19T18:32:17.457614+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=742b91d3-416a-4166-ae96-5b1a195f4918 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:17.455044+00:00 app[web.1]: 42.0524425619,-87.6770794206,1511116337.45
+2017-11-19T18:32:17.455202+00:00 app[web.1]: 
+2017-11-19T18:32:17.455343+00:00 app[web.1]: {}
+2017-11-19T18:32:18.213166+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7de8511a-6753-465f-8dc5-4730908dc4cb fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:18.210515+00:00 app[web.1]: 42.0524157817,-87.6770793368,1511116338.21
+2017-11-19T18:32:18.210819+00:00 app[web.1]: {}
+2017-11-19T18:32:18.210668+00:00 app[web.1]: 
+2017-11-19T18:32:20.339625+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e51c8142-a094-44d7-a528-82aaf1bb1e7f fwd="172.56.13.128" dyno=web.1 connect=0ms service=12ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:20.337709+00:00 app[web.1]: 42.0523596649,-87.6770800912,1511116340.34
+2017-11-19T18:32:20.337722+00:00 app[web.1]: 
+2017-11-19T18:32:20.337827+00:00 app[web.1]: {}
+2017-11-19T18:32:21.291059+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=9d29a4e6-043e-413e-9e60-5f7abf4d3f6e fwd="172.56.13.128" dyno=web.1 connect=0ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:21.286907+00:00 app[web.1]: 42.0523282327,-87.6770875511,1511116341.29
+2017-11-19T18:32:21.286975+00:00 app[web.1]: {}
+2017-11-19T18:32:21.286925+00:00 app[web.1]: 
+2017-11-19T18:32:23.408193+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5623fdf1-abd4-482e-879b-7e8d19d83502 fwd="172.56.13.128" dyno=web.1 connect=0ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:23.406476+00:00 app[web.1]: 42.052271571,-87.6770979446,1511116343.41
+2017-11-19T18:32:23.406490+00:00 app[web.1]: 
+2017-11-19T18:32:23.406569+00:00 app[web.1]: {}
+2017-11-19T18:32:24.290559+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=08285a28-2fab-48fd-a65f-3ac69646f718 fwd="172.56.13.128" dyno=web.1 connect=0ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:24.287113+00:00 app[web.1]: 42.0522478084,-87.6771000401,1511116344.29
+2017-11-19T18:32:24.287128+00:00 app[web.1]: 
+2017-11-19T18:32:24.287394+00:00 app[web.1]: {}
+2017-11-19T18:32:25.291757+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=6cf6db29-9eae-481c-900e-7f09ee2b4bfa fwd="172.56.13.128" dyno=web.1 connect=2ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:25.290204+00:00 app[web.1]: 42.0522215311,-87.6770982799,1511116345.29
+2017-11-19T18:32:25.290228+00:00 app[web.1]: 
+2017-11-19T18:32:25.290264+00:00 app[web.1]: {}
+2017-11-19T18:32:26.375531+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=38ba137c-a804-4572-9f64-88e16c58254b fwd="172.56.13.128" dyno=web.1 connect=3ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:26.373895+00:00 app[web.1]: 42.0521954215,-87.6770980284,1511116346.37
+2017-11-19T18:32:26.373961+00:00 app[web.1]: {}
+2017-11-19T18:32:26.373910+00:00 app[web.1]: 
+2017-11-19T18:32:28.307276+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=540c7022-2204-4688-bfaa-33fc60d46eea fwd="172.56.13.128" dyno=web.1 connect=1ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:28.306271+00:00 app[web.1]: 42.0521394723,-87.6770911553,1511116348.31
+2017-11-19T18:32:28.306293+00:00 app[web.1]: 
+2017-11-19T18:32:28.306341+00:00 app[web.1]: {}
+2017-11-19T18:32:29.237123+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=36e91eca-0b98-468c-ac43-fb2cd85404fa fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:29.235745+00:00 app[web.1]: 42.0521056513,-87.67708621,1511116349.24
+2017-11-19T18:32:29.235760+00:00 app[web.1]: 
+2017-11-19T18:32:29.235852+00:00 app[web.1]: {}
+2017-11-19T18:32:30.267798+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=9e170724-54aa-4149-a5a2-c9502b3f3c73 fwd="172.56.13.128" dyno=web.1 connect=1ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:30.266759+00:00 app[web.1]: 42.0520735905,-87.6770805103,1511116350.27
+2017-11-19T18:32:30.266774+00:00 app[web.1]: 
+2017-11-19T18:32:30.266819+00:00 app[web.1]: {}
+2017-11-19T18:32:31.287345+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=dd07edb0-6764-46d4-bb35-28e2ca34cecb fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:31.285843+00:00 app[web.1]: 42.0520434156,-87.6770790015,1511116351.29
+2017-11-19T18:32:31.285929+00:00 app[web.1]: 
+2017-11-19T18:32:31.286037+00:00 app[web.1]: {}
+2017-11-19T18:32:32.300098+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d7314f15-238d-455e-86dc-0de220a5b7c1 fwd="172.56.13.128" dyno=web.1 connect=0ms service=15ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:32.286852+00:00 app[web.1]: 42.0520139533,-87.6770818514,1511116352.29
+2017-11-19T18:32:32.286864+00:00 app[web.1]: 
+2017-11-19T18:32:32.287186+00:00 app[web.1]: {}
+2017-11-19T18:32:33.394676+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4a057e48-2451-4555-9836-a3b85d038334 fwd="172.56.13.128" dyno=web.1 connect=0ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:33.393347+00:00 app[web.1]: 42.0519868378,-87.6770839468,1511116353.39
+2017-11-19T18:32:33.393359+00:00 app[web.1]: 
+2017-11-19T18:32:33.393411+00:00 app[web.1]: {}
+2017-11-19T18:32:35.309523+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=cb698f69-da8c-4b23-96cd-21aca3f80fd9 fwd="172.56.13.128" dyno=web.1 connect=0ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:35.308857+00:00 app[web.1]: 42.0519356663,-87.6770852041,1511116355.31
+2017-11-19T18:32:35.308870+00:00 app[web.1]: 
+2017-11-19T18:32:35.308926+00:00 app[web.1]: {}
+2017-11-19T18:32:36.266328+00:00 app[web.1]: 42.0519131609,-87.6770815161,1511116356.27
+2017-11-19T18:32:36.266402+00:00 app[web.1]: {}
+2017-11-19T18:32:36.266342+00:00 app[web.1]: 
+2017-11-19T18:32:36.267056+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=549e9353-f4ff-4043-9f75-ce892f157036 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:37.327031+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=805021e4-1f3f-461d-85e3-1ae1188b96f5 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:37.325941+00:00 app[web.1]: 42.0518805553,-87.6770888922,1511116357.33
+2017-11-19T18:32:37.325958+00:00 app[web.1]: 
+2017-11-19T18:32:37.326017+00:00 app[web.1]: {}
+2017-11-19T18:32:39.327983+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f36d7d8a-9614-4076-ada2-8eab41e305e0 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:39.326393+00:00 app[web.1]: 42.0518260729,-87.6770896465,1511116359.33
+2017-11-19T18:32:39.326415+00:00 app[web.1]: 
+2017-11-19T18:32:39.326464+00:00 app[web.1]: {}
+2017-11-19T18:32:40.289273+00:00 app[web.1]: 42.0517995023,-87.6770869643,1511116360.29
+2017-11-19T18:32:40.289294+00:00 app[web.1]: 
+2017-11-19T18:32:40.289350+00:00 app[web.1]: {}
+2017-11-19T18:32:40.290905+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ab06eb1c-105b-4af5-a19a-6bb450ea7292 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:41.395773+00:00 app[web.1]: 42.0517729735,-87.6770816837,1511116361.4
+2017-11-19T18:32:41.395789+00:00 app[web.1]: 
+2017-11-19T18:32:41.395874+00:00 app[web.1]: {}
+2017-11-19T18:32:41.397251+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=099623ce-0eca-4075-a863-cb025794d35f fwd="172.56.13.128" dyno=web.1 connect=3ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:43.311313+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=74100735-c27e-4007-8fa5-33f17795a4d0 fwd="172.56.13.128" dyno=web.1 connect=0ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:43.309539+00:00 app[web.1]: 42.0517155994,-87.6770696138,1511116363.31
+2017-11-19T18:32:43.309561+00:00 app[web.1]: 
+2017-11-19T18:32:43.309618+00:00 app[web.1]: {}
+2017-11-19T18:32:44.267740+00:00 app[web.1]: 42.0516950637,-87.6770586335,1511116364.27
+2017-11-19T18:32:44.267759+00:00 app[web.1]: 
+2017-11-19T18:32:44.268253+00:00 app[web.1]: {}
+2017-11-19T18:32:44.282922+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=1d528e40-daea-4088-b676-808c9c41782f fwd="172.56.13.128" dyno=web.1 connect=1ms service=17ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:45.310091+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=42a59f9f-68d2-4462-9d01-1acba8ddac6b fwd="172.56.13.128" dyno=web.1 connect=0ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:45.308192+00:00 app[web.1]: 42.0516571356,-87.6770536044,1511116365.31
+2017-11-19T18:32:45.308348+00:00 app[web.1]: 
+2017-11-19T18:32:45.308490+00:00 app[web.1]: {}
+2017-11-19T18:32:47.409330+00:00 app[web.1]: 42.051599552,-87.6770437975,1511116367.41
+2017-11-19T18:32:47.409394+00:00 app[web.1]: 
+2017-11-19T18:32:47.409500+00:00 app[web.1]: {}
+2017-11-19T18:32:47.411568+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8129049e-696b-4528-9d8d-683505ffb096 fwd="172.56.13.128" dyno=web.1 connect=0ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:48.290731+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=cf1e33b6-05d2-4d4f-94ac-e31f9d632267 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:48.288660+00:00 app[web.1]: 42.0515723946,-87.6770421211,1511116368.29
+2017-11-19T18:32:48.288674+00:00 app[web.1]: 
+2017-11-19T18:32:48.288680+00:00 app[web.1]: {}
+2017-11-19T18:32:50.335127+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4d36518d-eda1-4edd-8d19-7046e76e3234 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:50.333686+00:00 app[web.1]: 42.0515165292,-87.6770445519,1511116370.33
+2017-11-19T18:32:50.333747+00:00 app[web.1]: 
+2017-11-19T18:32:50.333861+00:00 app[web.1]: {}
+2017-11-19T18:32:52.314768+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8e1c6f7d-048d-4331-836a-e29843104ddb fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:52.313981+00:00 app[web.1]: 42.0514674532,-87.6770514251,1511116372.31
+2017-11-19T18:32:52.314076+00:00 app[web.1]: 
+2017-11-19T18:32:52.314209+00:00 app[web.1]: {}
+2017-11-19T18:32:54.362898+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=52714cf9-fea4-4fc9-9350-dd9e11df0421 fwd="172.56.13.128" dyno=web.1 connect=1ms service=8ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:54.453451+00:00 heroku[router]: at=info method=GET path="/" host=hs4x.herokuapp.com request_id=6a4d28b4-3dea-4b69-bb7f-26d97d01b790 fwd="54.163.197.56" dyno=web.1 connect=0ms service=28ms status=404 bytes=386 protocol=http
+2017-11-19T18:32:54.359804+00:00 app[web.1]: 42.0514303632,-87.6770817676,1511116374.36
+2017-11-19T18:32:54.360073+00:00 app[web.1]: 
+2017-11-19T18:32:54.360409+00:00 app[web.1]: {}
+2017-11-19T18:32:56.512340+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=673a73aa-814c-43e3-a7aa-2810e5a3d25d fwd="172.56.13.128" dyno=web.1 connect=1ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:56.508551+00:00 app[web.1]: 42.0513887052,-87.6770884731,1511116376.51
+2017-11-19T18:32:56.510481+00:00 app[web.1]: 
+2017-11-19T18:32:56.510604+00:00 app[web.1]: {}
+2017-11-19T18:32:58.250526+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=c5cd0b36-9258-43d1-bcb4-e094f827de06 fwd="172.56.13.128" dyno=web.1 connect=0ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:32:58.249329+00:00 app[web.1]: 42.0513409283,-87.6770744753,1511116378.25
+2017-11-19T18:32:58.249408+00:00 app[web.1]: {}
+2017-11-19T18:32:58.249344+00:00 app[web.1]: 
+2017-11-19T18:33:00.948513+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b37521ae-bcd0-4997-932a-db162c8d2a58 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:00.947355+00:00 app[web.1]: 42.0512915589,-87.6770629083,1511116380.95
+2017-11-19T18:33:00.947368+00:00 app[web.1]: 
+2017-11-19T18:33:00.947438+00:00 app[web.1]: {}
+2017-11-19T18:33:02.297537+00:00 app[web.1]: 42.0512447041,-87.6770806779,1511116382.3
+2017-11-19T18:33:02.297550+00:00 app[web.1]: 
+2017-11-19T18:33:02.297610+00:00 app[web.1]: {}
+2017-11-19T18:33:02.298684+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=c7a67a6d-1a65-44b7-87c4-44a604657a85 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:04.230000+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7314cb01-5c2b-4c81-b881-c662829d97fe fwd="172.56.13.128" dyno=web.1 connect=0ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:04.228800+00:00 app[web.1]: 42.0512110927,-87.677123258,1511116384.23
+2017-11-19T18:33:04.228813+00:00 app[web.1]: 
+2017-11-19T18:33:04.228881+00:00 app[web.1]: {}
+2017-11-19T18:33:05.326929+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=cfb2927c-5b3f-4f0e-b616-25f820cf6720 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:05.325562+00:00 app[web.1]: 42.0512136911,-87.6771696099,1511116385.33
+2017-11-19T18:33:05.325580+00:00 app[web.1]: 
+2017-11-19T18:33:05.325648+00:00 app[web.1]: {}
+2017-11-19T18:33:07.329328+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e08daa27-ccbf-487d-ab29-e649acb3b1bf fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:07.328475+00:00 app[web.1]: 42.0512050158,-87.6772386768,1511116387.33
+2017-11-19T18:33:07.328497+00:00 app[web.1]: 
+2017-11-19T18:33:07.328609+00:00 app[web.1]: {}
+2017-11-19T18:33:08.255122+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=84a01e0f-7fcf-4bc5-ba11-07b9fdfe826c fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:08.254585+00:00 app[web.1]: 42.0512009925,-87.6772691031,1511116388.25
+2017-11-19T18:33:08.254600+00:00 app[web.1]: 
+2017-11-19T18:33:08.254605+00:00 app[web.1]: {}
+2017-11-19T18:33:10.526711+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a2ea49e0-3c0a-44eb-b491-485a0fe102a1 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:10.524848+00:00 app[web.1]: 42.0512000705,-87.677322412,1511116390.52
+2017-11-19T18:33:10.524861+00:00 app[web.1]: 
+2017-11-19T18:33:10.524918+00:00 app[web.1]: {}
+2017-11-19T18:33:11.267327+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5e049bbe-dc62-49fc-8f35-79c4f0ac23e6 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:11.265466+00:00 app[web.1]: 42.0511975559,-87.6773482283,1511116391.27
+2017-11-19T18:33:11.265482+00:00 app[web.1]: 
+2017-11-19T18:33:11.265541+00:00 app[web.1]: {}
+2017-11-19T18:33:12.263265+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e4040102-1352-4ad5-a60b-8e69a6f6bba0 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:12.261512+00:00 app[web.1]: 42.0511952509,-87.6773749665,1511116392.26
+2017-11-19T18:33:12.261531+00:00 app[web.1]: 
+2017-11-19T18:33:12.261600+00:00 app[web.1]: {}
+2017-11-19T18:33:14.269483+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f50832f0-ad11-4653-8ba2-585b237e00ff fwd="172.56.13.128" dyno=web.1 connect=2ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:14.267530+00:00 app[web.1]: 42.0511886292,-87.6774258447,1511116394.27
+2017-11-19T18:33:14.267545+00:00 app[web.1]: 
+2017-11-19T18:33:14.267591+00:00 app[web.1]: {}
+2017-11-19T18:33:15.209940+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=cf82f0f6-1ef4-4000-92d5-f0637d897c54 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:15.208110+00:00 app[web.1]: 42.0511890902,-87.6774514933,1511116395.21
+2017-11-19T18:33:15.208127+00:00 app[web.1]: 
+2017-11-19T18:33:15.208162+00:00 app[web.1]: {}
+2017-11-19T18:33:17.369860+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5b36385e-cb82-465f-9d58-128ddb3d99a8 fwd="172.56.13.128" dyno=web.1 connect=0ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:17.366873+00:00 app[web.1]: 42.0511979331,-87.6775036287,1511116397.37
+2017-11-19T18:33:17.369607+00:00 app[web.1]: {}
+2017-11-19T18:33:17.369606+00:00 app[web.1]: 
+2017-11-19T18:33:19.370531+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=083aa6f8-89ba-40f4-a2ba-02285302cfdc fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:19.367116+00:00 app[web.1]: 42.0512017049,-87.6775597037,1511116399.37
+2017-11-19T18:33:19.367131+00:00 app[web.1]: 
+2017-11-19T18:33:19.367223+00:00 app[web.1]: {}
+2017-11-19T18:33:20.250890+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ad5f08ad-1311-4706-bf4f-d1ca80dbe124 fwd="172.56.13.128" dyno=web.1 connect=2ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:20.249403+00:00 app[web.1]: 42.0512068598,-87.6775879507,1511116400.25
+2017-11-19T18:33:20.249419+00:00 app[web.1]: 
+2017-11-19T18:33:20.249477+00:00 app[web.1]: {}
+2017-11-19T18:33:21.247130+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=adc9be33-2275-4047-8f8a-0c65242e4032 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:21.245642+00:00 app[web.1]: {}
+2017-11-19T18:33:21.245593+00:00 app[web.1]: 42.0512100449,-87.6776153595,1511116401.25
+2017-11-19T18:33:21.245617+00:00 app[web.1]: 
+2017-11-19T18:33:22.301468+00:00 app[web.1]: 
+2017-11-19T18:33:22.301520+00:00 app[web.1]: {}
+2017-11-19T18:33:22.301454+00:00 app[web.1]: 42.0512108831,-87.6776417625,1511116402.3
+2017-11-19T18:33:22.302919+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=fbd820ae-010a-4e64-af8e-2abc165a703b fwd="172.56.13.128" dyno=web.1 connect=0ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:24.267367+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0fa78a8b-ab99-490d-9ba6-98633a4ba80b fwd="172.56.13.128" dyno=web.1 connect=1ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:24.265940+00:00 app[web.1]: 42.0512213605,-87.677700352,1511116404.27
+2017-11-19T18:33:24.265955+00:00 app[web.1]: 
+2017-11-19T18:33:24.265994+00:00 app[web.1]: {}
+2017-11-19T18:33:26.533633+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=aa00f6a0-d0cd-421f-bb72-b89fbfe91943 fwd="172.56.13.128" dyno=web.1 connect=1ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:26.532166+00:00 app[web.1]: 42.0512326342,-87.6777570975,1511116406.53
+2017-11-19T18:33:26.532186+00:00 app[web.1]: 
+2017-11-19T18:33:26.532267+00:00 app[web.1]: {}
+2017-11-19T18:33:27.371048+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ea176df5-0751-42f7-860b-a27a3d220279 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:27.369176+00:00 app[web.1]: 42.0512358193,-87.6777848416,1511116407.37
+2017-11-19T18:33:27.369196+00:00 app[web.1]: 
+2017-11-19T18:33:27.369250+00:00 app[web.1]: {}
+2017-11-19T18:33:28.350809+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=40e7e8ba-4903-46f9-999b-9650db1bfca9 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:28.349034+00:00 app[web.1]: 
+2017-11-19T18:33:28.349083+00:00 app[web.1]: {}
+2017-11-19T18:33:28.349016+00:00 app[web.1]: 42.0512365317,-87.6778109093,1511116408.35
+2017-11-19T18:33:30.355149+00:00 app[web.1]: 42.0512387949,-87.6778627095,1511116410.36
+2017-11-19T18:33:30.355165+00:00 app[web.1]: 
+2017-11-19T18:33:30.355231+00:00 app[web.1]: {}
+2017-11-19T18:33:30.361717+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=13ea01de-8756-4a17-9f01-505c8f0ea1ba fwd="172.56.13.128" dyno=web.1 connect=1ms service=9ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:31.253940+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d2fcaaea-1109-4901-a7b4-d967f0b19077 fwd="172.56.13.128" dyno=web.1 connect=1ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:31.251883+00:00 app[web.1]: 42.0512372442,-87.6778871008,1511116411.25
+2017-11-19T18:33:31.251970+00:00 app[web.1]: 
+2017-11-19T18:33:31.252186+00:00 app[web.1]: {}
+2017-11-19T18:33:32.270887+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=fe93e1fe-6215-4b7d-a6f8-f69898f69f54 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:32.269433+00:00 app[web.1]: {}
+2017-11-19T18:33:32.269377+00:00 app[web.1]: 
+2017-11-19T18:33:32.269363+00:00 app[web.1]: 42.0512372861,-87.6779109892,1511116412.27
+2017-11-19T18:33:34.421919+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e85a65ec-be36-4727-ab9d-20e8efa53d52 fwd="172.56.13.128" dyno=web.1 connect=3ms service=11ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:34.419821+00:00 app[web.1]: 42.0512311673,-87.6779628732,1511116414.42
+2017-11-19T18:33:34.419838+00:00 app[web.1]: 
+2017-11-19T18:33:34.419931+00:00 app[web.1]: {}
+2017-11-19T18:33:36.270971+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ef85de0a-c509-4996-b822-900960fe31a2 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:36.268990+00:00 app[web.1]: 42.0512350649,-87.6780145057,1511116416.27
+2017-11-19T18:33:36.269009+00:00 app[web.1]: 
+2017-11-19T18:33:36.269048+00:00 app[web.1]: {}
+2017-11-19T18:33:38.316848+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e8bebb8d-6de9-4ccc-816c-8e0854a8af03 fwd="172.56.13.128" dyno=web.1 connect=1ms service=10ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:38.315213+00:00 app[web.1]: 42.0512496913,-87.6780628693,1511116418.32
+2017-11-19T18:33:38.315230+00:00 app[web.1]: 
+2017-11-19T18:33:38.315265+00:00 app[web.1]: {}
+2017-11-19T18:33:39.209126+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a785404d-2610-4bf6-9182-96bcbc8302ef fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:39.207499+00:00 app[web.1]: 42.0512708556,-87.6780793817,1511116419.21
+2017-11-19T18:33:39.207576+00:00 app[web.1]: {}
+2017-11-19T18:33:39.207513+00:00 app[web.1]: 
+2017-11-19T18:33:41.389144+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b13f2d3e-43a3-467d-aa17-6b2ade65ce09 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:41.387718+00:00 app[web.1]: 
+2017-11-19T18:33:41.387703+00:00 app[web.1]: 42.0513293613,-87.6780930442,1511116421.39
+2017-11-19T18:33:41.387772+00:00 app[web.1]: {}
+2017-11-19T18:33:42.228664+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=41849d48-db56-4897-91d0-6b71810c8569 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:42.227305+00:00 app[web.1]: {}
+2017-11-19T18:33:42.227231+00:00 app[web.1]: 42.0513611706,-87.6780924574,1511116422.23
+2017-11-19T18:33:42.227254+00:00 app[web.1]: 
+2017-11-19T18:33:44.416084+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4ec922ec-f214-49f1-a7a7-ae2931db21b7 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:44.409314+00:00 app[web.1]: 
+2017-11-19T18:33:44.409292+00:00 app[web.1]: 42.0514219394,-87.678101007,1511116424.41
+2017-11-19T18:33:44.409318+00:00 app[web.1]: {}
+2017-11-19T18:33:45.257047+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=46f17972-aadd-4ed5-b8ec-a9cf3cc4be3d fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:45.250147+00:00 app[web.1]: {}
+2017-11-19T18:33:45.250060+00:00 app[web.1]: 42.0514512761,-87.6781233028,1511116425.25
+2017-11-19T18:33:45.250075+00:00 app[web.1]: 
+2017-11-19T18:33:46.295163+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a767e36f-f9a6-4542-a238-78e9b158ab68 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:46.288563+00:00 app[web.1]: 42.051470764,-87.6781383903,1511116426.29
+2017-11-19T18:33:46.288580+00:00 app[web.1]: 
+2017-11-19T18:33:46.288601+00:00 app[web.1]: {}
+2017-11-19T18:33:48.349784+00:00 app[web.1]: 42.0515049203,-87.6781718341,1511116428.35
+2017-11-19T18:33:48.349799+00:00 app[web.1]: 
+2017-11-19T18:33:48.349864+00:00 app[web.1]: {}
+2017-11-19T18:33:48.351295+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4ecb077a-47bd-456f-862d-820a54796af3 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:50.373129+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=6f8630a9-b0df-40a4-977b-cc4353b05330 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:50.371457+00:00 app[web.1]: 42.0515394118,-87.6782120672,1511116430.37
+2017-11-19T18:33:50.371527+00:00 app[web.1]: {}
+2017-11-19T18:33:50.371477+00:00 app[web.1]: 
+2017-11-19T18:33:51.250423+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=c9425552-383b-4b87-b1f4-ed16e2d30b4c fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:51.248766+00:00 app[web.1]: 42.0515446505,-87.6782414877,1511116431.25
+2017-11-19T18:33:51.248795+00:00 app[web.1]: {}
+2017-11-19T18:33:51.248789+00:00 app[web.1]: 
+2017-11-19T18:33:53.376512+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f38e9195-ef14-4afc-9bea-996e8ebc2080 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:53.369736+00:00 app[web.1]: 42.0515452791,-87.6782990713,1511116433.37
+2017-11-19T18:33:53.369750+00:00 app[web.1]: 
+2017-11-19T18:33:53.369808+00:00 app[web.1]: {}
+2017-11-19T18:33:55.454408+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e7e262ea-740d-45e8-9fc7-b8c52a27d3bd fwd="172.56.13.128" dyno=web.1 connect=1ms service=8ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:55.452957+00:00 app[web.1]: 42.0515436866,-87.6783517935,1511116435.45
+2017-11-19T18:33:55.452971+00:00 app[web.1]: 
+2017-11-19T18:33:55.452999+00:00 app[web.1]: {}
+2017-11-19T18:33:56.175967+00:00 app[web.1]: 42.0515410044,-87.6783843991,1511116436.18
+2017-11-19T18:33:56.176130+00:00 app[web.1]: 
+2017-11-19T18:33:56.176274+00:00 app[web.1]: {}
+2017-11-19T18:33:56.178145+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7fb546db-a006-47c2-8661-138b7718a739 fwd="172.56.13.128" dyno=web.1 connect=1ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:58.666397+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=50afead6-5902-4d48-8988-9afe516ea45d fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:33:58.665397+00:00 app[web.1]: 42.0515262103,-87.6784545557,1511116438.67
+2017-11-19T18:33:58.665411+00:00 app[web.1]: 
+2017-11-19T18:33:58.665443+00:00 app[web.1]: {}
+2017-11-19T18:34:00.389483+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7ea0d27c-5406-4a58-b9bc-94ef1ec1df8f fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:00.388109+00:00 app[web.1]: 42.0515203849,-87.6785136481,1511116440.39
+2017-11-19T18:34:00.388131+00:00 app[web.1]: 
+2017-11-19T18:34:00.388181+00:00 app[web.1]: {}
+2017-11-19T18:34:01.333420+00:00 app[web.1]: 42.0515213488,-87.6785437391,1511116441.33
+2017-11-19T18:34:01.333435+00:00 app[web.1]: 
+2017-11-19T18:34:01.333473+00:00 app[web.1]: {}
+2017-11-19T18:34:01.334928+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d7ac76af-7c34-45f1-9fd9-50c1c52e3dd3 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:03.208297+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=aba49f67-c250-4fae-b5ef-12980c81b1f4 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:03.206741+00:00 app[web.1]: 42.0515280543,-87.6786029153,1511116443.21
+2017-11-19T18:34:03.206758+00:00 app[web.1]: 
+2017-11-19T18:34:03.206807+00:00 app[web.1]: {}
+2017-11-19T18:34:04.272507+00:00 app[web.1]: 
+2017-11-19T18:34:04.272490+00:00 app[web.1]: 42.051525875,-87.6786308271,1511116444.27
+2017-11-19T18:34:04.272549+00:00 app[web.1]: {}
+2017-11-19T18:34:04.273884+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=bb55bfbe-5c98-451b-8fe7-cfc7a4dd1354 fwd="172.56.13.128" dyno=web.1 connect=0ms service=9ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:06.291203+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2cc82831-6491-467e-8da8-f87258669ed8 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:06.287279+00:00 app[web.1]: 42.0515063871,-87.6786809509,1511116446.29
+2017-11-19T18:34:06.287293+00:00 app[web.1]: 
+2017-11-19T18:34:06.287345+00:00 app[web.1]: {}
+2017-11-19T18:34:08.270469+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4d556cbb-d6ed-4c74-9681-bdc4f8010112 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:08.266300+00:00 app[web.1]: 42.0514881146,-87.6787349303,1511116448.27
+2017-11-19T18:34:08.266315+00:00 app[web.1]: 
+2017-11-19T18:34:08.266370+00:00 app[web.1]: {}
+2017-11-19T18:34:09.298961+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=43c46749-e054-4739-9107-d132db44dc10 fwd="172.56.13.128" dyno=web.1 connect=6ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:09.294859+00:00 app[web.1]: 42.0514854743,-87.6787646861,1511116449.29
+2017-11-19T18:34:09.294872+00:00 app[web.1]: 
+2017-11-19T18:34:09.294921+00:00 app[web.1]: {}
+2017-11-19T18:34:11.370244+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=38c67c4c-ac0d-4326-810b-e2c688a6bb34 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:11.368610+00:00 app[web.1]: 42.0514908387,-87.6788312384,1511116451.37
+2017-11-19T18:34:11.368624+00:00 app[web.1]: 
+2017-11-19T18:34:11.368675+00:00 app[web.1]: {}
+2017-11-19T18:34:13.271434+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8153303c-c2e0-4d73-9cad-1a60e1c2f84f fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:13.270091+00:00 app[web.1]: 42.0514854743,-87.6788977907,1511116453.27
+2017-11-19T18:34:13.270106+00:00 app[web.1]: 
+2017-11-19T18:34:13.270148+00:00 app[web.1]: {}
+2017-11-19T18:34:15.395864+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=34ade792-29c1-472a-83c2-c8af1148a421 fwd="172.56.13.128" dyno=web.1 connect=0ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:15.394484+00:00 app[web.1]: 42.0514741587,-87.6789651812,1511116455.39
+2017-11-19T18:34:15.394540+00:00 app[web.1]: 
+2017-11-19T18:34:15.394652+00:00 app[web.1]: {}
+2017-11-19T18:34:17.312385+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=bce070bb-f046-4865-8ca7-7c4f1f130ba9 fwd="172.56.13.128" dyno=web.1 connect=2ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:17.309786+00:00 app[web.1]: 42.0514747873,-87.6790302248,1511116457.31
+2017-11-19T18:34:17.309805+00:00 app[web.1]: 
+2017-11-19T18:34:17.309840+00:00 app[web.1]: {}
+2017-11-19T18:34:18.251630+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=afd6f251-cdb7-4fcb-9711-e458b607171c fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:18.248973+00:00 app[web.1]: 42.0514829178,-87.6790630818,1511116458.25
+2017-11-19T18:34:18.248994+00:00 app[web.1]: 
+2017-11-19T18:34:18.249042+00:00 app[web.1]: {}
+2017-11-19T18:34:20.510598+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ebab91e8-1720-46f9-844d-fe4db044d4b0 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:20.509632+00:00 app[web.1]: 42.0514942333,-87.6791261976,1511116460.51
+2017-11-19T18:34:20.509655+00:00 app[web.1]: 
+2017-11-19T18:34:20.509697+00:00 app[web.1]: {}
+2017-11-19T18:34:21.329012+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=6cb59f0a-a506-4ced-8b72-155a45a28296 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:21.328075+00:00 app[web.1]: 42.051492096,-87.6791525167,1511116461.33
+2017-11-19T18:34:21.328090+00:00 app[web.1]: 
+2017-11-19T18:34:21.328150+00:00 app[web.1]: {}
+2017-11-19T18:34:22.256567+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b64db20e-5425-405d-b98a-0295c3ec17a3 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:22.255744+00:00 app[web.1]: 42.0514892461,-87.6791751479,1511116462.26
+2017-11-19T18:34:22.255760+00:00 app[web.1]: 
+2017-11-19T18:34:22.255779+00:00 app[web.1]: {}
+2017-11-19T18:34:24.291551+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=33afc660-7949-4d8b-be00-05bd3e1e0c06 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:24.289016+00:00 app[web.1]: {}
+2017-11-19T18:34:24.288940+00:00 app[web.1]: 42.0514917607,-87.6792201587,1511116464.29
+2017-11-19T18:34:24.288953+00:00 app[web.1]: 
+2017-11-19T18:34:26.289000+00:00 app[web.1]: 42.0515076025,-87.6792745572,1511116466.29
+2017-11-19T18:34:26.289020+00:00 app[web.1]: 
+2017-11-19T18:34:26.289076+00:00 app[web.1]: {}
+2017-11-19T18:34:26.290579+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=88da0399-4efe-40bc-bf89-8ca038972609 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:28.293554+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f396c216-f948-48d9-bb64-838624bd0847 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:28.289340+00:00 app[web.1]: 42.0515169064,-87.6793378406,1511116468.29
+2017-11-19T18:34:28.289355+00:00 app[web.1]: 
+2017-11-19T18:34:28.289428+00:00 app[web.1]: {}
+2017-11-19T18:34:30.369998+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0a1ad3cf-1b19-451f-867e-eb8e97020177 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:30.368652+00:00 app[web.1]: {}
+2017-11-19T18:34:30.368582+00:00 app[web.1]: 42.0515151462,-87.6794069075,1511116470.37
+2017-11-19T18:34:30.368595+00:00 app[web.1]: 
+2017-11-19T18:34:32.309675+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=337c2afb-770e-4204-bb2e-e0b706829679 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:32.309282+00:00 app[web.1]: 42.0515085245,-87.6794744656,1511116472.31
+2017-11-19T18:34:32.309300+00:00 app[web.1]: 
+2017-11-19T18:34:32.309352+00:00 app[web.1]: {}
+2017-11-19T18:34:33.256730+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=61f85e08-f5d6-4798-8deb-e994558e506e fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:33.256327+00:00 app[web.1]: 42.0515022381,-87.6795069036,1511116473.26
+2017-11-19T18:34:33.256347+00:00 app[web.1]: 
+2017-11-19T18:34:33.256373+00:00 app[web.1]: {}
+2017-11-19T18:34:35.386748+00:00 app[web.1]: 42.0515156072,-87.6795674209,1511116475.39
+2017-11-19T18:34:35.386762+00:00 app[web.1]: 
+2017-11-19T18:34:35.386836+00:00 app[web.1]: {}
+2017-11-19T18:34:35.387904+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=fef379f8-bc36-43f9-b99c-d1af5db06728 fwd="172.56.13.128" dyno=web.1 connect=0ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:36.272877+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=713e4c21-3dff-4d7e-ae63-74151b0bf3bd fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:36.271209+00:00 app[web.1]: 42.0515374421,-87.6795837656,1511116476.27
+2017-11-19T18:34:36.271226+00:00 app[web.1]: 
+2017-11-19T18:34:36.271334+00:00 app[web.1]: {}
+2017-11-19T18:34:38.317276+00:00 app[web.1]: 42.0515819919,-87.6796009485,1511116478.32
+2017-11-19T18:34:38.317289+00:00 app[web.1]: 
+2017-11-19T18:34:38.317346+00:00 app[web.1]: {}
+2017-11-19T18:34:38.321179+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=475fb3eb-7d85-460b-a16a-4883a74008a4 fwd="172.56.13.128" dyno=web.1 connect=1ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:39.350010+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2e1c5727-3ce3-43d7-90f0-5df1130e960e fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:39.348639+00:00 app[web.1]: 42.0516050421,-87.6795954165,1511116479.35
+2017-11-19T18:34:39.348654+00:00 app[web.1]: 
+2017-11-19T18:34:39.348717+00:00 app[web.1]: {}
+2017-11-19T18:34:41.258425+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=18a97a7e-ee0a-4cd9-b0e7-d37f5d815195 fwd="172.56.13.128" dyno=web.1 connect=1ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:41.257647+00:00 app[web.1]: 42.0516589797,-87.6795727015,1511116481.26
+2017-11-19T18:34:41.257661+00:00 app[web.1]: 
+2017-11-19T18:34:41.257711+00:00 app[web.1]: {}
+2017-11-19T18:34:42.251135+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=c27f2c5f-a8c9-4220-a5ad-3610928de48a fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:42.249941+00:00 app[web.1]: 42.0516877715,-87.6795651578,1511116482.25
+2017-11-19T18:34:42.249965+00:00 app[web.1]: 
+2017-11-19T18:34:42.250094+00:00 app[web.1]: {}
+2017-11-19T18:34:44.410549+00:00 app[web.1]: 42.0517469896,-87.6795588714,1511116484.41
+2017-11-19T18:34:44.410563+00:00 app[web.1]: 
+2017-11-19T18:34:44.410610+00:00 app[web.1]: {}
+2017-11-19T18:34:44.411557+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=57038f37-82d8-4932-ba12-0d769f0cb86f fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:45.295175+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=94d74c82-4997-4eb9-aae0-e41afd04045e fwd="172.56.13.128" dyno=web.1 connect=0ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:45.297039+00:00 app[web.1]: 42.0517725125,-87.679554429,1511116485.29
+2017-11-19T18:34:45.297055+00:00 app[web.1]: 
+2017-11-19T18:34:45.297057+00:00 app[web.1]: {}
+2017-11-19T18:34:47.379898+00:00 app[web.1]: 42.0518062078,-87.6795554348,1511116487.38
+2017-11-19T18:34:47.379914+00:00 app[web.1]: 
+2017-11-19T18:34:47.379980+00:00 app[web.1]: {}
+2017-11-19T18:34:47.381040+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ccc04d6d-c5c1-465c-a851-d1e32bce2031 fwd="172.56.13.128" dyno=web.1 connect=0ms service=11ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:48.310097+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=c34dbf66-f4ae-41cd-9463-8a4c78e782dc fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:48.309264+00:00 app[web.1]: 42.0518233907,-87.6795685944,1511116488.31
+2017-11-19T18:34:48.309325+00:00 app[web.1]: {}
+2017-11-19T18:34:48.309289+00:00 app[web.1]: 
+2017-11-19T18:34:50.308647+00:00 app[web.1]: 42.0518467343,-87.6796012,1511116490.31
+2017-11-19T18:34:50.308661+00:00 app[web.1]: 
+2017-11-19T18:34:50.308735+00:00 app[web.1]: {}
+2017-11-19T18:34:50.309891+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=652c673a-d9b4-4fd7-a041-ef0bf9176256 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:52.323625+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f944bc46-3c39-4fb2-a59d-42dc8f9651bc fwd="172.56.13.128" dyno=web.1 connect=0ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:52.317565+00:00 app[web.1]: 
+2017-11-19T18:34:52.322155+00:00 app[web.1]: {}
+2017-11-19T18:34:52.317466+00:00 app[web.1]: 42.0519105206,-87.6795998589,1511116492.32
+2017-11-19T18:34:53.249135+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=087232b8-3938-47d5-91ee-d0c45145ed3f fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:53.247763+00:00 app[web.1]: 42.0519473171,-87.6795937401,1511116493.25
+2017-11-19T18:34:53.247777+00:00 app[web.1]: 
+2017-11-19T18:34:53.247852+00:00 app[web.1]: {}
+2017-11-19T18:34:54.310600+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=01128172-e014-4d3a-a72d-e089392cdfee fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:54.309232+00:00 app[web.1]: 42.0519801742,-87.6795880404,1511116494.31
+2017-11-19T18:34:54.309302+00:00 app[web.1]: 
+2017-11-19T18:34:54.309372+00:00 app[web.1]: {}
+2017-11-19T18:34:56.430788+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4a2610eb-8aae-4b5f-a4e7-d3bc9e51fee0 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:56.429558+00:00 app[web.1]: 42.0520277834,-87.6795530879,1511116496.43
+2017-11-19T18:34:56.429578+00:00 app[web.1]: 
+2017-11-19T18:34:56.429637+00:00 app[web.1]: {}
+2017-11-19T18:34:57.149775+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=fc0e55e7-f5f4-4e7c-8069-58a469f78593 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:57.148747+00:00 app[web.1]: 42.0520412783,-87.6795254276,1511116497.15
+2017-11-19T18:34:57.148761+00:00 app[web.1]: 
+2017-11-19T18:34:57.148795+00:00 app[web.1]: {}
+2017-11-19T18:34:59.348804+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=cfaee59c-96e8-47cd-9f2d-4a5f5ae96bf8 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:34:59.348490+00:00 app[web.1]: 42.0520698605,-87.6794749685,1511116499.35
+2017-11-19T18:34:59.348507+00:00 app[web.1]: 
+2017-11-19T18:34:59.348571+00:00 app[web.1]: {}
+2017-11-19T18:35:00.248484+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a29fb42a-3277-4ce9-98ab-c7857de1ba3c fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:00.248148+00:00 app[web.1]: 
+2017-11-19T18:35:00.248200+00:00 app[web.1]: {}
+2017-11-19T18:35:00.248126+00:00 app[web.1]: 42.0520782844,-87.6794491523,1511116500.25
+2017-11-19T18:35:01.269166+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5dd691f2-e0bb-4b2a-af4d-2daa1c5a2335 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:01.268403+00:00 app[web.1]: 42.0520795836,-87.6794222464,1511116501.27
+2017-11-19T18:35:01.268476+00:00 app[web.1]: 
+2017-11-19T18:35:01.268583+00:00 app[web.1]: {}
+2017-11-19T18:35:02.369503+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8372e626-7a28-47ac-a76a-c67721a9e0b7 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:02.369223+00:00 app[web.1]: 42.0520769433,-87.6793953405,1511116502.37
+2017-11-19T18:35:02.369240+00:00 app[web.1]: 
+2017-11-19T18:35:02.369280+00:00 app[web.1]: {}
+2017-11-19T18:35:04.302203+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=89478f1e-2fc7-49f3-bb42-cb82936bbb2e fwd="172.56.13.128" dyno=web.1 connect=2ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:04.301197+00:00 app[web.1]: 42.0520733809,-87.6793394332,1511116504.3
+2017-11-19T18:35:04.301216+00:00 app[web.1]: 
+2017-11-19T18:35:04.301275+00:00 app[web.1]: {}
+2017-11-19T18:35:05.250309+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e4cb2c53-ee88-42f2-b37a-b7f14d3e8c26 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:05.249277+00:00 app[web.1]: 42.0520717884,-87.6793148742,1511116505.25
+2017-11-19T18:35:05.249291+00:00 app[web.1]: 
+2017-11-19T18:35:05.249354+00:00 app[web.1]: {}
+2017-11-19T18:35:06.277073+00:00 app[web.1]: 42.0520723751,-87.6792923269,1511116506.28
+2017-11-19T18:35:06.277094+00:00 app[web.1]: 
+2017-11-19T18:35:06.277142+00:00 app[web.1]: {}
+2017-11-19T18:35:06.278307+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f78daa14-171a-4124-a0cc-c152d51bbd63 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:08.331258+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=21700dd6-504f-48ad-967c-445bdf43e3e1 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:08.329358+00:00 app[web.1]: 42.0520704892,-87.6792431251,1511116508.33
+2017-11-19T18:35:08.329370+00:00 app[web.1]: 
+2017-11-19T18:35:08.329445+00:00 app[web.1]: {}
+2017-11-19T18:35:09.211143+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5448fa61-a7ad-49fd-af68-42c5064a3228 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:09.209266+00:00 app[web.1]: 42.052064077,-87.6792142075,1511116509.21
+2017-11-19T18:35:09.209285+00:00 app[web.1]: 
+2017-11-19T18:35:09.209333+00:00 app[web.1]: {}
+2017-11-19T18:35:10.232076+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2a843a0b-b9e9-4a51-8e2e-066ca9abf013 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:10.230482+00:00 app[web.1]: 42.0520549408,-87.6791837812,1511116510.23
+2017-11-19T18:35:10.230560+00:00 app[web.1]: {}
+2017-11-19T18:35:10.230498+00:00 app[web.1]: 
+2017-11-19T18:35:11.230191+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8ea9dd61-1753-4be3-9c09-e32110c43be9 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:11.228541+00:00 app[web.1]: 42.0520488639,-87.6791438834,1511116511.23
+2017-11-19T18:35:11.228556+00:00 app[web.1]: 
+2017-11-19T18:35:11.228609+00:00 app[web.1]: {}
+2017-11-19T18:35:13.289993+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ec88532b-2aae-46d5-b442-ae53d61f6adc fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:13.288655+00:00 app[web.1]: 42.0520444634,-87.6790468209,1511116513.29
+2017-11-19T18:35:13.288712+00:00 app[web.1]: 
+2017-11-19T18:35:13.288824+00:00 app[web.1]: {}
+2017-11-19T18:35:14.228180+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=054f0755-f635-4d2f-86a5-4dde5e4e06b1 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:14.227216+00:00 app[web.1]: 42.0520461398,-87.6790117846,1511116514.23
+2017-11-19T18:35:14.227234+00:00 app[web.1]: 
+2017-11-19T18:35:14.227260+00:00 app[web.1]: {}
+2017-11-19T18:35:15.237041+00:00 app[web.1]: 42.0520440862,-87.6789771673,1511116515.24
+2017-11-19T18:35:15.237054+00:00 app[web.1]: 
+2017-11-19T18:35:15.237106+00:00 app[web.1]: {}
+2017-11-19T18:35:15.238165+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7d412221-307e-4999-b5c9-5f3acb8195a5 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:16.268417+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=c03bc74c-7aad-4dd4-82e3-2a9d5ef50e0d fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:16.267578+00:00 app[web.1]: 42.05203956,-87.6789425501,1511116516.27
+2017-11-19T18:35:16.267592+00:00 app[web.1]: 
+2017-11-19T18:35:16.267597+00:00 app[web.1]: {}
+2017-11-19T18:35:17.290773+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0d137bff-7ccc-4510-84b2-206f80d1aacb fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:17.289499+00:00 app[web.1]: 42.0520370454,-87.6789073461,1511116517.29
+2017-11-19T18:35:17.289517+00:00 app[web.1]: 
+2017-11-19T18:35:17.289580+00:00 app[web.1]: {}
+2017-11-19T18:35:18.371489+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b1d4da33-3191-47c6-81b1-f8e28afb4386 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:18.370561+00:00 app[web.1]: 42.0520359558,-87.6788718906,1511116518.37
+2017-11-19T18:35:18.370576+00:00 app[web.1]: 
+2017-11-19T18:35:18.370600+00:00 app[web.1]: {}
+2017-11-19T18:35:20.271467+00:00 app[web.1]: 42.0520370873,-87.6788087749,1511116520.27
+2017-11-19T18:35:20.271486+00:00 app[web.1]: 
+2017-11-19T18:35:20.271548+00:00 app[web.1]: {}
+2017-11-19T18:35:20.271142+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=63527f1b-7752-4284-a4e7-2c43400c9b09 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:21.296428+00:00 app[web.1]: 42.0520352852,-87.6787798573,1511116521.3
+2017-11-19T18:35:21.296480+00:00 app[web.1]: 
+2017-11-19T18:35:21.296594+00:00 app[web.1]: {}
+2017-11-19T18:35:21.296291+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=3a4008c2-d610-48a2-9c60-350d4b561a23 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:23.228683+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=22420966-9909-482d-a1fd-0dc14a252075 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:23.228976+00:00 app[web.1]: 42.0520208683,-87.6787168254,1511116523.23
+2017-11-19T18:35:23.229033+00:00 app[web.1]: 
+2017-11-19T18:35:23.229139+00:00 app[web.1]: {}
+2017-11-19T18:35:24.296563+00:00 app[web.1]: 42.052020575,-87.678683214,1511116524.3
+2017-11-19T18:35:24.296577+00:00 app[web.1]: 
+2017-11-19T18:35:24.296630+00:00 app[web.1]: {}
+2017-11-19T18:35:24.296151+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=3538a6db-e796-4986-820d-3a5dbbcf34b1 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:25.292880+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0e417575-2508-418c-bb03-64071ebb7408 fwd="172.56.13.128" dyno=web.1 connect=0ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:25.293606+00:00 app[web.1]: 42.0520258556,-87.6786478423,1511116525.29
+2017-11-19T18:35:25.293623+00:00 app[web.1]: 
+2017-11-19T18:35:25.293653+00:00 app[web.1]: {}
+2017-11-19T18:35:27.312431+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=9c2d30b0-21ff-4cf8-a23d-d3dd9279027b fwd="172.56.13.128" dyno=web.1 connect=2ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:27.310913+00:00 app[web.1]: 42.0520331478,-87.6785804518,1511116527.31
+2017-11-19T18:35:27.310981+00:00 app[web.1]: {}
+2017-11-19T18:35:27.310927+00:00 app[web.1]: 
+2017-11-19T18:35:28.269510+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=6c400a7a-36d5-4786-bab2-8dac752799dc fwd="172.56.13.128" dyno=web.1 connect=0ms service=12ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:28.268027+00:00 app[web.1]: 42.0520394762,-87.6785498579,1511116528.27
+2017-11-19T18:35:28.268041+00:00 app[web.1]: 
+2017-11-19T18:35:28.268128+00:00 app[web.1]: {}
+2017-11-19T18:35:30.290547+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ea641b0c-53cf-4ae8-be1b-33011945ba8a fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:30.289466+00:00 app[web.1]: 42.052045553,-87.6784838923,1511116530.29
+2017-11-19T18:35:30.289484+00:00 app[web.1]: 
+2017-11-19T18:35:30.289541+00:00 app[web.1]: {}
+2017-11-19T18:35:32.489920+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=6cba1ae9-6f51-4f17-9a4c-d6e9a5472a39 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:32.488718+00:00 app[web.1]: 42.0520445053,-87.6784159151,1511116532.49
+2017-11-19T18:35:32.488733+00:00 app[web.1]: 
+2017-11-19T18:35:32.488765+00:00 app[web.1]: {}
+2017-11-19T18:35:34.352632+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=93f77dd5-2faa-4a58-86d6-a62960e12245 fwd="172.56.13.128" dyno=web.1 connect=0ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:34.353074+00:00 app[web.1]: 42.0520408173,-87.6783522964,1511116534.35
+2017-11-19T18:35:34.353088+00:00 app[web.1]: 
+2017-11-19T18:35:34.353124+00:00 app[web.1]: {}
+2017-11-19T18:35:35.289840+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=3a7fdb94-ac97-4a18-9d31-5d2c419437c7 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:35.290310+00:00 app[web.1]: 42.0520442957,-87.6783189365,1511116535.29
+2017-11-19T18:35:35.290325+00:00 app[web.1]: 
+2017-11-19T18:35:35.290390+00:00 app[web.1]: {}
+2017-11-19T18:35:37.349247+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=322ec663-6686-4c7b-b431-b359e407a818 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:37.348476+00:00 app[web.1]: 42.0520538511,-87.678252468,1511116537.35
+2017-11-19T18:35:37.348490+00:00 app[web.1]: 
+2017-11-19T18:35:37.348524+00:00 app[web.1]: {}
+2017-11-19T18:35:39.371215+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2a46a008-8263-4dd5-8b73-edee7c0f1c77 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:39.370538+00:00 app[web.1]: 42.0520743868,-87.678183904,1511116539.37
+2017-11-19T18:35:39.370555+00:00 app[web.1]: 
+2017-11-19T18:35:39.370600+00:00 app[web.1]: {}
+2017-11-19T18:35:41.268693+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7f16796b-a14d-4fab-98b7-3231013be982 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:41.268339+00:00 app[web.1]: 42.0520805475,-87.6781120711,1511116541.27
+2017-11-19T18:35:41.268354+00:00 app[web.1]: 
+2017-11-19T18:35:41.268385+00:00 app[web.1]: {}
+2017-11-19T18:35:42.268881+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d484e9e5-c0af-4f6f-a574-bd6576649a4b fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:42.268455+00:00 app[web.1]: 
+2017-11-19T18:35:42.268442+00:00 app[web.1]: 42.0520790387,-87.6780749393,1511116542.27
+2017-11-19T18:35:42.268507+00:00 app[web.1]: {}
+2017-11-19T18:35:43.289857+00:00 app[web.1]: 42.0520759793,-87.6780408249,1511116543.29
+2017-11-19T18:35:43.289880+00:00 app[web.1]: 
+2017-11-19T18:35:43.290056+00:00 app[web.1]: {}
+2017-11-19T18:35:43.290501+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b117854e-dde6-4055-9892-55922d6a4075 fwd="172.56.13.128" dyno=web.1 connect=1ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:45.394248+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e9014a63-c0df-4f69-914f-d366d7a7bc2f fwd="172.56.13.128" dyno=web.1 connect=0ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:45.391453+00:00 app[web.1]: 42.052073339,-87.6779779606,1511116545.39
+2017-11-19T18:35:45.391469+00:00 app[web.1]: 
+2017-11-19T18:35:45.391637+00:00 app[web.1]: {}
+2017-11-19T18:35:46.250737+00:00 app[web.1]: 42.0520545217,-87.6779530664,1511116546.25
+2017-11-19T18:35:46.250758+00:00 app[web.1]: 
+2017-11-19T18:35:46.250818+00:00 app[web.1]: {}
+2017-11-19T18:35:46.252247+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=aaf1e988-67a2-4ac9-8faa-4ff08cc720cb fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:47.276848+00:00 app[web.1]: 42.0520484029,-87.6779258252,1511116547.27
+2017-11-19T18:35:47.276867+00:00 app[web.1]: 
+2017-11-19T18:35:47.276868+00:00 app[web.1]: {}
+2017-11-19T18:35:47.272529+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a549a09b-8787-4211-a20c-3829525af92b fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:49.393363+00:00 app[web.1]: 42.0520365006,-87.6778729354,1511116549.39
+2017-11-19T18:35:49.393381+00:00 app[web.1]: 
+2017-11-19T18:35:49.393423+00:00 app[web.1]: {}
+2017-11-19T18:35:49.394247+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2d64cfd7-d8a9-4a96-97a2-18eacf7eb4d7 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:50.291580+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=dbc0bf1a-06fb-481f-a0b5-9029c14877f7 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:50.290288+00:00 app[web.1]: 42.0520308847,-87.677844856,1511116550.29
+2017-11-19T18:35:50.290306+00:00 app[web.1]: 
+2017-11-19T18:35:50.290501+00:00 app[web.1]: {}
+2017-11-19T18:35:52.168332+00:00 app[web.1]: 42.0520179766,-87.6777873562,1511116552.17
+2017-11-19T18:35:52.168356+00:00 app[web.1]: 
+2017-11-19T18:35:52.168371+00:00 app[web.1]: {}
+2017-11-19T18:35:52.169054+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=80ef685a-284d-4b39-9d12-da837c9f6514 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:53.235757+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4fee3f0c-53de-4e66-914e-5c57c9eef632 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:53.234848+00:00 app[web.1]: 
+2017-11-19T18:35:53.234905+00:00 app[web.1]: {}
+2017-11-19T18:35:53.234835+00:00 app[web.1]: 42.0520213293,-87.6777565946,1511116553.23
+2017-11-19T18:35:54.179650+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=74cf5f53-164f-47cd-be26-3b0fd8625932 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:54.178619+00:00 app[web.1]: 42.0520231733,-87.6777253301,1511116554.18
+2017-11-19T18:35:54.178656+00:00 app[web.1]: 
+2017-11-19T18:35:54.178682+00:00 app[web.1]: {}
+2017-11-19T18:35:55.234595+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d3cf7257-1f7f-45cc-8f34-7e6213d6114c fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:55.233478+00:00 app[web.1]: 42.0520230057,-87.6776940656,1511116555.23
+2017-11-19T18:35:55.233520+00:00 app[web.1]: 
+2017-11-19T18:35:55.233632+00:00 app[web.1]: {}
+2017-11-19T18:35:57.437717+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a9160591-2828-4068-9488-1656770e3361 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:57.436344+00:00 app[web.1]: 42.0520177251,-87.6776377392,1511116557.44
+2017-11-19T18:35:57.436364+00:00 app[web.1]: 
+2017-11-19T18:35:57.436389+00:00 app[web.1]: {}
+2017-11-19T18:35:58.217137+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b8343eba-eedc-4ea5-af0d-8787412d0a42 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:58.215852+00:00 app[web.1]: 42.0520135761,-87.6776089893,1511116558.22
+2017-11-19T18:35:58.215866+00:00 app[web.1]: 
+2017-11-19T18:35:58.215915+00:00 app[web.1]: {}
+2017-11-19T18:35:59.320952+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8d26f4a0-0ad8-4306-837b-6641d952e380 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:35:59.319731+00:00 app[web.1]: 42.0520140371,-87.6775792335,1511116559.32
+2017-11-19T18:35:59.319748+00:00 app[web.1]: 
+2017-11-19T18:35:59.319784+00:00 app[web.1]: {}
+2017-11-19T18:36:00.275668+00:00 app[web.1]: 42.0520106005,-87.677550735,1511116560.28
+2017-11-19T18:36:00.275683+00:00 app[web.1]: 
+2017-11-19T18:36:00.275744+00:00 app[web.1]: {}
+2017-11-19T18:36:00.277229+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d13aa125-9959-41d2-ad22-979774412f88 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:02.336704+00:00 app[web.1]: 42.0520262327,-87.6774962527,1511116562.34
+2017-11-19T18:36:02.336719+00:00 app[web.1]: 
+2017-11-19T18:36:02.336836+00:00 app[web.1]: {}
+2017-11-19T18:36:02.338063+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=57c22eb3-5110-4550-8914-e5f87595d4cc fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:03.237668+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0c6a8de2-42e4-4add-91a4-045c60317c83 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:03.236704+00:00 app[web.1]: 42.0520455111,-87.6774768905,1511116563.24
+2017-11-19T18:36:03.236721+00:00 app[web.1]: 
+2017-11-19T18:36:03.236752+00:00 app[web.1]: {}
+2017-11-19T18:36:05.402086+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=88816d09-6351-4586-8162-140190ae51ff fwd="172.56.13.128" dyno=web.1 connect=2ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:05.396647+00:00 app[web.1]: 42.0520991553,-87.6774610487,1511116565.4
+2017-11-19T18:36:05.396658+00:00 app[web.1]: 
+2017-11-19T18:36:05.396715+00:00 app[web.1]: {}
+2017-11-19T18:36:07.322288+00:00 app[web.1]: 42.0521479799,-87.677466916,1511116567.32
+2017-11-19T18:36:07.322304+00:00 app[web.1]: 
+2017-11-19T18:36:07.322354+00:00 app[web.1]: {}
+2017-11-19T18:36:07.324470+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=025ae4bb-e1ad-4985-aa19-0c8911ffc81d fwd="172.56.13.128" dyno=web.1 connect=1ms service=9ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:08.195917+00:00 app[web.1]: 42.0521702338,-87.6774704364,1511116568.2
+2017-11-19T18:36:08.195935+00:00 app[web.1]: 
+2017-11-19T18:36:08.195982+00:00 app[web.1]: {}
+2017-11-19T18:36:08.197803+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=6fcfe2b0-7914-466c-a0cd-7990dd7b6893 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:09.257476+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=59c9acaf-dce5-4654-85bb-e07ea9b89c14 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:09.255407+00:00 app[web.1]: 42.052193326,-87.6774733701,1511116569.26
+2017-11-19T18:36:09.255426+00:00 app[web.1]: 
+2017-11-19T18:36:09.255529+00:00 app[web.1]: {}
+2017-11-19T18:36:11.279888+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2710b953-7e8f-40ca-a1fe-1344f57cc46f fwd="172.56.13.128" dyno=web.1 connect=1ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:11.279698+00:00 app[web.1]: 42.0522400132,-87.6774665807,1511116571.28
+2017-11-19T18:36:11.279712+00:00 app[web.1]: 
+2017-11-19T18:36:11.279763+00:00 app[web.1]: {}
+2017-11-19T18:36:12.263322+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=93f62d8c-8e85-4f23-8c8d-8b94973e7eb9 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:12.263081+00:00 app[web.1]: 42.0522639854,-87.6774571092,1511116572.26
+2017-11-19T18:36:12.263148+00:00 app[web.1]: 
+2017-11-19T18:36:12.263221+00:00 app[web.1]: {}
+2017-11-19T18:36:14.935895+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=999fda55-96b4-4186-94b0-4dee838e6384 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:14.936539+00:00 app[web.1]: 42.0523097087,-87.6774416027,1511116574.94
+2017-11-19T18:36:14.936562+00:00 app[web.1]: 
+2017-11-19T18:36:15.135819+00:00 app[web.1]: 42.0523323818,-87.6774340589,1511116575.14
+2017-11-19T18:36:14.936628+00:00 app[web.1]: {}
+2017-11-19T18:36:15.135822+00:00 app[web.1]: 
+2017-11-19T18:36:15.135979+00:00 app[web.1]: {}
+2017-11-19T18:36:15.135368+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e0f5d34c-0b20-4720-aea5-6e26ec136de5 fwd="172.56.13.128" dyno=web.1 connect=0ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:16.312578+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d1766875-09ab-429b-9a7c-148e9dcb06a9 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:16.313072+00:00 app[web.1]: 42.0523530012,-87.6774291136,1511116576.31
+2017-11-19T18:36:16.313085+00:00 app[web.1]: 
+2017-11-19T18:36:16.313145+00:00 app[web.1]: {}
+2017-11-19T18:36:18.293000+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0f1c3d71-0610-4c1d-9834-456a4af538c4 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:18.293517+00:00 app[web.1]: 42.0523886662,-87.677428024,1511116578.29
+2017-11-19T18:36:18.293529+00:00 app[web.1]: 
+2017-11-19T18:36:18.293592+00:00 app[web.1]: {}
+2017-11-19T18:36:20.236425+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5e0a4db0-b739-4e31-b09c-7a967a699aa4 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:20.236986+00:00 app[web.1]: 42.0524290251,-87.6774198097,1511116580.24
+2017-11-19T18:36:20.237030+00:00 app[web.1]: {}
+2017-11-19T18:36:20.237001+00:00 app[web.1]: 
+2017-11-19T18:36:22.393998+00:00 app[web.1]: 42.0524619241,-87.6773951669,1511116582.39
+2017-11-19T18:36:22.394017+00:00 app[web.1]: 
+2017-11-19T18:36:22.394131+00:00 app[web.1]: {}
+2017-11-19T18:36:22.393493+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ffd42273-f7b1-4eb3-a9f5-7bb16c931184 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:24.273558+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0bd4eefb-c92a-4f4b-8d18-0c8a95b5b909 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:24.274190+00:00 app[web.1]: 42.0524961641,-87.6773794928,1511116584.27
+2017-11-19T18:36:24.274211+00:00 app[web.1]: 
+2017-11-19T18:36:24.274256+00:00 app[web.1]: {}
+2017-11-19T18:36:26.315664+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=717a0ac1-1c53-4ec4-a363-45c42814b00a fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:26.314625+00:00 app[web.1]: 42.0525298594,-87.6773754694,1511116586.31
+2017-11-19T18:36:26.314700+00:00 app[web.1]: {}
+2017-11-19T18:36:26.314648+00:00 app[web.1]: 
+2017-11-19T18:36:27.254348+00:00 app[web.1]: 42.0525452402,-87.6773754694,1511116587.25
+2017-11-19T18:36:27.254375+00:00 app[web.1]: 
+2017-11-19T18:36:27.254398+00:00 app[web.1]: {}
+2017-11-19T18:36:27.255755+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=52941474-2118-4745-a591-496b0a5df6cf fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:29.296702+00:00 app[web.1]: 42.0525715594,-87.6773851924,1511116589.3
+2017-11-19T18:36:29.296869+00:00 app[web.1]: 
+2017-11-19T18:36:29.296994+00:00 app[web.1]: {}
+2017-11-19T18:36:29.298042+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d0939f86-109d-4904-878b-fbbf3438063f fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:30.397773+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5978184f-929e-408b-b146-8999f888ed28 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:30.396889+00:00 app[web.1]: 42.0525786421,-87.6773893834,1511116590.4
+2017-11-19T18:36:30.396901+00:00 app[web.1]: 
+2017-11-19T18:36:30.396905+00:00 app[web.1]: {}
+2017-11-19T18:36:31.217632+00:00 app[web.1]: 42.0525881555,-87.6773902216,1511116591.22
+2017-11-19T18:36:31.217676+00:00 app[web.1]: 
+2017-11-19T18:36:31.217783+00:00 app[web.1]: {}
+2017-11-19T18:36:31.218701+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=1d8bf644-5b73-4523-b2fd-f22528dbd3fe fwd="172.56.13.128" dyno=web.1 connect=0ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:32.314854+00:00 app[web.1]: 42.0525984234,-87.6773915627,1511116592.31
+2017-11-19T18:36:32.314874+00:00 app[web.1]: 
+2017-11-19T18:36:32.314926+00:00 app[web.1]: {}
+2017-11-19T18:36:32.316003+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2c5eef90-a01e-4af2-a234-6b8719533e9a fwd="172.56.13.128" dyno=web.1 connect=11ms service=11ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:34.459966+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d9f1f30f-0220-4ec2-bf99-4d17347899ec fwd="172.56.13.128" dyno=web.1 connect=0ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:34.458961+00:00 app[web.1]: 42.0526183723,-87.6773920656,1511116594.46
+2017-11-19T18:36:34.458980+00:00 app[web.1]: 
+2017-11-19T18:36:34.459072+00:00 app[web.1]: {}
+2017-11-19T18:36:35.196713+00:00 app[web.1]: 42.0526254969,-87.6773907245,1511116595.2
+2017-11-19T18:36:35.196738+00:00 app[web.1]: 
+2017-11-19T18:36:35.196739+00:00 app[web.1]: {}
+2017-11-19T18:36:35.197661+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=c0f1a629-f542-4183-95a3-7698ef117062 fwd="172.56.13.128" dyno=web.1 connect=0ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:37.294211+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b058f50d-33c7-4a8e-ad69-a85dd0dff59a fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:37.293396+00:00 app[web.1]: 42.052644901,-87.6773842704,1511116597.29
+2017-11-19T18:36:37.293414+00:00 app[web.1]: 
+2017-11-19T18:36:37.293461+00:00 app[web.1]: {}
+2017-11-19T18:36:38.235974+00:00 app[web.1]: 42.0526540792,-87.6773803309,1511116598.24
+2017-11-19T18:36:38.235991+00:00 app[web.1]: 
+2017-11-19T18:36:38.236045+00:00 app[web.1]: {}
+2017-11-19T18:36:38.236622+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=c2da881e-ee64-4512-9573-763a01b45d6d fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:39.223635+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=28240f87-3220-4416-b85b-d1fc6c680beb fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:39.222984+00:00 app[web.1]: 42.0526636765,-87.6773801633,1511116599.22
+2017-11-19T18:36:39.222998+00:00 app[web.1]: 
+2017-11-19T18:36:39.223103+00:00 app[web.1]: {}
+2017-11-19T18:36:40.232698+00:00 app[web.1]: 42.052678261,-87.6773826779,1511116600.23
+2017-11-19T18:36:40.232711+00:00 app[web.1]: 
+2017-11-19T18:36:40.232749+00:00 app[web.1]: {}
+2017-11-19T18:36:40.233387+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=9d0b8370-dba0-4a8a-b4f3-430e7fdf5c2b fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:41.241177+00:00 app[web.1]: 42.0526925102,-87.6773852763,1511116601.24
+2017-11-19T18:36:41.241193+00:00 app[web.1]: 
+2017-11-19T18:36:41.241250+00:00 app[web.1]: {}
+2017-11-19T18:36:41.242120+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ee706a4f-9d66-4cb0-9c62-b8dbebd834dc fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:42.355228+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=91be54fa-fcc7-49d2-b7b5-6055ee0116c8 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:42.354731+00:00 app[web.1]: 42.0527062985,-87.6773846895,1511116602.35
+2017-11-19T18:36:42.354750+00:00 app[web.1]: 
+2017-11-19T18:36:42.354774+00:00 app[web.1]: {}
+2017-11-19T18:36:44.316653+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0d725784-6ead-4150-bf98-21c06f6ba7bd fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:44.314733+00:00 app[web.1]: 42.0527368086,-87.6773838513,1511116604.31
+2017-11-19T18:36:44.314751+00:00 app[web.1]: 
+2017-11-19T18:36:44.314818+00:00 app[web.1]: {}
+2017-11-19T18:36:45.294506+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=cf2c5a57-dc54-4810-a068-7c80e8368fe4 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:45.293034+00:00 app[web.1]: 42.0527549973,-87.6773846895,1511116605.29
+2017-11-19T18:36:45.293055+00:00 app[web.1]: 
+2017-11-19T18:36:45.293090+00:00 app[web.1]: {}
+2017-11-19T18:36:47.395826+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ad6dfe4e-c778-4aa5-8496-1945475d78af fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:47.394942+00:00 app[web.1]: 42.052786639,-87.677390976,1511116607.39
+2017-11-19T18:36:47.394964+00:00 app[web.1]: 
+2017-11-19T18:36:47.395013+00:00 app[web.1]: {}
+2017-11-19T18:36:48.405424+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=97ac4b69-6a63-4772-8c14-e4371ebab75c fwd="172.56.13.128" dyno=web.1 connect=0ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:48.403525+00:00 app[web.1]: 42.0528024389,-87.6773952507,1511116608.4
+2017-11-19T18:36:48.403544+00:00 app[web.1]: 
+2017-11-19T18:36:48.404369+00:00 app[web.1]: {}
+2017-11-19T18:36:50.319052+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=e526be2a-b27c-4c8b-a3bd-c2c5f32a15e7 fwd="172.56.13.128" dyno=web.1 connect=0ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:50.318110+00:00 app[web.1]: 
+2017-11-19T18:36:50.318095+00:00 app[web.1]: 42.0528311888,-87.6774009504,1511116610.32
+2017-11-19T18:36:50.318174+00:00 app[web.1]: {}
+2017-11-19T18:36:51.255249+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d9238fdf-2518-44f5-a2d6-f2a3c19fb16e fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:51.254266+00:00 app[web.1]: 42.0528415824,-87.6774008666,1511116611.25
+2017-11-19T18:36:51.254284+00:00 app[web.1]: 
+2017-11-19T18:36:51.254316+00:00 app[web.1]: {}
+2017-11-19T18:36:52.334181+00:00 app[web.1]: 42.0528595196,-87.6774032974,1511116612.33
+2017-11-19T18:36:52.334195+00:00 app[web.1]: 
+2017-11-19T18:36:52.334206+00:00 app[web.1]: {}
+2017-11-19T18:36:52.335303+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0ec0c7a4-af87-4961-8c95-3061c06a7c70 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:54.337585+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=22de622e-a770-4c94-9663-bb0a5e286d30 fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:54.334948+00:00 app[web.1]: 42.0528868866,-87.6773981006,1511116614.33
+2017-11-19T18:36:54.334969+00:00 app[web.1]: 
+2017-11-19T18:36:54.335063+00:00 app[web.1]: {}
+2017-11-19T18:36:56.577324+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=bf06505c-1b6b-4cb3-b1e2-1ef8035ade1f fwd="172.56.13.128" dyno=web.1 connect=0ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:56.577447+00:00 app[web.1]: 42.0529141277,-87.6773931553,1511116616.58
+2017-11-19T18:36:56.577493+00:00 app[web.1]: 
+2017-11-19T18:36:56.577605+00:00 app[web.1]: {}
+2017-11-19T18:36:58.274534+00:00 app[web.1]: 42.052936717,-87.6773900539,1511116618.27
+2017-11-19T18:36:58.274548+00:00 app[web.1]: 
+2017-11-19T18:36:58.274179+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=9953accb-09a8-49f3-b361-6ccb4420743d fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:58.274666+00:00 app[web.1]: {}
+2017-11-19T18:36:59.334665+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=56c2ae52-5ea8-4385-9098-e5d9c3d36a71 fwd="172.56.13.128" dyno=web.1 connect=1ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:36:59.335386+00:00 app[web.1]: 42.0529467333,-87.6773860306,1511116619.34
+2017-11-19T18:36:59.335404+00:00 app[web.1]: 
+2017-11-19T18:36:59.335434+00:00 app[web.1]: {}
+2017-11-19T18:37:00.339358+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7543d9bc-ea4d-465a-9ed4-98b20cb9329d fwd="172.56.13.128" dyno=web.1 connect=1ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:00.339709+00:00 app[web.1]: 42.0529563725,-87.6773795766,1511116620.34
+2017-11-19T18:37:00.339726+00:00 app[web.1]: 
+2017-11-19T18:37:00.339757+00:00 app[web.1]: {}
+2017-11-19T18:37:02.304680+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=442bf4ea-481d-4051-8de5-288d3c051803 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:02.315375+00:00 app[web.1]: 42.052973304,-87.6773627289,1511116622.32
+2017-11-19T18:37:02.315393+00:00 app[web.1]: 
+2017-11-19T18:37:02.315436+00:00 app[web.1]: {}
+2017-11-19T18:37:03.266567+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=10493a70-037e-48f1-aed6-fa9618cc9863 fwd="172.56.13.128" dyno=web.1 connect=1ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:03.277132+00:00 app[web.1]: 
+2017-11-19T18:37:03.277181+00:00 app[web.1]: {}
+2017-11-19T18:37:03.277118+00:00 app[web.1]: 42.0529794228,-87.6773538441,1511116623.28
+2017-11-19T18:37:05.498958+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a7daea6e-b9f6-4c86-92e9-624358d1c99e fwd="172.56.13.128" dyno=web.1 connect=0ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:05.496050+00:00 app[web.1]: 42.0529935044,-87.6773338952,1511116625.5
+2017-11-19T18:37:05.496063+00:00 app[web.1]: 
+2017-11-19T18:37:05.496115+00:00 app[web.1]: {}
+2017-11-19T18:37:07.394148+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2dd208fc-9873-41f6-b2b4-4c28d04cee67 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:07.393423+00:00 app[web.1]: 42.0530071669,-87.677310845,1511116627.39
+2017-11-19T18:37:07.393442+00:00 app[web.1]: 
+2017-11-19T18:37:07.393489+00:00 app[web.1]: {}
+2017-11-19T18:37:09.415617+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=65c9d26c-0126-4523-a12c-9c7254ca7a1e fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:09.414619+00:00 app[web.1]: 42.0530165127,-87.6772986912,1511116629.41
+2017-11-19T18:37:09.414639+00:00 app[web.1]: 
+2017-11-19T18:37:09.414671+00:00 app[web.1]: {}
+2017-11-19T18:37:11.282914+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4800e5ad-ecfc-4329-ba29-604e0a094e71 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:11.293825+00:00 app[web.1]: 42.0530199493,-87.6773200651,1511116631.29
+2017-11-19T18:37:11.293844+00:00 app[web.1]: 
+2017-11-19T18:37:11.293868+00:00 app[web.1]: {}
+2017-11-19T18:37:13.607697+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=fee25cfe-5bc3-4da2-876e-5fb3aed51e64 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:13.603418+00:00 app[web.1]: 
+2017-11-19T18:37:13.603444+00:00 app[web.1]: {}
+2017-11-19T18:37:13.603401+00:00 app[web.1]: 42.0530130342,-87.6773554367,1511116633.6
+2017-11-19T18:37:14.217138+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d2ccd9ba-ab7e-46c6-8338-6cc1ac23df8a fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:14.213175+00:00 app[web.1]: 42.0530140819,-87.677368261,1511116634.21
+2017-11-19T18:37:14.213195+00:00 app[web.1]: 
+2017-11-19T18:37:14.213218+00:00 app[web.1]: {}
+2017-11-19T18:37:15.345189+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=be73d868-9794-481a-a8ce-1ef0a3e87d36 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:15.341213+00:00 app[web.1]: 42.0530263195,-87.6773784869,1511116635.34
+2017-11-19T18:37:15.341234+00:00 app[web.1]: 
+2017-11-19T18:37:15.341266+00:00 app[web.1]: {}
+2017-11-19T18:37:17.537574+00:00 app[web.1]: 42.0530507947,-87.6773875394,1511116637.54
+2017-11-19T18:37:17.537607+00:00 app[web.1]: 
+2017-11-19T18:37:17.537637+00:00 app[web.1]: {}
+2017-11-19T18:37:17.539164+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7a39b207-c97f-49e9-a710-050a45921c69 fwd="172.56.13.128" dyno=web.1 connect=1ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:19.300798+00:00 app[web.1]: {}
+2017-11-19T18:37:19.300629+00:00 app[web.1]: 42.0530758985,-87.6773857792,1511116639.3
+2017-11-19T18:37:19.300645+00:00 app[web.1]: 
+2017-11-19T18:37:19.302135+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=c0ddbab0-9e14-45c5-b157-21f84fda5701 fwd="172.56.13.128" dyno=web.1 connect=1ms service=8ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:20.316366+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=81c4cd3a-9c38-4529-b6c3-b2b7fb2cf22c fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:20.314917+00:00 app[web.1]: 42.0530891,-87.6773830132,1511116640.31
+2017-11-19T18:37:20.314930+00:00 app[web.1]: 
+2017-11-19T18:37:20.314997+00:00 app[web.1]: {}
+2017-11-19T18:37:22.218695+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5ce4283c-578c-4bc5-a442-33d4365026a5 fwd="172.56.13.128" dyno=web.1 connect=1ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:22.217107+00:00 app[web.1]: 42.0531141619,-87.6773784869,1511116642.22
+2017-11-19T18:37:22.217127+00:00 app[web.1]: 
+2017-11-19T18:37:22.217276+00:00 app[web.1]: {}
+2017-11-19T18:37:23.257123+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a3aab846-4664-46cb-bd88-6c9dd8e4a67f fwd="172.56.13.128" dyno=web.1 connect=2ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:23.255552+00:00 app[web.1]: 42.0531323506,-87.6773713623,1511116643.26
+2017-11-19T18:37:23.255575+00:00 app[web.1]: 
+2017-11-19T18:37:23.255666+00:00 app[web.1]: {}
+2017-11-19T18:37:25.299920+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b3ba917f-6b07-49b4-8536-3f245f78d1ff fwd="172.56.13.128" dyno=web.1 connect=1ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:25.298017+00:00 app[web.1]: 42.0531574544,-87.6773653273,1511116645.3
+2017-11-19T18:37:25.298037+00:00 app[web.1]: 
+2017-11-19T18:37:25.298101+00:00 app[web.1]: {}
+2017-11-19T18:37:26.263767+00:00 app[web.1]: 42.0531739667,-87.6773602982,1511116646.26
+2017-11-19T18:37:26.263788+00:00 app[web.1]: 
+2017-11-19T18:37:26.263846+00:00 app[web.1]: {}
+2017-11-19T18:37:26.265296+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7a0426f2-eda8-4afc-93d5-af889ab4d204 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:27.342896+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=28d8b294-3ca7-46f3-9e4f-4d1838b0f2ee fwd="172.56.13.128" dyno=web.1 connect=1ms service=8ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:27.341190+00:00 app[web.1]: 42.0531869587,-87.6773554367,1511116647.34
+2017-11-19T18:37:27.341240+00:00 app[web.1]: 
+2017-11-19T18:37:27.341332+00:00 app[web.1]: {}
+2017-11-19T18:37:29.215068+00:00 app[web.1]: 42.0532131941,-87.6773475577,1511116649.21
+2017-11-19T18:37:29.215100+00:00 app[web.1]: 
+2017-11-19T18:37:29.215218+00:00 app[web.1]: {}
+2017-11-19T18:37:29.216746+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=697de632-5d36-43e0-94f0-75aea05c9f4b fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:30.238160+00:00 app[web.1]: 42.0532447938,-87.6773439535,1511116650.24
+2017-11-19T18:37:30.238175+00:00 app[web.1]: 
+2017-11-19T18:37:30.238224+00:00 app[web.1]: {}
+2017-11-19T18:37:30.239824+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=9e98d873-d903-44c2-a5c1-dbfe28f84dfc fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:31.256704+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=8cd9c328-8362-44df-8ccf-84b8781fa4f1 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:31.255389+00:00 app[web.1]: 42.053266503,-87.6773391758,1511116651.26
+2017-11-19T18:37:31.255409+00:00 app[web.1]: 
+2017-11-19T18:37:31.255414+00:00 app[web.1]: {}
+2017-11-19T18:37:33.286338+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b04a7a00-0a90-4f9a-8b6f-82991177ce72 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:33.284423+00:00 app[web.1]: 42.0533027966,-87.6773370803,1511116653.28
+2017-11-19T18:37:33.284443+00:00 app[web.1]: 
+2017-11-19T18:37:33.284448+00:00 app[web.1]: {}
+2017-11-19T18:37:34.296955+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=813419fb-febb-441d-95c2-22300311734e fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:34.294996+00:00 app[web.1]: 42.0533185127,-87.6773435344,1511116654.29
+2017-11-19T18:37:34.295043+00:00 app[web.1]: 
+2017-11-19T18:37:34.295155+00:00 app[web.1]: {}
+2017-11-19T18:37:36.298512+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2c971d9e-4193-4045-be4a-248667ac100a fwd="172.56.13.128" dyno=web.1 connect=1ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:36.297212+00:00 app[web.1]: {}
+2017-11-19T18:37:36.296231+00:00 app[web.1]: 42.0533392998,-87.6773570293,1511116656.3
+2017-11-19T18:37:36.296921+00:00 app[web.1]: 
+2017-11-19T18:37:38.239325+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=cb630b7e-1507-4178-ba12-cea0e9b774be fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:38.238085+00:00 app[web.1]: 42.0533520822,-87.6773739607,1511116658.24
+2017-11-19T18:37:38.238110+00:00 app[web.1]: 
+2017-11-19T18:37:38.238115+00:00 app[web.1]: {}
+2017-11-19T18:37:40.359315+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5cea0a3b-8007-4e3e-b177-e9391d28d12a fwd="172.56.13.128" dyno=web.1 connect=1ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:40.356969+00:00 app[web.1]: 42.053373959,-87.6773800795,1511116660.36
+2017-11-19T18:37:40.356983+00:00 app[web.1]: 
+2017-11-19T18:37:40.357034+00:00 app[web.1]: {}
+2017-11-19T18:37:41.236224+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=35db0278-9bf0-4767-add2-d31e831a9f92 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:41.236091+00:00 app[web.1]: 42.0533871185,-87.6773811691,1511116661.24
+2017-11-19T18:37:41.236105+00:00 app[web.1]: 
+2017-11-19T18:37:41.236162+00:00 app[web.1]: {}
+2017-11-19T18:37:43.397650+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f71a3b77-a584-4bde-b851-54f60affb9f4 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:43.396688+00:00 app[web.1]: 42.0534172515,-87.6773880423,1511116663.4
+2017-11-19T18:37:43.396708+00:00 app[web.1]: 
+2017-11-19T18:37:43.396734+00:00 app[web.1]: {}
+2017-11-19T18:37:44.356006+00:00 app[web.1]: 42.0534307463,-87.6773907245,1511116664.36
+2017-11-19T18:37:44.356019+00:00 app[web.1]: 
+2017-11-19T18:37:44.356088+00:00 app[web.1]: {}
+2017-11-19T18:37:44.357344+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=7c8cc100-4708-4a24-b3e1-5013e05257ac fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:46.397946+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ea2759ac-2b07-4354-8be6-4a33dccca585 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:46.395702+00:00 app[web.1]: 
+2017-11-19T18:37:46.395683+00:00 app[web.1]: 42.0534541319,-87.6773910598,1511116666.4
+2017-11-19T18:37:46.395762+00:00 app[web.1]: {}
+2017-11-19T18:37:47.297590+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=33265e54-1ebc-4c98-8ffd-8b18080f41b0 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:47.296022+00:00 app[web.1]: 42.0534663275,-87.6773879585,1511116667.3
+2017-11-19T18:37:47.296032+00:00 app[web.1]: 
+2017-11-19T18:37:47.296099+00:00 app[web.1]: {}
+2017-11-19T18:37:49.376413+00:00 app[web.1]: 42.0534931496,-87.6773906407,1511116669.38
+2017-11-19T18:37:49.376427+00:00 app[web.1]: 
+2017-11-19T18:37:49.376474+00:00 app[web.1]: {}
+2017-11-19T18:37:49.377879+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f3ca7ea2-8473-433a-906f-4a91c96b8f85 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:50.266268+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ce9923e5-9556-4b24-9874-bcd5c4fc891a fwd="172.56.13.128" dyno=web.1 connect=3ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:50.264990+00:00 app[web.1]: 42.0535068121,-87.677390473,1511116670.26
+2017-11-19T18:37:50.265010+00:00 app[web.1]: 
+2017-11-19T18:37:50.265060+00:00 app[web.1]: {}
+2017-11-19T18:37:51.299643+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4ae7ae43-e980-4ffc-bc98-79a5a4a50985 fwd="172.56.13.128" dyno=web.1 connect=1ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:51.297802+00:00 app[web.1]: 42.0535216062,-87.6773887967,1511116671.3
+2017-11-19T18:37:51.297816+00:00 app[web.1]: 
+2017-11-19T18:37:51.297864+00:00 app[web.1]: {}
+2017-11-19T18:37:53.616039+00:00 app[web.1]: 42.0535531221,-87.6773929038,1511116673.62
+2017-11-19T18:37:53.616060+00:00 app[web.1]: 
+2017-11-19T18:37:53.616064+00:00 app[web.1]: {}
+2017-11-19T18:37:53.617531+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b80cb748-d0b4-456d-95f1-099213011495 fwd="172.56.13.128" dyno=web.1 connect=1ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:55.319390+00:00 app[web.1]: 42.0535793156,-87.6773929038,1511116675.32
+2017-11-19T18:37:55.319492+00:00 app[web.1]: 
+2017-11-19T18:37:55.319618+00:00 app[web.1]: {}
+2017-11-19T18:37:55.321210+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=186cfdf8-d9c1-4e36-a637-79db769f1fbf fwd="172.56.13.128" dyno=web.1 connect=1ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:56.285105+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ea638034-d32f-4ead-9e7c-e151cc6d4a39 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:56.283379+00:00 app[web.1]: 42.0535906312,-87.6773888805,1511116676.28
+2017-11-19T18:37:56.283394+00:00 app[web.1]: 
+2017-11-19T18:37:56.283434+00:00 app[web.1]: {}
+2017-11-19T18:37:58.618820+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0effa60a-c1be-4221-b258-5b4f00df5830 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:37:58.616314+00:00 app[web.1]: 42.0536104544,-87.6773889643,1511116678.62
+2017-11-19T18:37:58.616372+00:00 app[web.1]: 
+2017-11-19T18:37:58.616483+00:00 app[web.1]: {}
+2017-11-19T18:38:00.336324+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2d41301a-6997-464a-a090-f0a8cc4987d9 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:00.335036+00:00 app[web.1]: 42.0536328759,-87.677384941,1511116680.33
+2017-11-19T18:38:00.335134+00:00 app[web.1]: {}
+2017-11-19T18:38:00.335056+00:00 app[web.1]: 
+2017-11-19T18:38:01.240434+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a5f72902-74e7-4c77-8d0f-b599e63a8702 fwd="172.56.13.128" dyno=web.1 connect=1ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:01.237719+00:00 app[web.1]: 42.0536465804,-87.6773823426,1511116681.24
+2017-11-19T18:38:01.237770+00:00 app[web.1]: 
+2017-11-19T18:38:01.237859+00:00 app[web.1]: {}
+2017-11-19T18:38:02.336586+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4e6596fe-e377-4461-a5cf-405c2aa29c82 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:02.335053+00:00 app[web.1]: 42.0536587341,-87.6773802471,1511116682.33
+2017-11-19T18:38:02.335079+00:00 app[web.1]: 
+2017-11-19T18:38:02.335129+00:00 app[web.1]: {}
+2017-11-19T18:38:04.377585+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4801e549-507d-4781-a178-0bb796d63f18 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:04.375976+00:00 app[web.1]: 42.0536817005,-87.6773706079,1511116684.38
+2017-11-19T18:38:04.375995+00:00 app[web.1]: 
+2017-11-19T18:38:04.376039+00:00 app[web.1]: {}
+2017-11-19T18:38:05.245833+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=3d683282-ccb4-4285-b8dc-984b122cd23b fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:05.243919+00:00 app[web.1]: 42.0536913397,-87.677365495,1511116685.24
+2017-11-19T18:38:05.243938+00:00 app[web.1]: 
+2017-11-19T18:38:05.243996+00:00 app[web.1]: {}
+2017-11-19T18:38:06.258889+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0d8223a5-9233-418c-b3d9-5c5076fd6958 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:06.257381+00:00 app[web.1]: 42.0537026134,-87.6773581189,1511116686.26
+2017-11-19T18:38:06.257401+00:00 app[web.1]: 
+2017-11-19T18:38:06.257423+00:00 app[web.1]: {}
+2017-11-19T18:38:08.321769+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d89f3cd9-496f-40f3-ba90-4c3798f211db fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:08.316180+00:00 app[web.1]: 42.0537074749,-87.6773371641,1511116688.32
+2017-11-19T18:38:08.316269+00:00 app[web.1]: 
+2017-11-19T18:38:08.316381+00:00 app[web.1]: {}
+2017-11-19T18:38:09.343810+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5727509a-42de-46ba-8986-26ab1e4d8747 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:09.338413+00:00 app[web.1]: 42.0536884899,-87.6773454622,1511116689.34
+2017-11-19T18:38:09.338432+00:00 app[web.1]: 
+2017-11-19T18:38:09.338498+00:00 app[web.1]: {}
+2017-11-19T18:38:11.261269+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=90de7cfe-1be9-4ffb-897c-17af34178fc7 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:11.255907+00:00 app[web.1]: 42.0536728576,-87.6773494017,1511116691.26
+2017-11-19T18:38:11.255921+00:00 app[web.1]: 
+2017-11-19T18:38:11.255979+00:00 app[web.1]: {}
+2017-11-19T18:38:12.302890+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ec8ed4d3-f737-4183-bbec-f5e1a558e804 fwd="172.56.13.128" dyno=web.1 connect=2ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:12.297555+00:00 app[web.1]: 42.0536775934,-87.6773406845,1511116692.3
+2017-11-19T18:38:12.297574+00:00 app[web.1]: 
+2017-11-19T18:38:12.297647+00:00 app[web.1]: {}
+2017-11-19T18:38:14.318412+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=182bdd31-83d6-41d2-aa96-c177c88a8503 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:14.316926+00:00 app[web.1]: 42.0536792279,-87.6773369127,1511116694.32
+2017-11-19T18:38:14.316946+00:00 app[web.1]: 
+2017-11-19T18:38:14.317003+00:00 app[web.1]: {}
+2017-11-19T18:38:15.257791+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=dfc68533-0293-4e21-ba3c-bc8d3ddbd7c4 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:15.256192+00:00 app[web.1]: 42.0536787669,-87.6773376671,1511116695.26
+2017-11-19T18:38:15.256207+00:00 app[web.1]: 
+2017-11-19T18:38:15.256254+00:00 app[web.1]: {}
+2017-11-19T18:38:16.297798+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=20be30c0-e753-49d1-85b3-4b035bb61a12 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:16.296114+00:00 app[web.1]: 42.053679647,-87.6773395949,1511116696.3
+2017-11-19T18:38:16.296129+00:00 app[web.1]: 
+2017-11-19T18:38:16.296189+00:00 app[web.1]: {}
+2017-11-19T18:38:17.346562+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=127bfe48-7ab9-45a0-8a26-b41d79f7e266 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:17.344753+00:00 app[web.1]: 42.0536814072,-87.6773420256,1511116697.34
+2017-11-19T18:38:17.344766+00:00 app[web.1]: 
+2017-11-19T18:38:17.344844+00:00 app[web.1]: {}
+2017-11-19T18:38:18.356722+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a57a205b-4a4d-4c1e-b060-afdc64d5991d fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:18.355270+00:00 app[web.1]: 42.0536853886,-87.6773382538,1511116698.36
+2017-11-19T18:38:18.355285+00:00 app[web.1]: 
+2017-11-19T18:38:18.355319+00:00 app[web.1]: {}
+2017-11-19T18:38:20.338288+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=c59fd237-9dcc-41c1-95b9-07a4693505dc fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:20.336191+00:00 app[web.1]: 42.0536886994,-87.6773380023,1511116700.34
+2017-11-19T18:38:20.336210+00:00 app[web.1]: 
+2017-11-19T18:38:20.336301+00:00 app[web.1]: {}
+2017-11-19T18:38:21.239173+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=3b405b95-d079-4b10-ad70-e722752180e7 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:21.237139+00:00 app[web.1]: 42.0536863944,-87.6773380023,1511116701.24
+2017-11-19T18:38:21.237154+00:00 app[web.1]: 
+2017-11-19T18:38:21.237200+00:00 app[web.1]: {}
+2017-11-19T18:38:22.238809+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b64f7e7e-6e7b-4bb4-90a8-9dbb49293770 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:22.236713+00:00 app[web.1]: 42.0536910464,-87.6773368289,1511116702.24
+2017-11-19T18:38:22.236730+00:00 app[web.1]: 
+2017-11-19T18:38:22.236780+00:00 app[web.1]: {}
+2017-11-19T18:38:24.296166+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=eb115987-7960-4ff5-ae38-2a78f1d28016 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:24.294802+00:00 app[web.1]: {}
+2017-11-19T18:38:24.294733+00:00 app[web.1]: 42.05369398,-87.6773356554,1511116704.29
+2017-11-19T18:38:24.294749+00:00 app[web.1]: 
+2017-11-19T18:38:25.223827+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=2f5ea5e1-bde3-46a3-81b8-4321d1f16ba0 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:25.222589+00:00 app[web.1]: 42.053696285,-87.6773325541,1511116705.22
+2017-11-19T18:38:25.222610+00:00 app[web.1]: 
+2017-11-19T18:38:25.222614+00:00 app[web.1]: {}
+2017-11-19T18:38:27.303211+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b69e6506-2035-44fe-b7d9-b81923e24548 fwd="172.56.13.128" dyno=web.1 connect=1ms service=8ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:27.301318+00:00 app[web.1]: 
+2017-11-19T18:38:27.301298+00:00 app[web.1]: 42.053701398,-87.6773294528,1511116707.3
+2017-11-19T18:38:27.301364+00:00 app[web.1]: {}
+2017-11-19T18:38:28.238405+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=cc9051de-a771-4a29-bba5-4fd9da220ca9 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:28.236249+00:00 app[web.1]: 42.0537070139,-87.6773290337,1511116708.24
+2017-11-19T18:38:28.236273+00:00 app[web.1]: 
+2017-11-19T18:38:28.236322+00:00 app[web.1]: {}
+2017-11-19T18:38:30.398299+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=59435a75-4ee6-483a-925c-9d804fa2737f fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:30.396559+00:00 app[web.1]: 
+2017-11-19T18:38:30.396544+00:00 app[web.1]: 42.053711582,-87.6773271897,1511116710.4
+2017-11-19T18:38:30.396670+00:00 app[web.1]: {}
+2017-11-19T18:38:31.264975+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=1cca6a41-f3fa-4484-b424-0b0bb952ca3e fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:31.263397+00:00 app[web.1]: 42.053711582,-87.6773271897,1511116711.26
+2017-11-19T18:38:31.263466+00:00 app[web.1]: {}
+2017-11-19T18:38:31.263416+00:00 app[web.1]: 
+2017-11-19T18:38:32.262764+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=6b90bb33-1d9a-488e-8224-e1d305f1b334 fwd="172.56.13.128" dyno=web.1 connect=4ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:32.261279+00:00 app[web.1]: 42.053711582,-87.6773271897,1511116712.26
+2017-11-19T18:38:32.261294+00:00 app[web.1]: 
+2017-11-19T18:38:32.261347+00:00 app[web.1]: {}
+2017-11-19T18:38:33.357169+00:00 app[web.1]: 42.053711582,-87.6773271897,1511116713.36
+2017-11-19T18:38:33.357184+00:00 app[web.1]: 
+2017-11-19T18:38:33.357236+00:00 app[web.1]: {}
+2017-11-19T18:38:33.358695+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=55295143-24b6-4408-8651-12ef082abcc0 fwd="172.56.13.128" dyno=web.1 connect=1ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:35.476094+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=b67fbd04-a435-469b-b41d-8b86c8226b56 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:35.474710+00:00 app[web.1]: 42.053711582,-87.6773271897,1511116715.47
+2017-11-19T18:38:35.474725+00:00 app[web.1]: 
+2017-11-19T18:38:35.474791+00:00 app[web.1]: {}
+2017-11-19T18:38:36.136937+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=3f768cad-5281-4c09-abd4-6365281ea98e fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:36.135319+00:00 app[web.1]: 
+2017-11-19T18:38:36.135303+00:00 app[web.1]: 42.053711582,-87.6773271897,1511116716.14
+2017-11-19T18:38:36.135374+00:00 app[web.1]: {}
+2017-11-19T18:38:37.246794+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=05cab4cb-8860-450b-9d5d-54b3622d3083 fwd="172.56.13.128" dyno=web.1 connect=0ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:37.245412+00:00 app[web.1]: 42.0537114982,-87.6772905608,1511116717.25
+2017-11-19T18:38:37.245426+00:00 app[web.1]: 
+2017-11-19T18:38:37.245511+00:00 app[web.1]: {}
+2017-11-19T18:38:38.254268+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0f548902-21c4-4580-8e41-63bf70e63350 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:38.252968+00:00 app[web.1]: 42.0537215146,-87.6772597154,1511116718.25
+2017-11-19T18:38:38.252982+00:00 app[web.1]: 
+2017-11-19T18:38:38.253044+00:00 app[web.1]: {}
+2017-11-19T18:38:39.297106+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=690195fc-aa76-4245-80bc-dc9b71891c37 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:39.295636+00:00 app[web.1]: 42.0537334169,-87.6772249305,1511116719.3
+2017-11-19T18:38:39.295649+00:00 app[web.1]: 
+2017-11-19T18:38:39.295721+00:00 app[web.1]: {}
+2017-11-19T18:38:40.256723+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=72e6d3b9-da0c-4317-a816-a49acb2a9b71 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:40.255230+00:00 app[web.1]: 42.0537518571,-87.6771783271,1511116720.26
+2017-11-19T18:38:40.255245+00:00 app[web.1]: 
+2017-11-19T18:38:40.255276+00:00 app[web.1]: {}
+2017-11-19T18:38:41.350593+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=769344a4-bdca-446d-a438-9ddf38a49166 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:41.349417+00:00 app[web.1]: 42.0537755778,-87.677129712,1511116721.35
+2017-11-19T18:38:41.349437+00:00 app[web.1]: 
+2017-11-19T18:38:41.349473+00:00 app[web.1]: {}
+2017-11-19T18:38:42.354296+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5e6e9edb-258c-4f6d-8051-4de3c576da27 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:42.353047+00:00 app[web.1]: 42.0538065071,-87.677087132,1511116722.35
+2017-11-19T18:38:42.353062+00:00 app[web.1]: 
+2017-11-19T18:38:42.353107+00:00 app[web.1]: {}
+2017-11-19T18:38:44.255272+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4d6fbaa3-6eeb-4611-a55a-66c763e975f1 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:44.254055+00:00 app[web.1]: 42.0538856322,-87.6770341583,1511116724.25
+2017-11-19T18:38:44.254071+00:00 app[web.1]: 
+2017-11-19T18:38:44.254104+00:00 app[web.1]: {}
+2017-11-19T18:38:45.274706+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=257e70a8-784b-445d-980b-5f020414447f fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:45.273412+00:00 app[web.1]: 42.0539224288,-87.6770300512,1511116725.27
+2017-11-19T18:38:45.273439+00:00 app[web.1]: 
+2017-11-19T18:38:45.273444+00:00 app[web.1]: {}
+2017-11-19T18:38:47.497022+00:00 app[web.1]: {}
+2017-11-19T18:38:47.496734+00:00 app[web.1]: 42.0539902384,-87.6770297159,1511116727.5
+2017-11-19T18:38:47.496752+00:00 app[web.1]: 
+2017-11-19T18:38:47.498183+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=733b0d9a-52ef-42ea-9275-7c894bd960b7 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:49.289121+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=f12ad7c9-07c8-4d5e-b6fb-01b6af252015 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:49.288299+00:00 app[web.1]: 
+2017-11-19T18:38:49.288277+00:00 app[web.1]: 42.0540486603,-87.6770262794,1511116729.29
+2017-11-19T18:38:49.288348+00:00 app[web.1]: {}
+2017-11-19T18:38:50.289735+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=bc8daf5c-1aa1-4867-9567-4cb4f3861320 fwd="172.56.13.128" dyno=web.1 connect=0ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:50.288956+00:00 app[web.1]: 42.0540766558,-87.6770208311,1511116730.29
+2017-11-19T18:38:50.289018+00:00 app[web.1]: 
+2017-11-19T18:38:50.289132+00:00 app[web.1]: {}
+2017-11-19T18:38:52.352643+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a486b28a-ee7e-471f-bcd8-e3dfaf8f3d17 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:52.351535+00:00 app[web.1]: 42.0541292942,-87.6770115272,1511116732.35
+2017-11-19T18:38:52.351632+00:00 app[web.1]: {}
+2017-11-19T18:38:52.351551+00:00 app[web.1]: 
+2017-11-19T18:38:53.269465+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=6cf4dfde-e9e6-4ddc-8f03-ccaa59c824a7 fwd="172.56.13.128" dyno=web.1 connect=1ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:53.268679+00:00 app[web.1]: {}
+2017-11-19T18:38:53.268647+00:00 app[web.1]: 
+2017-11-19T18:38:53.268625+00:00 app[web.1]: 42.0541554038,-87.6770080906,1511116733.27
+2017-11-19T18:38:54.269190+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=568e7127-c915-4316-aecd-3cc89f461635 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:54.267958+00:00 app[web.1]: 42.0541804657,-87.6770036482,1511116734.27
+2017-11-19T18:38:54.267979+00:00 app[web.1]: 
+2017-11-19T18:38:54.268168+00:00 app[web.1]: {}
+2017-11-19T18:38:55.327903+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=9ab2b14f-523e-4f8b-9ba7-176aa030c5b4 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:55.327046+00:00 app[web.1]: 42.0542061143,-87.6769987029,1511116735.33
+2017-11-19T18:38:55.327066+00:00 app[web.1]: 
+2017-11-19T18:38:55.327089+00:00 app[web.1]: {}
+2017-11-19T18:38:57.469091+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=d3e6ad02-b0bc-40ed-9cf7-962567b7317a fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:38:57.467665+00:00 app[web.1]: 
+2017-11-19T18:38:57.467697+00:00 app[web.1]: {}
+2017-11-19T18:38:57.467645+00:00 app[web.1]: 42.0542588365,-87.6769885608,1511116737.47
+2017-11-19T18:38:59.176012+00:00 app[web.1]: 42.054310469,-87.6769783349,1511116739.18
+2017-11-19T18:38:59.176031+00:00 app[web.1]: 
+2017-11-19T18:38:59.176062+00:00 app[web.1]: {}
+2017-11-19T18:38:59.177587+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=0395a2f9-b524-4ce6-9764-2ccb21910389 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:00.251530+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=a6b1ad86-8f87-48ab-9740-eeaf8e6a2947 fwd="172.56.13.128" dyno=web.1 connect=1ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:00.249955+00:00 app[web.1]: 42.0543329325,-87.6769721323,1511116740.25
+2017-11-19T18:39:00.250000+00:00 app[web.1]: 
+2017-11-19T18:39:00.250065+00:00 app[web.1]: {}
+2017-11-19T18:39:01.289115+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=af331a5d-4427-4d97-8623-c5f8d014d828 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:01.287410+00:00 app[web.1]: 42.0543520432,-87.6769659296,1511116741.29
+2017-11-19T18:39:01.287431+00:00 app[web.1]: 
+2017-11-19T18:39:01.287457+00:00 app[web.1]: {}
+2017-11-19T18:39:02.373680+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=bb853753-d5c9-4b21-929c-ad6920a8b70a fwd="172.56.13.128" dyno=web.1 connect=0ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:02.368275+00:00 app[web.1]: 42.0543728723,-87.6769619902,1511116742.37
+2017-11-19T18:39:02.368292+00:00 app[web.1]: 
+2017-11-19T18:39:02.372244+00:00 app[web.1]: {}
+2017-11-19T18:39:04.254322+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=5c7b8283-52e7-465e-b320-e7b2fc25ffc3 fwd="172.56.13.128" dyno=web.1 connect=0ms service=6ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:04.253132+00:00 app[web.1]: 42.0544179669,-87.6769488306,1511116744.25
+2017-11-19T18:39:04.253182+00:00 app[web.1]: {}
+2017-11-19T18:39:04.253147+00:00 app[web.1]: 
+2017-11-19T18:39:05.309855+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=be147ff2-d113-459c-934d-cbdba53f5247 fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:05.308658+00:00 app[web.1]: 42.05444064,-87.676937515,1511116745.31
+2017-11-19T18:39:05.308673+00:00 app[web.1]: 
+2017-11-19T18:39:05.308712+00:00 app[web.1]: {}
+2017-11-19T18:39:07.330347+00:00 app[web.1]: 42.0544909733,-87.6769308933,1511116747.33
+2017-11-19T18:39:07.330361+00:00 app[web.1]: 
+2017-11-19T18:39:07.330413+00:00 app[web.1]: {}
+2017-11-19T18:39:07.335190+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=34df5b41-069f-4db0-9da9-09b64cac8391 fwd="172.56.13.128" dyno=web.1 connect=0ms service=7ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:08.248744+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=ed66ce2b-cdea-4b0d-a703-e21a8ba9de7e fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:08.249222+00:00 app[web.1]: 42.0545164543,-87.6769343299,1511116748.25
+2017-11-19T18:39:08.249234+00:00 app[web.1]: 
+2017-11-19T18:39:08.249235+00:00 app[web.1]: {}
+2017-11-19T18:39:09.211435+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=83465b2b-6b56-48ee-bd16-af2d2c8a5ef2 fwd="172.56.13.128" dyno=web.1 connect=0ms service=5ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:09.209984+00:00 app[web.1]: 42.0545431506,-87.6769407001,1511116749.21
+2017-11-19T18:39:09.210039+00:00 app[web.1]: 
+2017-11-19T18:39:09.210144+00:00 app[web.1]: {}
+2017-11-19T18:39:10.369244+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=c10de870-0326-41ff-8a4e-2248621119ce fwd="172.56.13.128" dyno=web.1 connect=1ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:10.368060+00:00 app[web.1]: 42.0545667457,-87.6769461484,1511116750.37
+2017-11-19T18:39:10.368073+00:00 app[web.1]: 
+2017-11-19T18:39:10.368131+00:00 app[web.1]: {}
+2017-11-19T18:39:12.369938+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=1c96b539-9001-4be0-87e0-ec0df6bf57bd fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:12.364910+00:00 app[web.1]: 42.0546148997,-87.6769529377,1511116752.36
+2017-11-19T18:39:12.364927+00:00 app[web.1]: 
+2017-11-19T18:39:12.364990+00:00 app[web.1]: {}
+2017-11-19T18:39:13.315465+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=4967427e-87e6-4bb2-bdad-051a0b3f16db fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:13.310403+00:00 app[web.1]: 42.0546415542,-87.6769526862,1511116753.31
+2017-11-19T18:39:13.310416+00:00 app[web.1]: 
+2017-11-19T18:39:13.310484+00:00 app[web.1]: {}
+2017-11-19T18:39:15.368941+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=56682395-cdd1-49d3-ad58-9b2f4be6f109 fwd="172.56.13.128" dyno=web.1 connect=0ms service=1ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:15.367776+00:00 app[web.1]: 42.0546962461,-87.6769564581,1511116755.37
+2017-11-19T18:39:15.367793+00:00 app[web.1]: 
+2017-11-19T18:39:15.367818+00:00 app[web.1]: {}
+2017-11-19T18:39:16.268026+00:00 app[web.1]: 
+2017-11-19T18:39:16.268009+00:00 app[web.1]: 42.0547186677,-87.6769592241,1511116756.27
+2017-11-19T18:39:16.268076+00:00 app[web.1]: {}
+2017-11-19T18:39:16.269293+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=3230c2b4-6f3b-40cc-84cd-4529cbd7aabf fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:17.289233+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=6a66385e-a06f-4ad3-8469-78619a611a8b fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:17.288076+00:00 app[web.1]: 42.0547419694,-87.6769651753,1511116757.29
+2017-11-19T18:39:17.288092+00:00 app[web.1]: 
+2017-11-19T18:39:17.288139+00:00 app[web.1]: {}
+2017-11-19T18:39:19.358375+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=48f6899b-d2f0-4922-877d-576edc772eab fwd="172.56.13.128" dyno=web.1 connect=0ms service=3ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:19.356772+00:00 app[web.1]: 42.0547862677,-87.6769831964,1511116759.36
+2017-11-19T18:39:19.356792+00:00 app[web.1]: 
+2017-11-19T18:39:19.356844+00:00 app[web.1]: {}
+2017-11-19T18:39:20.371935+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=41e78d55-6686-4f0e-8731-cf45e570dba7 fwd="172.56.13.128" dyno=web.1 connect=2ms service=4ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:20.369734+00:00 app[web.1]: 42.0548096113,-87.6769890637,1511116760.37
+2017-11-19T18:39:20.369751+00:00 app[web.1]: 
+2017-11-19T18:39:20.369812+00:00 app[web.1]: {}
+2017-11-19T18:39:22.357762+00:00 heroku[router]: at=info method=POST path="/location" host=hs4x.herokuapp.com request_id=aab581f4-49d9-4c44-a0e7-d6127e6fa44d fwd="172.56.13.128" dyno=web.1 connect=0ms service=2ms status=200 bytes=161 protocol=https
+2017-11-19T18:39:22.356111+00:00 app[web.1]: 
+2017-11-19T18:39:22.356214+00:00 app[web.1]: {}
+2017-11-19T18:39:22.356058+00:00 app[web.1]: 42.0548619144,-87.6769982838,1511116762.36
