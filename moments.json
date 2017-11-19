@@ -3,7 +3,7 @@
 		"name": "Expand",
 		"prompt": "There are zombies on your tail, run to the stronghold at the Rock between Harris Hall and University Hall.",
 		"id": "rock",
-		"radius": 40000
+		"radius": 400
 	},
 	{
 		"name": "Exploit",
