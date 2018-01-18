@@ -7,6 +7,11 @@ app = Flask(__name__)
 opportunityManager = OpportunityManager()
 # actionVerifier = ActionVerifier()
 
+@app.route('/')
+def index():
+	return "hs4x"
+
+
 #this endpoint receives the posted location from the ios app, 
 #	and then immediately checks whether there are 
 #	any moments in range to send. 
