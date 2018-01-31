@@ -1,19 +1,26 @@
 import json
 import time
 import sys
+from bson import json_util
+from pymongo import MongoClient
 from math import sin, cos, sqrt, atan2, radians
 
-class OpportunityManager():
 
+class OpportunityManager():
 	def __init__(self):
-		#load moments and objects
-		with open('moments.json') as file:
-		    self.moments = json.load(file)
-		with open('objects.json') as file:
-		    self.objects = json.load(file)
+		#uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
+		uri= "mongodb://localhost:27017"
+
+		dbName = "hs4x"
+		client = MongoClient(uri)
+		self.db = client[dbName]
+
+		#load moments and objects from DB
+		self.moments = list(self.db.moments.find())
+		self.objects = list(self.db.worldObjects.find())
 		self.sent = {}
 
-	#called by endpoint, finds all moments in range,
+	#	called by endpoint, finds all moments in range,
 	#	filters out any it's already sent, and
 	#	returns the one with the fewest responses
 	def get_moment(self,lat,lng):
@@ -25,10 +32,8 @@ class OpportunityManager():
 			print "{}"
 			return "{}"
 		else:
-			#if not empty, return the prompt
-			self.sent[best_moment["prompt"]] = True
-			print json.dumps(best_moment)
-			return json.dumps(best_moment)
+			best_moment = [json.loads(json.dumps(best_moment, default=json_util.default))]
+			return best_moment
 
 	#returns all moments within range of lat, lng
 	def get_moments_in_range(self,lat,lng):
@@ -36,11 +41,23 @@ class OpportunityManager():
 		for moment in self.moments:
 			objectId = moment["id"]
 			objectRadius = moment["radius"]
-			objectLat = float(self.objects[objectId]["lat"])
-			objectLng = float(self.objects[objectId]["lng"])
+
+			objectRadius = 10000000000000000000000000
+
+			obj = self.db.worldObjects.find({"name":objectId})
+			obj = list(obj)[0]
+			# print "objects collections"
+			# print self.objects
+			# print(obj[objectId]["lng"])
+
+			objectLat = float(obj["lat"])
+			objectLng = float(obj["lng"])
 			if self.estimate_distance(lat,lng,objectLat,objectLng) < objectRadius:
 				moments_in_range.append(moment)
+			else:
+				pass
 		return moments_in_range
+			
 
 	#returns moment from given array of moments with fewest responses
 	def get_best_moment(self, moments):
@@ -48,9 +65,10 @@ class OpportunityManager():
 		best_moment = {}
 		for moment in moments:
 			momentId = moment["id"]
-			objectResponses = self.objects[momentId]["responses"]
-			if objectResponses < fewest_responses:
-				fewest_responses = objectResponses
+			reponses = self.db.worldObjects.find({"name": momentId})
+			response = list(reponses)[0]["responses"]
+			if response < fewest_responses:
+				fewest_responses = response
 				best_moment = moment
 		return best_moment
 
