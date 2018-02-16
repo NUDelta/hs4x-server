@@ -8,8 +8,8 @@ from math import sin, cos, sqrt, atan2, radians
 
 class OpportunityManager():
 	def __init__(self):
-		#uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
-		uri= "mongodb://localhost:27017"
+		uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
+		#uri= "mongodb://localhost:27017"
 
 		dbName = "hs4x"
 		client = MongoClient(uri)
@@ -18,14 +18,14 @@ class OpportunityManager():
 		#load moments and objects from DB
 		self.moments = list(self.db.moments.find())
 		self.objects = list(self.db.worldObjects.find())
-		self.sent = {}
+		self.sent = set()
 
 	#	called by endpoint, finds all moments in range,
 	#	filters out any it's already sent, and
 	#	returns the one with the fewest responses
 	def get_moment(self,lat,lng):
 		moments_in_range = self.get_moments_in_range(lat,lng)
-		valid_moments = [ moment for moment in moments_in_range if moment["prompt"] not in self.sent.keys() ]
+		valid_moments = [ moment for moment in moments_in_range if moment["prompt"] not in self.sent ]
 		best_moment = self.get_best_moment(valid_moments)
 		#best_moment can return {}, so check if empty
 		if len(best_moment.keys()) == 0:
@@ -33,22 +33,21 @@ class OpportunityManager():
 			return "{}"
 		else:
 			best_moment = [json.loads(json.dumps(best_moment, default=json_util.default))]
+			self.sent.add(best_moment[0]["prompt"])
 			return best_moment
 
 	#returns all moments within range of lat, lng
 	def get_moments_in_range(self,lat,lng):
 		moments_in_range = []
-		for moment in self.moments:
+		expands = self.db.moments.find({"name": "Expand"})
+		for moment in expands:
 			objectId = moment["id"]
 			objectRadius = moment["radius"]
 
-			objectRadius = 10000000000000000000000000
+			objectRadius = 500
 
 			obj = self.db.worldObjects.find({"name":objectId})
 			obj = list(obj)[0]
-			# print "objects collections"
-			# print self.objects
-			# print(obj[objectId]["lng"])
 
 			objectLat = float(obj["lat"])
 			objectLng = float(obj["lng"])
