@@ -98,6 +98,12 @@ def seed(moments, worldObjects):
 		"id": "NA",
 		"radius": 0
 	})
+	moments.insert({ 
+		"name": "Expand",
+		"prompt": "WOOO IT WORKED! Yay. That is awesome. It expanded.",
+		"id": "test-obj",
+		"radius": 20
+	})
 
 	worldObjects.insert({
 		"name": "rock",
@@ -141,10 +147,16 @@ def seed(moments, worldObjects):
 		"lng": -87.683191,
 		"responses": 2	
 	})
-
+	worldObjects.insert({
+		"name": "test-obj",
+		"lat": 42.05909,
+    	"lng": -87.674446,
+    	"responses": 5
+	})
 
 dbName = "hs4x"
-uri= "mongodb://localhost:27017"
+#uri= "mongodb://localhost:27017"
+uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
 client = MongoClient(uri)
 db = client[dbName]
 
