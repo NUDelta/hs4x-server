@@ -25,16 +25,18 @@ class OpportunityManager():
 	#	returns the one with the fewest responses
 	def get_moment(self,lat,lng):
 		moments_in_range = self.get_moments_in_range(lat,lng)
-		valid_moments = [ moment for moment in moments_in_range ] # if moment["prompt"] not in self.sent 
-		best_moment = self.get_best_moment(valid_moments)
-		#best_moment can return {}, so check if empty
-		if len(best_moment.keys()) == 0:
-			print "{}"
-			return "{}"
-		else:
-			best_moment = [json.loads(json.dumps(best_moment, default=json_util.default))]
-			#self.sent.add(best_moment[0]["prompt"])
-			return best_moment
+		if len(moments_in_range) > 0:
+			valid_moments = [ moment for moment in moments_in_range ] # if moment["prompt"] not in self.sent 
+			best_moment = self.get_best_moment(valid_moments)
+			#best_moment can return {}, so check if empty
+			if len(best_moment.keys()) == 0:
+				return {}
+			else:
+				best_moment = [json.loads(json.dumps(best_moment, default=json_util.default))]
+				#self.sent.add(best_moment[0]["prompt"])
+				return best_moment
+		return {}
+
 
 	#returns all moments within range of lat, lng
 	def get_moments_in_range(self,lat,lng):
@@ -44,17 +46,16 @@ class OpportunityManager():
 			objectId = moment["id"]
 			objectRadius = moment["radius"]
 
-			objectRadius = 500
-
 			obj = self.db.worldObjects.find({"name":objectId})
-			obj = list(obj)[0]
+			obj = list(obj)
 
-			objectLat = float(obj["lat"])
-			objectLng = float(obj["lng"])
-			if self.estimate_distance(lat,lng,objectLat,objectLng) < objectRadius:
-				moments_in_range.append(moment)
-			else:
-				pass
+			if len(obj) > 0:
+				objectLat = float(obj["lat"])
+				objectLng = float(obj["lng"])
+				if self.estimate_distance(lat,lng,objectLat,objectLng) < objectRadius:
+					moments_in_range.append(moment)
+				else:
+					pass
 		return moments_in_range
 			
 
