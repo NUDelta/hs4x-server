@@ -18,14 +18,14 @@ class OpportunityManager():
 		#load moments and objects from DB
 		self.moments = list(self.db.moments.find())
 		self.objects = list(self.db.worldObjects.find())
-		self.sent = set()
+		#self.sent = set()
 
 	#	called by endpoint, finds all moments in range,
 	#	filters out any it's already sent, and
 	#	returns the one with the fewest responses
 	def get_moment(self,lat,lng):
 		moments_in_range = self.get_moments_in_range(lat,lng)
-		valid_moments = [ moment for moment in moments_in_range if moment["prompt"] not in self.sent ]
+		valid_moments = [ moment for moment in moments_in_range ] # if moment["prompt"] not in self.sent 
 		best_moment = self.get_best_moment(valid_moments)
 		#best_moment can return {}, so check if empty
 		if len(best_moment.keys()) == 0:
@@ -33,7 +33,7 @@ class OpportunityManager():
 			return "{}"
 		else:
 			best_moment = [json.loads(json.dumps(best_moment, default=json_util.default))]
-			self.sent.add(best_moment[0]["prompt"])
+			#self.sent.add(best_moment[0]["prompt"])
 			return best_moment
 
 	#returns all moments within range of lat, lng

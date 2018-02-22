@@ -159,7 +159,3 @@ dbName = "hs4x"
 uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
 client = MongoClient(uri)
 db = client[dbName]
-
-# Collections based on Experience Kit
-moments = db["moments"] # Individual interactions
-worldObjects = db["worldObjects"] # Objects with locations

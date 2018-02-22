@@ -134,5 +134,4 @@ def add_object():
 
 # FROM YK, makes running app refresh
 if __name__ == "__main__":
-   	#app.run(debug=True)
 	app.run(host='0.0.0.0')
