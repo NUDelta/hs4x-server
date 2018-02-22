@@ -50,6 +50,7 @@ class OpportunityManager():
 			obj = list(obj)
 
 			if len(obj) > 0:
+				obj = obj[0]
 				objectLat = float(obj["lat"])
 				objectLng = float(obj["lng"])
 				if self.estimate_distance(lat,lng,objectLat,objectLng) < objectRadius:
