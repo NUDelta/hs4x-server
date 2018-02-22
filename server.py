@@ -50,12 +50,15 @@ def save_location():
 		save_string = latStr+','+lngStr+','+timeStr+'\n'
 		# Return result of opportunity manager!
 		best_moment = opportunityManager.get_moment(float(latStr),float(lngStr))
-		return Response(
-		# RETURN BEST MOMENT
-			json_util.dumps(best_moment[0]),
-			mimetype='application/json'
-		)
-	return "{}"
+		if best_moment != None:
+			return Response(
+			# RETURN BEST MOMENT
+				json_util.dumps(best_moment[0]),
+				mimetype='application/json'
+			)
+		else:
+			return jsonify({"result":0})
+	return jsonify({"result":0})
 
 # Send best moment to ExperienceKit for insertion
 @app.route('/intro')

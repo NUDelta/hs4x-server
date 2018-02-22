@@ -30,12 +30,12 @@ class OpportunityManager():
 			best_moment = self.get_best_moment(valid_moments)
 			#best_moment can return {}, so check if empty
 			if len(best_moment.keys()) == 0:
-				return {}
+				return None
 			else:
 				best_moment = [json.loads(json.dumps(best_moment, default=json_util.default))]
 				#self.sent.add(best_moment[0]["prompt"])
 				return best_moment
-		return {}
+		return None
 
 
 	#returns all moments within range of lat, lng
