@@ -42,7 +42,9 @@ class OpportunityManager():
 	def get_moments_in_range(self,lat,lng):
 		moments_in_range = []
 		expands = self.db.moments.find({"name": "Expand"})
-		for moment in expands:
+		exploits = self.db.moments.find({"name": "Exploit"})
+		list_expand_exploits = expands + exploits
+		for moment in list_expand_exploits:
 			objectId = moment["id"]
 			objectRadius = moment["radius"]
 

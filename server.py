@@ -3,6 +3,7 @@ from opportunity import OpportunityManager
 from pymongo import MongoClient
 from verify import ActionVerifier
 from seed import seed
+from seed2 import seed2
 from bson import json_util
 from collections import defaultdict
 import time
@@ -27,6 +28,8 @@ sensorMoments = db["sensorMoments"]
 worldObjects = db["worldObjects"] # Objects with locations
 
 #seed(moments, worldObjects)
+#seed2(moments, worldObjects)
+
 # Fill server database with hardcoded moments/objects
 
 @app.route('/')
