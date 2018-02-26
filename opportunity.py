@@ -10,16 +10,13 @@ class OpportunityManager():
 	def __init__(self):
 		uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
 		#uri= "mongodb://localhost:27017"
-
 		dbName = "hs4x"
 		client = MongoClient(uri)
 		self.db = client[dbName]
-
 		#load moments and objects from DB
 		self.moments = list(self.db.moments.find())
 		self.objects = list(self.db.worldObjects.find())
 		#self.sent = set()
-
 	#	called by endpoint, finds all moments in range,
 	#	filters out any it's already sent, and
 	#	returns the one with the fewest responses
@@ -41,16 +38,18 @@ class OpportunityManager():
 	#returns all moments within range of lat, lng
 	def get_moments_in_range(self,lat,lng):
 		moments_in_range = []
+		list_expand_exploits = []
 		expands = self.db.moments.find({"name": "Expand"})
 		exploits = self.db.moments.find({"name": "Exploit"})
-		list_expand_exploits = expands + exploits
+		for expand in expands:
+			list_expand_exploits.append(expand)
+		for exploit in exploits:
+			list_expand_exploits.append(exploit)
 		for moment in list_expand_exploits:
 			objectId = moment["id"]
 			objectRadius = moment["radius"]
-
 			obj = self.db.worldObjects.find({"name":objectId})
 			obj = list(obj)
-
 			if len(obj) > 0:
 				obj = obj[0]
 				objectLat = float(obj["lat"])
@@ -79,17 +78,13 @@ class OpportunityManager():
 	def estimate_distance(self,lat1,lng1,lat2,lng2):
 		# approximate radius of earth in km
 		R = 6373.0
-
 		lat1 = radians(lat1)
 		lon1 = radians(lng1)
 		lat2 = radians(lat2)
 		lon2 = radians(lng2)
-
 		dlon = lon2 - lon1
 		dlat = lat2 - lat1
-
 		a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
 		c = 2 * atan2(sqrt(a), sqrt(1 - a))
-
 		distance = R * c * 3280.84
 		return distance
