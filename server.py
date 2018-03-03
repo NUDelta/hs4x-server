@@ -8,7 +8,6 @@ from bson import json_util
 from collections import defaultdict
 import time
 import json
-#import pprint
 
 app = Flask(__name__)
 opportunityManager = OpportunityManager()

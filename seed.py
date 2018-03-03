@@ -11,38 +11,38 @@ def seed(moments, worldObjects):
 		"name": "Expand",
 		"prompt": "There are zombies on your tail, run to the stronghold at the Rock between Harris Hall and University Hall.",
 		"id": "rock",
-		"radius": 400
+		"radius": 70
 	})
 	moments.insert({
 		"name": "Exploit",
 		"prompt": "If you see someone guarding the Rock, then our fortress in the area is still going strong and you are safe to continue on your way towards Tech. Otherwise, canvas the area by running around the Rock and then continue to your original destination.",
 		"id": "rock",
-		"radius": 100
+		"radius": 50
 	})
 	moments.insert({
 		"name": "Expand",
 		"prompt": "There are zombies coming towards you on Sheridan, jog to Norris if you want to avoid them.",
 		"id": "Norris",
-		"radius": 1400
+		"radius": 100
 
 	})
 	moments.insert({
 		"name": "Exploit",
 		"prompt": "Jog into Norris and up towards the Starbucks -- if it is crowded the zombies are probably on their way -- leave quickly via the door you entered. Otherwise, leave Norris through a different entrance to throw the zombies off your tail.",
 		"id": "Norris",
-		"radius": 100
+		"radius": 50
 	})
 	moments.insert({ 
 		"name": "Expand",
 		"prompt": "The Garrett Parking Lot is coming up on your right and zombies are close. Jog into the lot to look for cover.",
 		"id": "Garrett",
-		"radius": 250
+		"radius": 100
 	})
 	moments.insert({ 
 		"name": "Exploit",
 		"prompt": "If you see many cars in the lot and few empty spots then there it will provide cover from the zombies, weave through the cars in the lot to throw the zombies off. Otherwise, sprint out of the lot and continue on quickly.",
 		"id": "Garrett",
-		"radius": 85
+		"radius": 50
 	})
 	moments.insert({ 
 		"name": "Exploit",
@@ -90,19 +90,13 @@ def seed(moments, worldObjects):
 		"name": "Expand",
 		"prompt":  "The local grocery store D&Ds might have leftover food. Peak inside. If there are lots of people, sprint past, otherwise slowly jog past.",
 		"id": "D&Ds",
-		"radius": 20
+		"radius": 50
 	})
 	moments.insert({ 
 		"name": "End",
 		"prompt":  "Great job, runner 5. You had very few run-ins with zombies and collected incredibly important data for us. You're within our base range now and you are safe. Until our next mission together!",
 		"id": "NA",
 		"radius": 0
-	})
-	moments.insert({ 
-		"name": "Expand",
-		"prompt": "WOOO IT WORKED! Yay. That is awesome. It expanded.",
-		"id": "test-obj",
-		"radius": 20
 	})
 
 	worldObjects.insert({
