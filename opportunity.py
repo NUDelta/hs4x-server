@@ -69,7 +69,11 @@ class OpportunityManager():
 			momentId = moment["id"]
 			reponses = self.db.worldObjects.find({"name": momentId})
 			response = list(reponses)[0]["responses"]
-			if response < fewest_responses:
+			# Exploits and expands on the same object have the same number of responses, but we always want to smaller range one
+			if response == fewest_responses and momentId == best_moment["id"] and (moment["radius"] < best_moment["radius"]):
+				best_moment = moment
+				print best_moment
+			elif response < fewest_responses:
 				fewest_responses = response
 				best_moment = moment
 		return best_moment
