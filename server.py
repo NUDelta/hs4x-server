@@ -4,10 +4,12 @@ from pymongo import MongoClient
 from verify import ActionVerifier
 from seed import seed
 from seed2 import seed2
+from bson import ObjectId
 from bson import json_util
 from collections import defaultdict
 import time
 import json
+import random
 
 app = Flask(__name__)
 opportunityManager = OpportunityManager()
@@ -25,15 +27,47 @@ locations = db["locations"] # Streamer for locations
 motionActivityUpdates = db["motionActivityUpdates"]
 sensorMoments = db["sensorMoments"]
 worldObjects = db["worldObjects"] # Objects with locations
+runs = db["runs"] # Run organizes the entire experience for each individual run
+users = set() # Keep track of user ids. Hacky fix.
 
 #seed(moments, worldObjects)
 #seed2(moments, worldObjects)
 
-# Fill server database with hardcoded moments/objects
+# Fill server database with hardcoded moments/objectt
 
 @app.route('/')
 def index():
 	return 'hs4x'
+
+def generate_userId():
+	randId = random.randint(1,1001)
+	while(randId in users):
+		randId = random.randint(1,1001)
+	return randId
+
+# Initialize the run for a user
+# Front end sends in a start time
+# Return a run id and unique user id
+@app.route('/initialize_run', methods = ['POST'])
+def initialize_run():
+	data = request.get_json() 
+	user_id = generate_userId()
+	users.add(user_id)
+	start_time = str(data['start_time'])
+	run_oid = runs.insert({
+		"user_id": user_id,
+		"start_time": start_time,
+		"end_time": "",
+		"locations": [],
+		"moments_played": []
+	})
+	
+	return Response(
+			# The id of the run created for future use on Front end
+			json_util.dumps([{'run_id': str(run_oid)},
+							{'user_id': user_id}]),
+			mimetype='application/json'
+	)
 
 # Recieves the posted location from the ios app, 
 #	and then immediately checks whether there are 
@@ -46,12 +80,17 @@ def save_location():
   		data = request.get_json()
 		latStr = str(data['latitude'])
 		lngStr = str(data['longitude'])
+		run_id = str(data['run_id'])
 		timeStr = str(time.time())
-		# Write to db
-		locations.insert(data)
+		# Currently redundant: keeping track of location in two places
+		# One in global locations collection, the other by run <-- optimal
+		locations.insert({"latitude": latStr, "longitude": lngStr})
+		runs.update(
+					{"_id" : ObjectId(run_id)}, 
+					{"$push":{"locations": {"latitude": latStr, "longitude": lngStr}}})
 		save_string = latStr+','+lngStr+','+timeStr+'\n'
 		# Return result of opportunity manager!
-		best_moment = opportunityManager.get_moment(float(latStr),float(lngStr))
+		best_moment = opportunityManager.get_moment(run_id, float(latStr),float(lngStr))
 		if best_moment != None:
 			return Response(
 			# RETURN BEST MOMENT
@@ -61,29 +100,6 @@ def save_location():
 		else:
 			return jsonify({"result":0})
 	return jsonify({"result":0})
-
-# Send best moment to ExperienceKit for insertion
-@app.route('/intro')
-def intro():
-	moments = list()
-	for moment in db.moments.find({"name": "Intro"}):
-		moments.append(moment)
-	return Response(
-		# Right now, returning the first intro moment it finds, later should be randomized or calcualted
-		json_util.dumps(moments[0]), 
-		mimetype='application/json'
-	)
-
-@app.route('/end')
-def end():
-	moments = list()
-	for moment in db.moments.find({"name": "End"}):
-		moments.append(moment)
-	return Response(
-		# Right now, returning the first intro moment it finds, later should be randomized or calcualted
-		json_util.dumps(moments[0]), 
-		mimetype='application/json'
-	)
 
 # Dump world objects
 @app.route('/objects')
@@ -110,7 +126,6 @@ def add_moment():
 	try:
 		data = request.get_json(silent=True)
 		# Write to moments collection
-		print data
 		moments.insert(data)
 		return jsonify(status='OK',message='inserted successfully')
 	except Exception, e:
@@ -126,6 +141,30 @@ def add_object():
 		return jsonify(status='OK',message='inserted successfully')
 	except Exception, e:
 		return str(e)
+
+# Send best moment to ExperienceKit for insertion
+@app.route('/intro')
+def intro():
+	moments = list()
+	for moment in db.moments.find({"name": "Intro"}):
+		moments.append(moment)
+	return Response(
+		# Right now, returning the first intro moment it finds, later should be randomized or calcualted
+		json_util.dumps(moments[0]), 
+		mimetype='application/json'
+	)
+
+@app.route('/end')
+def end():
+	moments = list()
+	for moment in db.moments.find({"name": "End"}):
+		moments.append(moment)
+	return Response(
+		# Right now, returning the first intro moment it finds, later should be randomized or calcualted
+		json_util.dumps(moments[0]), 
+		mimetype='application/json'
+	)
+
 
 #verifier not used, so it's commented out
 # @app.route('/verify', methods = ['POST'])

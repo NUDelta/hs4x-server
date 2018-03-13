@@ -2,6 +2,7 @@ import json
 import time
 import sys
 from bson import json_util
+from bson import ObjectId
 from pymongo import MongoClient
 from math import sin, cos, sqrt, atan2, radians
 
@@ -13,29 +14,38 @@ class OpportunityManager():
 		dbName = "hs4x"
 		client = MongoClient(uri)
 		self.db = client[dbName]
-		#load moments and objects from DB
 		self.moments = list(self.db.moments.find())
 		self.objects = list(self.db.worldObjects.find())
-		#self.sent = set()
-	#	called by endpoint, finds all moments in range,
-	#	filters out any it's already sent, and
-	#	returns the one with the fewest responses
-	def get_moment(self,lat,lng):
+
+	#	Find all moments in range
+	#	Find the one with the least number of responses
+	#	Make sure it has not already been sent
+	# 	Return to frontend
+	def get_moment(self, run_id, lat,lng):
 		moments_in_range = self.get_moments_in_range(lat,lng)
 		if len(moments_in_range) > 0:
 			valid_moments = [ moment for moment in moments_in_range ] # if moment["prompt"] not in self.sent 
 			best_moment = self.get_best_moment(valid_moments)
-			#best_moment can return {}, so check if empty
+			run = self.db.runs.find_one({"_id" : ObjectId(run_id)})
+			prompt = best_moment["prompt"]
+			# Best moment can return empty, don't send if so
 			if len(best_moment.keys()) == 0:
 				return None
+			# Check that this moment has not been sent already
+			elif prompt in run["moments_played"]:
+				print("This moment has been sent already!")
+				return None
+			# Send this moment to front end. Add to runs "played moment"
 			else:
+				print("Send this moment to front end. Add to run's played moments")
 				best_moment = [json.loads(json.dumps(best_moment, default=json_util.default))]
-				#self.sent.add(best_moment[0]["prompt"])
+				self.db.runs.update(
+					{"_id" : ObjectId(run_id)}, 
+					{"$addToSet":{"moments_played": prompt}})
 				return best_moment
 		return None
 
-
-	#returns all moments within range of lat, lng
+	# Returns all moments within range of lat, lng
 	def get_moments_in_range(self,lat,lng):
 		moments_in_range = []
 		list_expand_exploits = []
@@ -61,7 +71,7 @@ class OpportunityManager():
 		return moments_in_range
 			
 
-	#returns moment from given array of moments with fewest responses
+	# Returns moment from given array of moments with fewest responses
 	def get_best_moment(self, moments):
 		fewest_responses = sys.maxint
 		best_moment = {}
@@ -72,15 +82,14 @@ class OpportunityManager():
 			# Exploits and expands on the same object have the same number of responses, but we always want to smaller range one
 			if response == fewest_responses and momentId == best_moment["id"] and (moment["radius"] < best_moment["radius"]):
 				best_moment = moment
-				print best_moment
 			elif response < fewest_responses:
 				fewest_responses = response
 				best_moment = moment
 		return best_moment
 
-	#stackoverflow function to compute distance. accurate to a couple ft
+	# Stackoverflow function to compute distance. accurate to a couple ft
 	def estimate_distance(self,lat1,lng1,lat2,lng2):
-		# approximate radius of earth in km
+		# Approximate radius of earth in km
 		R = 6373.0
 		lat1 = radians(lat1)
 		lon1 = radians(lng1)
