@@ -63,7 +63,7 @@ def initialize_run():
 	})
 	returnDict = {}
 	returnDict["run_id"] = str(run_oid)
-	returnDict["user_id"] = user_id
+	returnDict["user_id"] = str(user_id)
 	return Response(
 			# The id of the run created for future use on Front end
 			json_util.dumps(returnDict),
