@@ -61,11 +61,12 @@ def initialize_run():
 		"locations": [],
 		"moments_played": []
 	})
-	
+	returnDict = {}
+	returnDict["run_id"] = str(run_oid)
+	returnDict["user_id"] = user_id
 	return Response(
 			# The id of the run created for future use on Front end
-			json_util.dumps([{'run_id': str(run_oid)},
-							{'user_id': user_id}]),
+			json_util.dumps(returnDict),
 			mimetype='application/json'
 	)
 
@@ -178,4 +179,5 @@ def end():
 
 # FROM YK, makes running app refresh
 if __name__ == "__main__":
+	#app.run(debug=True)
 	app.run(host='0.0.0.0')
