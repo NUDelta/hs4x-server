@@ -19,6 +19,7 @@ files:
 	venv/ - virtualenv for downloading python packages to the project and not to local dev machine
 
 build instructions:
+
 	- can ignore all other branches, master is the most up to date. code is on master bc it needs to be to push to heroku (git push heroku master)
 	- run LOCALLY: 
 		- set uri = mongodb://localhost:27017 in both server.py and opportunity.py
