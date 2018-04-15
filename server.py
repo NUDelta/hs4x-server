@@ -23,7 +23,7 @@ db = client[dbName]
 # Collections based on Experience Kit
 experiences = db["experiences"] # Story of full run
 moments = db["moments"] # Individual interactions
-locations = db["locations"] # Streamer for locations
+#locations = db["locations"] # Streamer for locations
 motionActivityUpdates = db["motionActivityUpdates"]
 sensorMoments = db["sensorMoments"]
 worldObjects = db["worldObjects"] # Objects with locations
@@ -59,6 +59,7 @@ def initialize_run():
 		"start_time": start_time,
 		"end_time": "",
 		"locations": [],
+		"speeds": [],
 		"moments_played": []
 	})
 	returnDict = {}
@@ -81,14 +82,16 @@ def save_location():
   		data = request.get_json()
 		latStr = str(data['latitude'])
 		lngStr = str(data['longitude'])
+		speed = str(data['speed'])
 		run_id = str(data['run_id'])
 		timeStr = str(time.time())
 		# Currently redundant: keeping track of location in two places
 		# One in global locations collection, the other by run <-- optimal
-		locations.insert({"latitude": latStr, "longitude": lngStr})
+		#locations.insert({"latitude": latStr, "longitude": lngStr})
 		runs.update(
 					{"_id" : ObjectId(run_id)}, 
-					{"$push":{"locations": {"latitude": latStr, "longitude": lngStr}}})
+					{"$push":{"locations": {"latitude": latStr, "longitude": lngStr}}},
+					{"$push":{"speeds": speed}})
 		save_string = latStr+','+lngStr+','+timeStr+'\n'
 		# Return result of opportunity manager!
 		best_moment = opportunityManager.get_moment(run_id, float(latStr),float(lngStr))

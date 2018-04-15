@@ -101,3 +101,7 @@ class OpportunityManager():
 		c = 2 * atan2(sqrt(a), sqrt(1 - a))
 		distance = R * c * 3280.84
 		return distance
+
+	def action_verifier(self, speed):
+		
+
