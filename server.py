@@ -14,8 +14,8 @@ import random
 app = Flask(__name__)
 opportunityManager = OpportunityManager()
 
-#uri= "mongodb://localhost:27017"
-uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
+uri= "mongodb://localhost:27017"
+#uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
 dbName = "hs4x"
 client = MongoClient(uri)
 db = client[dbName]
@@ -90,19 +90,22 @@ def save_location():
 		#locations.insert({"latitude": latStr, "longitude": lngStr})
 		runs.update(
 					{"_id" : ObjectId(run_id)}, 
-					{"$push":{"locations": {"latitude": latStr, "longitude": lngStr}}},
+					{"$push":{"locations": {"latitude": latStr, "longitude": lngStr}}})
+		runs.update(
+					{"_id" : ObjectId(run_id)}, 
 					{"$push":{"speeds": speed}})
 		save_string = latStr+','+lngStr+','+timeStr+'\n'
 		# Return result of opportunity manager!
 		best_moment = opportunityManager.get_moment(run_id, float(latStr),float(lngStr))
+		confirm_action = opportunityManager.action_verifier(run_id, int(speed))
 		if best_moment != None:
+			best_moment[0]["action_verified"] = confirm_action
 			return Response(
-			# RETURN BEST MOMENT
 				json_util.dumps(best_moment[0]),
 				mimetype='application/json'
 			)
 		else:
-			return jsonify({"result":0})
+			return jsonify({"result":0, "action_verified": confirm_action})
 	return jsonify({"result":0})
 
 # Dump world objects
@@ -168,17 +171,6 @@ def end():
 		json_util.dumps(moments[0]), 
 		mimetype='application/json'
 	)
-
-
-#verifier not used, so it's commented out
-# @app.route('/verify', methods = ['POST'])
-# def verify_action():
-# 	if request.method == 'POST':
-# 		data = request.get_json()
-# 		to_verify = data['to_verify']
-# 		from_timestamp = data['from_timestamp']
-# 		return str(actionVerifier.verify(to_verify, from_timestamp))
-# 	return str(False)
 
 # FROM YK, makes running app refresh
 if __name__ == "__main__":

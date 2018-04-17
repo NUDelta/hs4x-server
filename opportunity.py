@@ -9,8 +9,8 @@ from math import sin, cos, sqrt, atan2, radians
 
 class OpportunityManager():
 	def __init__(self):
-		uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
-		#uri= "mongodb://localhost:27017"
+		#uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
+		uri= "mongodb://localhost:27017"
 		dbName = "hs4x"
 		client = MongoClient(uri)
 		self.db = client[dbName]
@@ -102,6 +102,22 @@ class OpportunityManager():
 		distance = R * c * 3280.84
 		return distance
 
-	def action_verifier(self, speed):
-		
+	# SIMPLE action verifier -- just assess change in speed
+	def action_verifier(self, run_id, speed):
+		data_set_size = 10
+		speeds = list(self.db.runs.find({"_id": ObjectId(run_id)}))[0]["speeds"]
+		speeds = map(int, speeds)
+
+		if (len(speeds) > data_set_size):
+			previous = speeds[-1*data_set_size:]
+			avg = sum(previous)/data_set_size
+		else:			
+			avg = sum(speeds)/len(speeds)
+
+
+		if speed > avg:
+			return True
+		else:
+			return False
+
 
