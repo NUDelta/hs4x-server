@@ -18,7 +18,6 @@ class OpportunityManager():
 		self.objects = list(self.db.worldObjects.find())
 
 	#	Find all moments in range
-	#	Find the one with the least number of responses
 	#	Make sure it has not already been sent
 	# 	Return to frontend
 	def get_moment(self, run_id, lat,lng):
@@ -48,14 +47,13 @@ class OpportunityManager():
 	# Returns all moments within range of lat, lng
 	def get_moments_in_range(self,lat,lng):
 		moments_in_range = []
-		list_expand_exploits = []
+		available_expands = []
 		expands = self.db.moments.find({"name": "Expand"})
-		exploits = self.db.moments.find({"name": "Exploit"})
+		# Only moments flagged as "available" in the database
 		for expand in expands:
-			list_expand_exploits.append(expand)
-		for exploit in exploits:
-			list_expand_exploits.append(exploit)
-		for moment in list_expand_exploits:
+			if(expand["available"]):
+				available_expands.append(expand)
+		for moment in available_expands:
 			objectId = moment["id"]
 			objectRadius = moment["radius"]
 			obj = self.db.worldObjects.find({"name":objectId})
@@ -71,19 +69,24 @@ class OpportunityManager():
 		return moments_in_range
 			
 
-	# Returns moment from given array of moments with fewest responses
+	# Returns moment from given array of moments least % covered attributes
 	def get_best_moment(self, moments):
-		fewest_responses = sys.maxint
+		fewest_attr_left = sys.maxint
 		best_moment = {}
 		for moment in moments:
 			momentId = moment["id"]
-			reponses = self.db.worldObjects.find({"name": momentId})
-			response = list(reponses)[0]["responses"]
-			# Exploits and expands on the same object have the same number of responses, but we always want to smaller range one
-			if response == fewest_responses and momentId == best_moment["id"] and (moment["radius"] < best_moment["radius"]):
+			target_object = self.db.worldObjects.find({"name": momentId})
+			target_object = list(target_object)[0]
+			attributes = target_object["attributes"]
+			countTrue = sum(1 for x in attributes.values() if x[0])
+
+			# Make the attributes left a percentage of the attributes of a worldObject
+			attributes_left = (len(attributes) - countTrue)/len(attributes)	
+
+			if attributes_left == fewest_attr_left and momentId == best_moment["id"] and (moment["radius"] < best_moment["radius"]):
 				best_moment = moment
-			elif response < fewest_responses:
-				fewest_responses = response
+			elif attributes_left < fewest_attr_left:
+				fewest_attr_left = attributes_left
 				best_moment = moment
 		return best_moment
 
@@ -102,8 +105,9 @@ class OpportunityManager():
 		distance = R * c * 3280.84
 		return distance
 
+
 	# SIMPLE action verifier -- just assess change in speed
-	def action_verifier(self, run_id, speed):
+	def action_verifier(self, run_id, speed, moment):
 		data_set_size = 10
 		speeds = list(self.db.runs.find({"_id": ObjectId(run_id)}))[0]["speeds"]
 		speeds = map(int, speeds)
@@ -113,11 +117,99 @@ class OpportunityManager():
 			avg = sum(previous)/data_set_size
 		else:			
 			avg = sum(speeds)/len(speeds)
+		
+		# Verified = true means this person sprinted 
+		verified = speed > avg
+
+		# Front end needs to look for this string. If empty, not verified
+		if verified:
+			self.update_database(verified, moment)
+			return "Good sprinting. Thanks runner 5."
+		return ""
+
+	# Based on action verification, update the database accordingly
+	def update_database(self, verified, moment_prompt):
+		moment = list(self.db.moments.find({"prompt": moment_prompt}))[0]
+		momentId = moment["id"]
+		worldObj = list(self.db.worldObjects.find({"name": momentId}))[0]
+
+		specific_attribute = moment["attribute"]
+		
+		# Access the dictionary within the collection by "attributes.{specific_attribute}"
+		attribute2update = "attributes." + specific_attribute 
+
+		# Status and responses = [None, 0] or something like that
+		# Gotta be a better way to do this ... but having trouble accessing the list itself
+		status_and_responses = worldObj["attributes"][specific_attribute]
+		status_and_responses[1] = status_and_responses[1] + 1
+
+		# Increment number of responses to this attribute
+		self.db.worldObjects.update_one(  
+					{"name" : worldObj["name"]}, 
+					{'$set':{
+						attribute2update: status_and_responses
+					}
+		})
+
+		# For now, dealing with "yes" verifications only...
+		# Set to true if responses more than 2
+		if status_and_responses[1] > 2:
+			status_and_responses[0] = True
+			self.db.worldObjects.update_one(  
+						{"name" : worldObj["name"]}, 
+						{'$set':{
+							attribute2update: status_and_responses
+							}
+			})
 
 
-		if speed > avg:
-			return True
-		else:
-			return False
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 

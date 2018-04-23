@@ -19,6 +19,7 @@ def seed(moments, worldObjects):
 		"id": "rock",
 		"radius": 50
 	})
+
 	moments.insert({
 		"name": "Expand",
 		"prompt": "There are zombies coming towards you on Sheridan, jog to Norris if you want to avoid them.",

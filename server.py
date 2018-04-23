@@ -4,6 +4,7 @@ from pymongo import MongoClient
 from verify import ActionVerifier
 from seed import seed
 from seed2 import seed2
+from seed3 import seed3
 from bson import ObjectId
 from bson import json_util
 from collections import defaultdict
@@ -32,6 +33,7 @@ users = set() # Keep track of user ids. Hacky fix.
 
 #seed(moments, worldObjects)
 #seed2(moments, worldObjects)
+#seed3(moments, worldObjects)
 
 # Fill server database with hardcoded moments/objectt
 
@@ -85,28 +87,44 @@ def save_location():
 		speed = str(data['speed'])
 		run_id = str(data['run_id'])
 		timeStr = str(time.time())
-		# Currently redundant: keeping track of location in two places
-		# One in global locations collection, the other by run <-- optimal
-		#locations.insert({"latitude": latStr, "longitude": lngStr})
+
+		runs.update(  
+					{"_id" : ObjectId(run_id)}, 
+					{"$push":{"speeds": speed}})
+
 		runs.update(
 					{"_id" : ObjectId(run_id)}, 
 					{"$push":{"locations": {"latitude": latStr, "longitude": lngStr}}})
-		runs.update(
-					{"_id" : ObjectId(run_id)}, 
-					{"$push":{"speeds": speed}})
+		
 		save_string = latStr+','+lngStr+','+timeStr+'\n'
 		# Return result of opportunity manager!
 		best_moment = opportunityManager.get_moment(run_id, float(latStr),float(lngStr))
-		confirm_action = opportunityManager.action_verifier(run_id, int(speed))
 		if best_moment != None:
-			best_moment[0]["action_verified"] = confirm_action
 			return Response(
 				json_util.dumps(best_moment[0]),
 				mimetype='application/json'
 			)
 		else:
-			return jsonify({"result":0, "action_verified": confirm_action})
+			return jsonify({})
 	return jsonify({"result":0})
+
+@app.route('/verify', methods = ['POST'])
+def verify_action():
+	# To verify an action, we need:
+	# the run_id, the current speed, the moment it is verifying
+	data = request.get_json()
+	run_id = str(data['run_id'])
+	speed = str(data['speed'])	
+	moment = str(data['moment']) # How do I identify a moment? By prompt most likely...
+
+	# Action verifier will check for a speed change and update the database accordingly
+	respond2action = opportunityManager.action_verifier(run_id, int(speed), moment)
+	verification_response = {"action_verified": respond2action}
+	
+	return Response(
+		json_util.dumps(verification_response), 
+		mimetype='application/json'
+	)
 
 # Dump world objects
 @app.route('/objects')
@@ -125,7 +143,6 @@ def all_moments():
 		json_util.dumps(moments), 
 		mimetype='application/json'
 	)
-
 
 # Add new moment to DB
 @app.route('/moment', methods = ['POST'])
