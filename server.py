@@ -29,6 +29,7 @@ motionActivityUpdates = db["motionActivityUpdates"]
 sensorMoments = db["sensorMoments"]
 worldObjects = db["worldObjects"] # Objects with locations
 runs = db["runs"] # Run organizes the entire experience for each individual run
+	# Runs has: run id, user id, start_time, list of locations in lat, lng, end time, list of moments played, list of speeds, last distance run to moment
 users = set() # Keep track of user ids. Hacky fix.
 
 #seed(moments, worldObjects)
@@ -62,7 +63,8 @@ def initialize_run():
 		"end_time": "",
 		"locations": [],
 		"speeds": [],
-		"moments_played": []
+		"moments_played": [],
+		"last_distance": None
 	})
 	returnDict = {}
 	returnDict["run_id"] = str(run_oid)

@@ -21,10 +21,13 @@ class OpportunityManager():
 	#	Make sure it has not already been sent
 	# 	Return to frontend
 	def get_moment(self, run_id, lat,lng):
-		moments_in_range = self.get_moments_in_range(lat,lng)
+		moments_in_range = self.get_moments_in_range(run_id, lat,lng)
 		if len(moments_in_range) > 0:
-			valid_moments = [ moment for moment in moments_in_range ] # if moment["prompt"] not in self.sent 
-			best_moment = self.get_best_moment(valid_moments)
+			valid_moments = [ moment[0] for moment in moments_in_range ] # if moment["prompt"] not in self.sent 
+			distances = [ dist[1] for dist in moments_in_range ] # if moment["prompt"] not in self.sent 
+
+			best_moment, dist_to = self.get_best_moment(valid_moments)				
+
 			run = self.db.runs.find_one({"_id" : ObjectId(run_id)})
 			prompt = best_moment["prompt"]
 			# Best moment can return empty, don't send if so
@@ -36,16 +39,21 @@ class OpportunityManager():
 				return None
 			# Send this moment to front end. Add to runs "played moment"
 			else:
-				print("Send this moment to front end. Add to run's played moments")
+				print("Send this moment to front end. Add to run's played moments, update last distance run")
 				best_moment = [json.loads(json.dumps(best_moment, default=json_util.default))]
 				self.db.runs.update(
 					{"_id" : ObjectId(run_id)}, 
 					{"$addToSet":{"moments_played": prompt}})
+				# Keep track of how far we just made the runner go out of their way
+				if dist_to != None:
+					self.db.runs.update(
+						{"_id" : ObjectId(run_id)}, 
+						{"$set":{"last_distance": distances[dist_to]}})
 				return best_moment
 		return None
 
 	# Returns all moments within range of lat, lng
-	def get_moments_in_range(self,lat,lng):
+	def get_moments_in_range(self, run_id, lat,lng):
 		moments_in_range = []
 		available_expands = []
 		expands = self.db.moments.find({"name": "Expand"})
@@ -56,14 +64,22 @@ class OpportunityManager():
 		for moment in available_expands:
 			objectId = moment["id"]
 			objectRadius = moment["radius"]
-			obj = self.db.worldObjects.find({"name":objectId})
-			obj = list(obj)
+			obj = list(self.db.worldObjects.find({"name":objectId}))
+
+			# Toggle object radius depending on how far runner JUST ran
+			last_distance = list(self.db.runs.find({"_id": ObjectId(run_id)}))[0]["last_distance"]
+			print  last_distance
+			if last_distance > 50:
+				objectRadius = .5*objectRadius
+				print objectRadius
+
 			if len(obj) > 0:
 				obj = obj[0]
 				objectLat = float(obj["lat"])
 				objectLng = float(obj["lng"])
-				if self.estimate_distance(lat,lng,objectLat,objectLng) < objectRadius:
-					moments_in_range.append(moment)
+				dist = self.estimate_distance(lat,lng,objectLat,objectLng)
+				if dist < objectRadius:
+					moments_in_range.append([moment, dist])
 				else:
 					pass
 		return moments_in_range
@@ -73,11 +89,13 @@ class OpportunityManager():
 	def get_best_moment(self, moments):
 		fewest_attr_left = sys.maxint
 		best_moment = {}
-		for moment in moments:
+		distance_index = None
+		for index, moment in enumerate(moments):
 			momentId = moment["id"]
 			target_object = self.db.worldObjects.find({"name": momentId})
 			target_object = list(target_object)[0]
 			attributes = target_object["attributes"]
+
 			countTrue = sum(1 for x in attributes.values() if x[0])
 
 			# Make the attributes left a percentage of the attributes of a worldObject
@@ -85,10 +103,13 @@ class OpportunityManager():
 
 			if attributes_left == fewest_attr_left and momentId == best_moment["id"] and (moment["radius"] < best_moment["radius"]):
 				best_moment = moment
+				distance_index = index
 			elif attributes_left < fewest_attr_left:
 				fewest_attr_left = attributes_left
 				best_moment = moment
-		return best_moment
+				distance_index = index
+
+		return best_moment, distance_index
 
 	# Stackoverflow function to compute distance. accurate to a couple ft
 	def estimate_distance(self,lat1,lng1,lat2,lng2):
