@@ -65,13 +65,10 @@ class OpportunityManager():
 			objectId = moment["id"]
 			objectRadius = moment["radius"]
 			obj = list(self.db.worldObjects.find({"name":objectId}))
-
 			# Toggle object radius depending on how far runner JUST ran
 			last_distance = list(self.db.runs.find({"_id": ObjectId(run_id)}))[0]["last_distance"]
-			print  last_distance
 			if last_distance > 50:
 				objectRadius = .5*objectRadius
-				print objectRadius
 
 			if len(obj) > 0:
 				obj = obj[0]
@@ -95,7 +92,6 @@ class OpportunityManager():
 			target_object = self.db.worldObjects.find({"name": momentId})
 			target_object = list(target_object)[0]
 			attributes = target_object["attributes"]
-
 			countTrue = sum(1 for x in attributes.values() if x[0])
 
 			# Make the attributes left a percentage of the attributes of a worldObject
@@ -158,12 +154,12 @@ class OpportunityManager():
 		
 		# Access the dictionary within the collection by "attributes.{specific_attribute}"
 		attribute2update = "attributes." + specific_attribute 
-
+		
 		# Status and responses = [None, 0] or something like that
 		# Gotta be a better way to do this ... but having trouble accessing the list itself
 		status_and_responses = worldObj["attributes"][specific_attribute]
 		status_and_responses[1] = status_and_responses[1] + 1
-
+		
 		# Increment number of responses to this attribute
 		self.db.worldObjects.update_one(  
 					{"name" : worldObj["name"]}, 
@@ -182,6 +178,20 @@ class OpportunityManager():
 							attribute2update: status_and_responses
 							}
 			})
+
+			# Unlock the next moment, if there is one
+			if moment["unlock"] != None:
+				next_moment = list(self.db.moments.find({"attribute": moment["unlock"]}))[0]
+				self.db.moments.update_one(  
+						{"prompt" : next_moment["prompt"]}, 
+						{'$set':{
+							"available": True
+							}
+				})
+
+		
+
+
 
 
 

@@ -9,7 +9,8 @@ def seed3(moments, worldObjects):
 		"name": "Expand",
 		"prompt": "There are zombies on your tail, run to the stronghold at the Rock. Sprint by the rock to mark it for our records.",
 		"id": "rock",
-		"attribute": "exists",
+		"attribute": "rock-exists",
+		"unlock": "rock-guarded",
 		"available": True,
 		"radius": 70
 	})
@@ -18,7 +19,8 @@ def seed3(moments, worldObjects):
 		"name": "Expand",
 		"prompt": "If you see someone guarding the Rock, then our fortress in the area is still going strong, otherwise sprint past the Rock.",
 		"id": "rock",
-		"attribute": "guarding",
+		"attribute": "rock-guarded",
+		"unlock": "rock-crowded",
 		"available": False,
 		"radius": 70
 	})
@@ -26,7 +28,8 @@ def seed3(moments, worldObjects):
 		"name": "Expand",
 		"prompt": "The Rock is being guarded, which means it is safe. However, are lots of people crowding the area by it? If so, zombies will arrive soon so sprint away.",
 		"id": "rock",
-		"attribute": "crowded",
+		"attribute": "rock-crowded",
+		"unlock": None,
 		"available": False,
 		"radius": 50
 	})
@@ -37,7 +40,8 @@ def seed3(moments, worldObjects):
 		"name": "Expand",
 		"prompt": "Our sources are telling us Norris seems to be safer than where you are headed, jog to Norris and sprint into it immediately.",
 		"id": "Norris",
-		"attribute": "exists",
+		"attribute": "norris-exists",
+		"unlock": "norris-no-line",
 		"available": True,
 		"radius": 100
 	})
@@ -46,7 +50,8 @@ def seed3(moments, worldObjects):
 		"name": "Expand",
 		"prompt": "Jog into Norris and up towards the Starbucks -- if there is no line Zombies have been here recently. Sprint out of there.",
 		"id": "Norris",
-		"attribute": "no-line",
+		"attribute": "norris-no-line",
+		"unlock": "norris-crowded",
 		"available": False,
 		"radius": 50
 	})
@@ -55,7 +60,8 @@ def seed3(moments, worldObjects):
 		"name": "Expand",
 		"prompt": "There is no line at the Starbucks, but check the surrounding area in Norris - is it crowded? If so, sprint out of there.",
 		"id": "Norris",
-		"attribute": "crowded",
+		"attribute": "norris-crowded",
+		"unlock": None,
 		"available": False,
 		"radius": 50
 	})
@@ -133,13 +139,13 @@ def seed3(moments, worldObjects):
 		"name": "rock",
 		"lat": 42.051507,
 		"lng": -87.675919,
-		"attributes": {"exists": [None, 0], "guarded": [None, 0], "crowded": [None, 0]}
+		"attributes": {"rock-exists": [None, 0], "rock-guarded": [None, 0], "rock-crowded": [None, 0]}
 	})
 	worldObjects.insert({
 		"name": "Norris",
 		"lat": 42.053384, 
 		"lng": -87.672949,
-		"attributes": {"exists": [None, 0], "no-line": [None, 0], "crowded": [None, 0]}
+		"attributes": {"norris-exists": [None, 0], "norris-no-line": [None, 0], "norris-crowded": [None, 0]}
 	})
 	# worldObjects.insert({
 	# 	"name": "Garrett",
