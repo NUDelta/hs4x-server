@@ -5,51 +5,90 @@ from bson import json_util
 from bson import ObjectId
 from pymongo import MongoClient
 from math import sin, cos, sqrt, atan2, radians
+import time
+from threading import Timer
 
 
 class OpportunityManager():
-	def __init__(self):
-		#uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
-		uri= "mongodb://localhost:27017"
+	def __init__(self, arg):
+		if arg == 'local':
+			uri= "mongodb://localhost:27017"
+		else:
+			uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
+
 		dbName = "hs4x"
 		client = MongoClient(uri)
+		# db contains moments and world objects
 		self.db = client[dbName]
-		self.moments = list(self.db.moments.find())
-		self.objects = list(self.db.worldObjects.find())
+		self.defaultStory = list()
+
+
+	# Send true if its time to send another moment, false if more waiting needed
+	def check_time(self, run_id):
+		curr_time = time.time()
+		run = self.db.runs.find_one({"_id" : ObjectId(run_id)})
+		last_time = run["time_since_last"]
+		if last_time != None:
+			time_elapsed = curr_time - int(last_time)
+			# 300 seconds is 5 minutes
+			if time_elapsed > 20:
+				return True, curr_time
+			else:
+				return False, None
+		else:
+			return True, curr_time
+
+	def send_default(self, default_story, run_data, run_id):
+		last = run_data["last_default"]
+		index_next = default_story["sequence"].index(last) + 1
+		if index_next < len(default_story["sequence"]):
+			next_story_key = default_story["sequence"][index_next]
+			self.db.runs.update(
+						{"_id" : ObjectId(run_id)}, 
+						{"$set":{"last_default": next_story_key}})
+			default_moment = { 
+				"name": "Default",
+				"prompt": default_story[next_story_key]
+			}
+			return default_moment
+		return None
 
 	#	Find all moments in range
 	#	Make sure it has not already been sent
 	# 	Return to frontend
 	def get_moment(self, run_id, lat,lng):
 		moments_in_range = self.get_moments_in_range(run_id, lat,lng)
-		if len(moments_in_range) > 0:
-			valid_moments = [ moment[0] for moment in moments_in_range ] # if moment["prompt"] not in self.sent 
-			distances = [ dist[1] for dist in moments_in_range ] # if moment["prompt"] not in self.sent 
+		time_ok, new_time = self.check_time(run_id)
+		run_data = self.db.runs.find_one({"_id" : ObjectId(run_id)})
+		default_story = self.db.defaultStories.find_one({"id": run_data["default-story"]})
 
-			best_moment, dist_to = self.get_best_moment(valid_moments)				
+		# Check TIME: if > 5 min, send something. If < 5 minutes, send nothing.
+		if time_ok:
+			# Update new time
+			self.db.runs.update(
+							{"_id" : ObjectId(run_id)}, 
+							{"$set":{"time_since_last": new_time}})
+				
+			if len(moments_in_range) > 0:
+				valid_moments = [ moment[0] for moment in moments_in_range ] # if moment["prompt"] not in self.sent 
+				distances = [ dist[1] for dist in moments_in_range ] 
 
-			run = self.db.runs.find_one({"_id" : ObjectId(run_id)})
-			prompt = best_moment["prompt"]
-			# Best moment can return empty, don't send if so
-			if len(best_moment.keys()) == 0:
-				return None
-			# Check that this moment has not been sent already
-			elif prompt in run["moments_played"]:
-				print("This moment has been sent already!")
-				return None
-			# Send this moment to front end. Add to runs "played moment"
-			else:
-				print("Send this moment to front end. Add to run's played moments, update last distance run")
-				best_moment = [json.loads(json.dumps(best_moment, default=json_util.default))]
-				self.db.runs.update(
-					{"_id" : ObjectId(run_id)}, 
-					{"$addToSet":{"moments_played": prompt}})
-				# Keep track of how far we just made the runner go out of their way
-				if dist_to != None:
+				best_moment, dist_to = self.get_best_moment(valid_moments)				
+				prompt = best_moment["prompt"]
+				
+				if len(best_moment.keys()) != 0:
 					self.db.runs.update(
 						{"_id" : ObjectId(run_id)}, 
-						{"$set":{"last_distance": distances[dist_to]}})
-				return best_moment
+						{"$addToSet":{"moments_played": prompt}})
+					# Keep track of how far we just made the runner go out of their way
+					if dist_to != None:
+						self.db.runs.update(
+							{"_id" : ObjectId(run_id)}, 
+							{"$set":{"last_distance": distances[dist_to]}})	
+					return best_moment
+			# If did not return best moment, send default
+			return self.send_default(default_story, run_data, run_id)
+		print("time is NOT OK")
 		return None
 
 	# Returns all moments within range of lat, lng
@@ -61,24 +100,30 @@ class OpportunityManager():
 		for expand in expands:
 			if(expand["available"]):
 				available_expands.append(expand)
-		for moment in available_expands:
-			objectId = moment["id"]
-			objectRadius = moment["radius"]
-			obj = list(self.db.worldObjects.find({"name":objectId}))
-			# Toggle object radius depending on how far runner JUST ran
-			last_distance = list(self.db.runs.find({"_id": ObjectId(run_id)}))[0]["last_distance"]
-			if last_distance > 50:
-				objectRadius = .5*objectRadius
 
-			if len(obj) > 0:
-				obj = obj[0]
-				objectLat = float(obj["lat"])
-				objectLng = float(obj["lng"])
-				dist = self.estimate_distance(lat,lng,objectLat,objectLng)
-				if dist < objectRadius:
-					moments_in_range.append([moment, dist])
-				else:
-					pass
+		run_data = self.db.runs.find_one({"_id" : ObjectId(run_id)})
+			
+		for moment in available_expands:
+			prompt = moment["prompt"]
+			# Check that this moment has not been sent already
+			if prompt not in run_data["moments_played"]:
+				objectId = moment["id"]
+				objectRadius = moment["radius"]
+				obj = list(self.db.worldObjects.find({"name":objectId}))
+				# Toggle object radius depending on how far runner JUST ran
+				last_distance = list(self.db.runs.find({"_id": ObjectId(run_id)}))[0]["last_distance"]
+				if last_distance > 50:
+					objectRadius = .5*objectRadius
+
+				if len(obj) > 0:
+					obj = obj[0]
+					objectLat = float(obj["lat"])
+					objectLng = float(obj["lng"])
+					dist = self.estimate_distance(lat,lng,objectLat,objectLng)
+					if dist < objectRadius:
+						moments_in_range.append([moment, dist])
+					else:
+						pass
 		return moments_in_range
 			
 
@@ -142,7 +187,7 @@ class OpportunityManager():
 		if verified:
 			self.update_database(verified, moment)
 			return "Good sprinting. Thanks runner 5."
-		return ""
+		return "Bad job runner 5!"
 
 	# Based on action verification, update the database accordingly
 	def update_database(self, verified, moment_prompt):
@@ -168,7 +213,7 @@ class OpportunityManager():
 					}
 		})
 
-		# For now, dealing with "yes" verifications only...
+		# For now, dealing with "yes" verifications only... could get info from "no" too potentially?
 		# Set to true if responses more than 2
 		if status_and_responses[1] > 2:
 			status_and_responses[0] = True
@@ -190,57 +235,3 @@ class OpportunityManager():
 				})
 
 		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
-

@@ -2,21 +2,32 @@ from flask import Flask, request, Response, jsonify
 from opportunity import OpportunityManager
 from pymongo import MongoClient
 from verify import ActionVerifier
-from seed import seed
-from seed2 import seed2
+from seedDefault import seedDefault
 from seed3 import seed3
 from bson import ObjectId
 from bson import json_util
 from collections import defaultdict
-import time
 import json
 import random
+import time
+import sys
 
 app = Flask(__name__)
-opportunityManager = OpportunityManager()
 
-uri= "mongodb://localhost:27017"
-#uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
+arg = sys.argv[1]
+
+	
+if arg == 'local':
+	print("using local")
+	uri= "mongodb://localhost:27017"
+elif arg == 'remote':
+	print("using remote")
+	uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
+else:
+	print("didn't specify remote vs. local!")
+
+opportunityManager = OpportunityManager(arg)
+
 dbName = "hs4x"
 client = MongoClient(uri)
 db = client[dbName]
@@ -24,19 +35,22 @@ db = client[dbName]
 # Collections based on Experience Kit
 experiences = db["experiences"] # Story of full run
 moments = db["moments"] # Individual interactions
-#locations = db["locations"] # Streamer for locations
 motionActivityUpdates = db["motionActivityUpdates"]
 sensorMoments = db["sensorMoments"]
 worldObjects = db["worldObjects"] # Objects with locations
 runs = db["runs"] # Run organizes the entire experience for each individual run
-	# Runs has: run id, user id, start_time, list of locations in lat, lng, end time, list of moments played, list of speeds, last distance run to moment
+# Runs has: run id, user id, start_time, list of locations in lat, lng, end time, list of moments played, list of speeds, last distance run to moment
+defaultStories = db["defaultStories"]
 users = set() # Keep track of user ids. Hacky fix.
 
-#seed(moments, worldObjects)
-#seed2(moments, worldObjects)
-#seed3(moments, worldObjects)
-
 # Fill server database with hardcoded moments/objectt
+if len(sys.argv) > 2:
+	seedFlag = sys.argv[2]
+	if seedFlag == 'seed':
+		print("seeding database")
+		seed3(moments, worldObjects)
+	elif seedFlag == 'default':
+		seedDefault(defaultStories)
 
 @app.route('/')
 def index():
@@ -56,7 +70,8 @@ def initialize_run():
 	data = request.get_json() 
 	user_id = generate_userId()
 	users.add(user_id)
-	start_time = str(data['start_time'])
+	start_time = time.time() # Record the time we start this run
+	timer = time.time()
 	run_oid = runs.insert({
 		"user_id": user_id,
 		"start_time": start_time,
@@ -64,11 +79,15 @@ def initialize_run():
 		"locations": [],
 		"speeds": [],
 		"moments_played": [],
-		"last_distance": None
+		"last_distance": None,
+		"time_since_last": None, # Spacing of moments
+		"last_default": "intro",
+		"default-story": "story1" # Need a way to keep track of which default stories the user has heard
 	})
 	returnDict = {}
 	returnDict["run_id"] = str(run_oid)
 	returnDict["user_id"] = str(user_id)
+
 	return Response(
 			# The id of the run created for future use on Front end
 			json_util.dumps(returnDict),
@@ -101,7 +120,9 @@ def save_location():
 		save_string = latStr+','+lngStr+','+timeStr+'\n'
 		# Return result of opportunity manager!
 		best_moment = opportunityManager.get_moment(run_id, float(latStr),float(lngStr))
+		print(best_moment)
 		if best_moment != None:
+			best_moment = [json.loads(json.dumps(best_moment, default=json_util.default))]
 			return Response(
 				json_util.dumps(best_moment[0]),
 				mimetype='application/json'
@@ -122,7 +143,7 @@ def verify_action():
 	# Action verifier will check for a speed change and update the database accordingly
 	respond2action = opportunityManager.action_verifier(run_id, int(speed), moment)
 	verification_response = {"action_verified": respond2action}
-	
+
 	return Response(
 		json_util.dumps(verification_response), 
 		mimetype='application/json'

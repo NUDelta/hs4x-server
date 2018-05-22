@@ -149,8 +149,4 @@ def seed(moments, worldObjects):
     	"responses": 5
 	})
 
-dbName = "hs4x"
-#uri= "mongodb://localhost:27017"
-uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
-client = MongoClient(uri)
-db = client[dbName]
+

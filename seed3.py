@@ -19,8 +19,7 @@ def seed3(moments, worldObjects):
 		"name": "Expand",
 		"prompt": "If you see someone guarding the Rock, then our fortress in the area is still going strong, otherwise sprint past the Rock.",
 		"id": "rock",
-		"attribute": "rock-guarded",
-		"unlock": "rock-crowded",
+ 		"unlock": "rock-crowded",
 		"available": False,
 		"radius": 70
 	})
@@ -68,18 +67,25 @@ def seed3(moments, worldObjects):
 
 	# TODO rest
 
-	# moments.insert({ 
-	# 	"name": "Expand",
-	# 	"prompt": "The Garrett Parking Lot is coming up on your right and zombies are close. Jog into the lot to look for cover.",
-	# 	"id": "Garrett",
-	# 	"radius": 100
-	# })
-	# moments.insert({ 
-	# 	"name": "Expand",
-	# 	"prompt": "If you see many cars in the lot and few empty spots then there it will provide cover from the zombies, weave through the cars in the lot to throw the zombies off. Otherwise, sprint out of the lot and continue on quickly.",
-	# 	"id": "Garrett",
-	# 	"radius": 50
-	# })
+	moments.insert({ 
+		"name": "Expand",
+		"prompt": "The Garrett Parking Lot is coming up on your right and zombies are close. Jog into the lot to look for cover.",
+		"id": "Garrett",
+		"attribute": "garrett-exists",
+		"unlock": "garrett-full",
+		"available": True,
+		"radius": 100
+	})
+	moments.insert({ 
+		"name": "Expand",
+		"prompt": "If you see many cars in the lot and few empty spots then there it will provide cover from the zombies, weave through the cars in the lot to throw the zombies off. Otherwise, sprint out of the lot and continue on quickly.",
+		"id": "Garrett",
+		"attribute": "garrett-full",
+		"unlock": None,
+		"available": False,
+		"radius": 50
+	})
+
 	# moments.insert({ 
 	# 	"name": "Expand",
 	# 	"prompt":  "Run through the main courtyard. If the dining hall through the windows is packed, sprint as fast as you can out of there. Zombies will be there in no time. If not, keep your pace steady.",
@@ -147,12 +153,12 @@ def seed3(moments, worldObjects):
 		"lng": -87.672949,
 		"attributes": {"norris-exists": [None, 0], "norris-no-line": [None, 0], "norris-crowded": [None, 0]}
 	})
-	# worldObjects.insert({
-	# 	"name": "Garrett",
-	# 	"lat": 42.055600,
-	# 	"lng": -87.676569,
-	# 	"responses": 5	
-	# })
+	worldObjects.insert({
+		"name": "Garrett",
+		"lat": 42.055600,
+		"lng": -87.676569,
+		"attributes": {"garrett-exists": [None, 0], "garrett-full": [None, 0]}
+	})
 	# worldObjects.insert({
 	# 	"name": "Plex",
 	# 	"lat": 42.052936,
@@ -184,8 +190,3 @@ def seed3(moments, worldObjects):
  #    	"responses": 5
 	# })
 
-dbName = "hs4x"
-uri= "mongodb://localhost:27017"
-#uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
-client = MongoClient(uri)
-db = client[dbName]
