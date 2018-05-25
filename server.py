@@ -135,9 +135,13 @@ def verify_action():
 	# the run_id, the current speed, the moment it is verifying
 	data = request.get_json()
 	run_id = str(data['run_id'])
+	moments_of_run = db.runs.find_one({"_id" : ObjectId(run_id)})["moments_played"]
 	speed = str(data['speed'])	
-	moment = str(data['moment']) # How do I identify a moment? By prompt most likely...
 
+	if len(moments_of_run) > 0:
+		moment = moments_of_run[-1]
+	else:
+		return {}
 	# Action verifier will check for a speed change and update the database accordingly
 	respond2action = opportunityManager.action_verifier(run_id, int(speed), moment)
 	verification_response = {"action_verified": respond2action}
