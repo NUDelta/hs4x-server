@@ -20,11 +20,9 @@ arg = sys.argv[1]
 if arg == 'local':
 	print("using local")
 	uri= "mongodb://localhost:27017"
-elif arg == 'remote':
+else:
 	print("using remote")
 	uri= "mongodb://ob:kim@ds153577.mlab.com:53577/hs4x"
-else:
-	print("didn't specify remote vs. local!")
 
 opportunityManager = OpportunityManager(arg)
 
