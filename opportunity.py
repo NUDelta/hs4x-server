@@ -51,7 +51,7 @@ class OpportunityManager():
 				"prompt": default_story[next_story_key]
 			}
 			return default_moment
-		return None
+		return jsonify({})
 
 	#	Find all moments in range
 	#	Make sure it has not already been sent
@@ -149,7 +149,6 @@ class OpportunityManager():
 				fewest_attr_left = attributes_left
 				best_moment = moment
 				distance_index = index
-
 		return best_moment, distance_index
 
 	# Stackoverflow function to compute distance. accurate to a couple ft

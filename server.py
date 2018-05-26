@@ -126,7 +126,7 @@ def save_location():
 				mimetype='application/json'
 			)
 		else:
-			return jsonify({})
+			return jsonify({"result":0})
 	return jsonify({"result":0})
 
 @app.route('/verify', methods = ['POST'])
@@ -141,7 +141,7 @@ def verify_action():
 	if len(moments_of_run) > 0:
 		moment = moments_of_run[-1]
 	else:
-		return {}
+		return jsonify({})
 	# Action verifier will check for a speed change and update the database accordingly
 	respond2action = opportunityManager.action_verifier(run_id, int(speed), moment)
 	verification_response = {"action_verified": respond2action}
