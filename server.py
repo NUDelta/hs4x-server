@@ -78,7 +78,7 @@ def initialize_run():
 		"speeds": [],
 		"moments_played": [],
 		"last_distance": None,
-		"time_since_last": None, # Spacing of moments
+		"time_since_last": start_time, # Spacing of moments
 		"last_default": "intro",
 		"default-story": "story1" # Need a way to keep track of which default stories the user has heard
 	})
