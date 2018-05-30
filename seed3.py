@@ -12,7 +12,7 @@ def seed3(moments, worldObjects):
 		"attribute": "rock-exists",
 		"unlock": "rock-guarded",
 		"available": True,
-		"radius": 70
+		"radius": 200
 	})
 
 	moments.insert({ 
@@ -21,7 +21,7 @@ def seed3(moments, worldObjects):
 		"id": "rock",
  		"unlock": "rock-crowded",
 		"available": False,
-		"radius": 70
+		"radius": 200
 	})
 	moments.insert({
 		"name": "Expand",
@@ -30,7 +30,7 @@ def seed3(moments, worldObjects):
 		"attribute": "rock-crowded",
 		"unlock": None,
 		"available": False,
-		"radius": 50
+		"radius": 200
 	})
 
 	# NORRIS
@@ -42,7 +42,7 @@ def seed3(moments, worldObjects):
 		"attribute": "norris-exists",
 		"unlock": "norris-no-line",
 		"available": True,
-		"radius": 100
+		"radius": 200
 	})
 
 	moments.insert({
@@ -52,7 +52,7 @@ def seed3(moments, worldObjects):
 		"attribute": "norris-no-line",
 		"unlock": "norris-crowded",
 		"available": False,
-		"radius": 50
+		"radius": 200
 	})
 
 	moments.insert({
@@ -62,7 +62,7 @@ def seed3(moments, worldObjects):
 		"attribute": "norris-crowded",
 		"unlock": None,
 		"available": False,
-		"radius": 50
+		"radius": 200
 	})
 
 	# TODO rest
@@ -74,7 +74,7 @@ def seed3(moments, worldObjects):
 		"attribute": "garrett-exists",
 		"unlock": "garrett-full",
 		"available": True,
-		"radius": 100
+		"radius": 200
 	})
 	moments.insert({ 
 		"name": "Expand",
@@ -83,57 +83,92 @@ def seed3(moments, worldObjects):
 		"attribute": "garrett-full",
 		"unlock": None,
 		"available": False,
-		"radius": 50
+		"radius": 200
 	})
 
-	# moments.insert({ 
-	# 	"name": "Expand",
-	# 	"prompt":  "Run through the main courtyard. If the dining hall through the windows is packed, sprint as fast as you can out of there. Zombies will be there in no time. If not, keep your pace steady.",
-	# 	"id": "Plex",
-	# 	"radius": 100
-	# })
-	# moments.insert({ 
-	# 	"name": "Explore",
-	# 	"prompt":  "Hey there runner 5, do you see any fire hydrants nearby? If you do, mark it for us by sprinting to it and pausing. We need to know where they can be found for when we start sending teams out.",
-	# 	"id": "NA",
-	# 	"radius": 0
-	# })
-	# moments.insert({ 
-	# 	"name": "Expand",
-	# 	"prompt":  "There is a park due north of you. There is a pack of zombies on your tail and the park might provide cover -- sprint quickly!!",
-	# 	"id": "Tallmadge Park",
-	# 	"radius": 50
-	# })
-	# moments.insert({ 
-	# 	"name": "Expand",
-	# 	"prompt":  "Great you made it. We're considering setting up a small settlement here. If there is a thick foliage for cover in the area, run a path circumventing the park. Otherwise, keep heading on.",
-	# 	"id": "Tallmadge Park",
-	# 	"radius": 20
-	# })
-	# moments.insert({ 
-	# 	"name": "Expand",
-	# 	"prompt":  "We have a settlement set up at Coffee Lab, run two blocks north and two west to check in there.",
-	# 	"id": "Coffee Lab",
-	# 	"radius": 100
-	# })
-	# moments.insert({ 
-	# 	"name": "Expand",
-	# 	"prompt":  "This is an old settlement -- if it is overrun with people, sprint past -- Zombies will be here in no time -- otherwise pause for a moment to regain your energy.",
-	# 	"id": "Coffee Lab",
-	# 	"radius": 20
-	# })
+	moments.insert({ 
+		"name": "Expand",
+		"prompt":  "Cut through the Plex courtyard to avoid Zombies on your path. You should sprint there",
+		"id": "Plex",
+		"attribute": "Plex-exists",
+		"unlock": "Plex-full",
+		"available": True,
+		"radius": 200
+	})
+
+	moments.insert({ 
+		"name": "Expand",
+		"prompt":  "Run through the main courtyard of Plex. If the dining hall through the windows is packed, sprint as fast as you can out of there. Zombies will be there in no time.",
+		"id": "Plex",
+		"attribute": "Plex-full",
+		"unlock": None,
+		"available": False,
+		"radius": 200
+	})
+	
+	moments.insert({ 
+		"name": "Expand",
+		"prompt":  "There is a park nearby. There is a pack of zombies on your tail and the park might provide cover -- sprint quickly.",
+		"id": "Tallmadge Park",
+		"attribute": "Tallmadge-exists",
+		"unlock": "Tallmadge-foliage",
+		"available": True,
+		"radius": 200
+	})
+
+	moments.insert({ 
+		"name": "Expand",
+		"prompt":  "Great you made it. We're considering setting up a small settlement here. If there is a thick foliage for cover in the area, run a path circumventing the park. Otherwise, keep heading on.",
+		"id": "Tallmadge Park",
+		"attribute": "Tallmadge-foliage",
+		"unlock": None,
+		"available": False,
+		"radius": 200
+	})
+
+	moments.insert({ 
+		"name": "Expand",
+		"prompt":  "We have a settlement set up at Coffee Lab, run to it to check in.",
+		"id": "Coffee Lab",
+		"attribute": "Coffee-lab-exists",
+		"unlock": "Coffee-lab-full",
+		"available": True,
+		"radius": 200
+	})
+	moments.insert({ 
+		"name": "Expand",
+		"prompt":  "This is an old settlement -- if it is overrun with people, sprint past -- Zombies will be here in no time -- otherwise pause for a moment to regain your energy.",
+		"id": "Coffee Lab",
+		"attribute": "Coffee-lab-full",
+		"unlock": None,
+		"available": False,
+		"radius": 200
+	})
+
+	moments.insert({ 
+		"name": "Expand",
+		"prompt":  "The local grocery store D&Ds might have leftover food. Peak inside. If there are lots of people, sprint past, otherwise slowly jog past.",
+		"id": "D&Ds",
+		"attribute": "D&Ds-exists",
+		"unlock": None,
+		"available": True,
+		"radius": 50
+	})
+	
 	# moments.insert({ 
 	# 	"name": "Explore",
 	# 	"prompt":  "You are in unexplored territory, runner 5. Keep an eye out for parking spots -- those usually mean residents fled quickly and left behind valuables. If you see some in the area, reduce your pace and try to memorize the area so we can come back later and pick resources up. Otherwise, keep continuing on to base.",
 	# 	"id": "NA",
 	# 	"radius": 0
 	# })
+
 	# moments.insert({ 
-	# 	"name": "Expand",
-	# 	"prompt":  "The local grocery store D&Ds might have leftover food. Peak inside. If there are lots of people, sprint past, otherwise slowly jog past.",
-	# 	"id": "D&Ds",
-	# 	"radius": 50
+	# 	"name": "Explore",
+	# 	"prompt":  "Hey there runner 5, do you see any fire hydrants nearby? If you do, mark it for us by sprinting to it and pausing. We need to know where they can be found for when we start sending teams out.",
+	# 	"id": "NA",
+	# 	"radius": 0
 	# })
+
 	# moments.insert({ 
 	# 	"name": "End",
 	# 	"prompt":  "Great job, runner 5. You had very few run-ins with zombies and collected incredibly important data for us. You're within our base range now and you are safe. Until our next mission together!",
@@ -159,34 +194,29 @@ def seed3(moments, worldObjects):
 		"lng": -87.676569,
 		"attributes": {"garrett-exists": [None, 0], "garrett-full": [None, 0]}
 	})
-	# worldObjects.insert({
-	# 	"name": "Plex",
-	# 	"lat": 42.052936,
-	# 	"lng": -87.679330,
-	# 	"responses": 2	
-	# })
-	# worldObjects.insert({
-	# 	"name": "Tallmadge Park",
-	# 	"lat": 42.054570,
-	# 	"lng": -87.682204,
-	# 	"responses": 4	
-	# })
-	# worldObjects.insert({
-	# 	"name": "Coffee Lab",
-	# 	"lat": 42.0583,
-	# 	"lng": -87.6837,
-	# 	"responses": 7	
-	# })
-	# worldObjects.insert({
-	# 	"name": "D&Ds",
-	# 	"lat": 42.058701,
-	# 	"lng": -87.683191,
-	# 	"responses": 2	
-	# })
-	# worldObjects.insert({
-	# 	"name": "test-obj",
-	# 	"lat": 42.05909,
- #    	"lng": -87.674446,
- #    	"responses": 5
-	# })
+	worldObjects.insert({
+		"name": "Plex",
+		"lat": 42.052936,
+		"lng": -87.679330,
+		"attributes": {"Plex-exists": [None, 0], "Plex-full": [None, 0]}
+	})
+	worldObjects.insert({
+		"name": "Tallmadge Park",
+		"lat": 42.054570,
+		"lng": -87.682204,
+		"attributes": {"Tallmadge-exists": [None, 0], "Tallmadge-foliage": [None, 0]}
+	})
+	worldObjects.insert({
+		"name": "Coffee Lab",
+		"lat": 42.0583,
+		"lng": -87.6837,
+		"attributes": {"Coffee-lab-exists": [None, 0], "Coffee-lab-full": [None, 0]}
+	})
+	worldObjects.insert({
+		"name": "D&Ds",
+		"lat": 42.058701,
+		"lng": -87.683191,
+		"attributes": {"D&Ds-exists": [None, 0]}
+	})
+	
 
