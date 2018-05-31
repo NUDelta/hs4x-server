@@ -31,7 +31,7 @@ class OpportunityManager():
 		if last_time != None:
 			time_elapsed = curr_time - int(last_time)
 			# 300 seconds is 5 minutes
-			if time_elapsed > 120:
+			if time_elapsed > 200:
 				return True, curr_time
 			else:
 				return False, None
