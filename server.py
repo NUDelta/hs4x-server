@@ -2,8 +2,7 @@ from flask import Flask, request, Response, jsonify
 from opportunity import OpportunityManager
 from pymongo import MongoClient
 from verify import ActionVerifier
-from seedDefault import seedDefault
-from seed3 import seed3
+from seed import seed, seedNudge, seedDefault
 from bson import ObjectId
 from bson import json_util
 from collections import defaultdict
@@ -15,7 +14,6 @@ import sys
 app = Flask(__name__)
 
 arg = sys.argv[1]
-
 	
 if arg == 'local':
 	print("using local")
@@ -39,6 +37,8 @@ worldObjects = db["worldObjects"] # Objects with locations
 runs = db["runs"] # Run organizes the entire experience for each individual run
 # Runs has: run id, user id, start_time, list of locations in lat, lng, end time, list of moments played, list of speeds, last distance run to moment
 defaultStories = db["defaultStories"]
+nudgeStories = db["nudgeStories"]
+
 users = set() # Keep track of user ids. Hacky fix.
 
 # Fill server database with hardcoded moments/objectt
@@ -46,9 +46,13 @@ if len(sys.argv) > 2:
 	seedFlag = sys.argv[2]
 	if seedFlag == 'seed':
 		print("seeding database")
-		seed3(moments, worldObjects)
+		seed(moments, worldObjects)
 	elif seedFlag == 'default':
+		print("seeding w/ default")
 		seedDefault(defaultStories)
+	elif seedFlag == 'nudge':
+		print("seeding w/ nudge")
+		seedNudge(nudgeStories)
 
 @app.route('/')
 def index():
@@ -80,7 +84,9 @@ def initialize_run():
 		"last_distance": None,
 		"time_since_last": start_time, # Spacing of moments
 		"last_default": "intro",
-		"default-story": "story1" # Need a way to keep track of which default stories the user has heard
+		"nudge_index": 0,
+		"default-story": "story1", # Need a way to keep track of which default stories the user has heard
+		"nudge-story": "story1"
 	})
 	returnDict = {}
 	returnDict["run_id"] = str(run_oid)

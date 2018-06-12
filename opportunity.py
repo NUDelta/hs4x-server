@@ -1,3 +1,4 @@
+from flask import Flask, request, Response, jsonify
 import json
 import time
 import sys
@@ -31,7 +32,7 @@ class OpportunityManager():
 		if last_time != None:
 			time_elapsed = curr_time - int(last_time)
 			# 300 seconds is 5 minutes
-			if time_elapsed > 200:
+			if time_elapsed > 2:
 				return True, curr_time
 			else:
 				return False, None
@@ -53,14 +54,32 @@ class OpportunityManager():
 			return default_moment
 		return jsonify({})
 
+	def send_nudge(self, obj, nudge_story, run_data, run_id):
+		index_next = run_data["nudge_index"]
+		if index_next < len(nudge_story["sequence"]):
+			nudge_story_key = nudge_story["sequence"][index_next]
+			prompt = nudge_story[nudge_story_key]
+			prompt = str.replace("[ENTERLOCATION]", obj)
+
+			self.db.runs.update(
+						{"_id" : ObjectId(run_id)}, 
+						{"$set":{"nudge_index": index_next+1}})
+			nudge_moment = { 
+				"name": "Nudge",
+				"prompt": prompt
+			}
+			return nudge_moment
+		return jsonify({})
+
 	#	Find all moments in range
 	#	Make sure it has not already been sent
 	# 	Return to frontend
 	def get_moment(self, run_id, lat,lng):
-		moments_in_range = self.get_moments_in_range(run_id, lat,lng)
+		moments_in_range, closest_obj = self.get_moments_in_range(run_id, lat,lng)
 		time_ok, new_time = self.check_time(run_id)
 		run_data = self.db.runs.find_one({"_id" : ObjectId(run_id)})
 		default_story = self.db.defaultStories.find_one({"id": run_data["default-story"]})
+		nudge_story = self.db.nudgeStories.find_one({"id": run_data["nudge-story"]})
 
 		# Check TIME: if > 5 min, send something. If < 5 minutes, send nothing.
 		if time_ok:
@@ -68,7 +87,7 @@ class OpportunityManager():
 			self.db.runs.update(
 							{"_id" : ObjectId(run_id)}, 
 							{"$set":{"time_since_last": new_time}})
-				
+			# First, try and send an actual moment
 			if len(moments_in_range) > 0:
 				valid_moments = [ moment[0] for moment in moments_in_range ] # if moment["prompt"] not in self.sent 
 				distances = [ dist[1] for dist in moments_in_range ] 
@@ -86,6 +105,8 @@ class OpportunityManager():
 							{"_id" : ObjectId(run_id)}, 
 							{"$set":{"last_distance": distances[dist_to]}})	
 					return best_moment
+			if closest_obj != "":
+				return self.send_nudge(closest_obj["name"], nudge_story, run_data, run_id)
 			# If did not return best moment, send default
 			return self.send_default(default_story, run_data, run_id)
 		print("time is NOT OK")
@@ -102,7 +123,10 @@ class OpportunityManager():
 				available_expands.append(expand)
 
 		run_data = self.db.runs.find_one({"_id" : ObjectId(run_id)})
-			
+		
+		closest_obj = ""
+		min_dist = float("inf")
+
 		for moment in available_expands:
 			prompt = moment["prompt"]
 			# Check that this moment has not been sent already
@@ -110,6 +134,7 @@ class OpportunityManager():
 				objectId = moment["id"]
 				objectRadius = moment["radius"]
 				obj = list(self.db.worldObjects.find({"name":objectId}))
+
 				# Toggle object radius depending on how far runner JUST ran
 				last_distance = list(self.db.runs.find({"_id": ObjectId(run_id)}))[0]["last_distance"]
 				if last_distance > 50:
@@ -120,11 +145,15 @@ class OpportunityManager():
 					objectLat = float(obj["lat"])
 					objectLng = float(obj["lng"])
 					dist = self.estimate_distance(lat,lng,objectLat,objectLng)
+					
+					if dist < min_dist and dist < 1000:
+						min_dist = dist
+						closest_obj = obj
 					if dist < objectRadius:
 						moments_in_range.append([moment, dist])
 					else:
 						pass
-		return moments_in_range
+		return moments_in_range, closest_obj
 			
 
 	# Returns moment from given array of moments least % covered attributes
