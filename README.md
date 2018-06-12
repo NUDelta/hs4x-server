@@ -24,11 +24,15 @@ build instructions:
 	- run LOCALLY: 
 		- set uri = mongodb://localhost:27017 in both server.py and opportunity.py
 		- run mongod in terminal window
-		- (To seed if previously unseeded, add "seed(moments, worldObjects)" at beginning of server.py but only run the server 			with this line once! )
-		- In another terminal window, run "python server.py"
+		- In another terminal window, run "python server.py local"
 	- run REMOTE:
 		- set uri remote heroku server in server.py and opportunity.py
 		- git add, git commit, push heroku master
-		- (To seed if previously unseeded, add "seed(moments, worldObjects)" at beginning of server.py but only run the server 			with this line once! )
-		- run "python server.py"
+		- run "python server.py remote"
+	- to SEED:
+		- Only do this if previously unseeded!
+		- Run with terminal input argument seed for normal moments
+		- Run with terminal input argument default for default moments
+		- Run with terminal input argument nudge for nudge moments
+		- Run as in: "python server.py local seed" 
 	- to download pip packages from requirements.txt, type "pip install -r requirements.txt"
